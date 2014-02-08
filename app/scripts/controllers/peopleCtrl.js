@@ -80,9 +80,9 @@ angular.module('angularProfileApp')
 
     ]
   	
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    $scope.setPerson = function (person) {
+    	console.log(person);
+    	$scope.selectedPerson = person;
+    };
+
   });

@@ -8,16 +8,21 @@
         
            <li class="person" ng-repeat='person in people'>
              
-              <img ng-src="{{person.picture}}"> 
+              <img ng-src="{{person.picture}}" ng-click="setPerson(person)"> 
               <div class='textBackground'></div>
               <p>{{person.firstName}}</p>
               <div class='addOns'>
                 <a ng-href='{{person.link}}'><i class="fa fa-bolt icon_large"></i></a>
                 <i class="fa fa-comments icon_large"></i>
-          
+              
             
               </div>
             </li>
+
+            <div jds-popup="img">
+                  {{ selectedPerson }}
+                  
+            </div>
 
         </ul>  
 

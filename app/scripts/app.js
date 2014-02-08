@@ -4,7 +4,7 @@ angular.module('angularProfileApp', [
 	'ui.router'
 ]).config(function ($stateProvider, $urlRouterProvider) {
 
-    // $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/');
 
 var nav = {
       templateUrl: 'views/nav.html',
@@ -39,7 +39,7 @@ $stateProvider
           nav: nav,
           body: {
             templateUrl: 'views/main.html',
-            controller: 'MainCtrl'
+            controller: 'peopleCtrl'
           },
           footer: {
           	templateUrl: 'views/footer.html'

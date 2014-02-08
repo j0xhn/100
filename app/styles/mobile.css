@@ -103,12 +103,12 @@ text-align: right;
 }
 
 #left {
-	background-color: #383942;
-	padding: 3px 20px 0 0;
+	padding: 0px 2px 0 0;
 	width: 123px;
 	height: 100%;
 	position: fixed;
 	left: -123;
+	margin-left: -125px;
 	text-align: right;
 	transition: all .3s;
 	-webkit-transition: all .3s;
@@ -136,17 +136,15 @@ text-align: right;
 
 
 #right {
-	width: 123px;
-	height: 100%;
-	position: fixed;
-	right: -123;
-	top: -20;
-	z-index: 1;
-	text-align: left;
-	padding: 20px;
-	background-color: #383942;
-	transition: all .3s;
-	-webkit-transition: all .3s;
+  width: 123px;
+  height: 100%;
+  position: fixed;
+  margin-left: 28px;
+  right: -123;
+  top: -20;
+  z-index: 1;
+  text-align: left;
+  transition: all .3s;
 }
 
 #center_left {
@@ -279,6 +277,20 @@ ul {
 }
 
 /* Right Hand Sidebar */
+.sidebar-open-right {
+	/*border-color: black;
+  	border-width: 1px;
+  	border-style: dotted;*/
+}
+
+.sidebar-open-right ul {
+	padding-top: 5px;
+	
+
+	/*border-color: grey;
+  	border-width: 1px;
+  	border-style: dotted;*/
+}
 
 .sidebar-open-right #right, .sidebar-open-right #center {
 	transform: translateX(-123px);
@@ -294,6 +306,8 @@ ul {
 
 /* Left Hand Sidebar */
 
+
+
 #sidebar-toggle-left {
 	transition: all .3s;
 	-webkit-transition: all .3s;
@@ -301,6 +315,21 @@ ul {
 
 #sidebar-toggle-left:hover{
 	-webkit-transform: scale(1.1); 
+}
+
+.sidebar-open-left {
+
+	/*border-color: grey;
+  	border-width: 1px;
+  	border-style: dotted;*/
+}
+
+.sidebar-open-left ul {
+	padding-top: 0px;
+
+	/*border-color: grey;
+  	border-width: 1px;
+  	border-style: dotted;*/
 }
 
 .sidebar-open-left #left, .sidebar-open-left #center {
