@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularProfileApp')
+angular.module('100App')
   .service('peopleService', function getPeople () {
   	return [{
     "firstName": "John",

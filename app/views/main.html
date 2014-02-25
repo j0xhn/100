@@ -1,32 +1,23 @@
 
 <!-- Main Section -->
-    
-     <div class="col" id="center" ng-controller='peopleCtrl'>
+
+  <div class="col" id="center" ng-controller='peopleCtrl'>
 
 <!-- Grid Items -->
-        <ul id = 'makeCenter'>
-        
-           <li class="person" ng-repeat='person in people'>
-             
-              <img ng-src="{{person.picture}}" ng-click="setPerson(person)"> 
-              <div class='textBackground'></div>
+    <ul id = 'makeCenter'>
+       <li class="person" ng-repeat='person in people'>
+         <img ng-src="{{person.picture}}" ng-click="setPerson(person)"> 
+          <div class='textBackground'></div>
               <p>{{person.firstName}}</p>
-              <div class='addOns'>
-                <a ng-href='{{person.link}}'><i class="fa fa-bolt icon_large"></i></a>
-                <i class="fa fa-comments icon_large"></i>
-              
-            
-              </div>
-            </li>
+          <div class='addOns'>
+              <a ng-href='{{person.link}}'><i class="fa fa-bolt icon_large"></i></a>
+              <i class="fa fa-comments icon_large"></i>
+          </div>
+       </li>p
+       <button class="btn btn-default" ng-click="open()">Open me!</button>
+    </ul>
 
-            <div jds-popup="img">
-                  {{ selectedPerson }}
-                  
-            </div>
-
-        </ul>  
-
-    </div>
+        <div jds-popup="img" ui-sref='modal'></div>
 
     <script src='/scripts/main.js'></script>
 
@@ -54,4 +45,4 @@
   <p>Spectacular Test Runner for JavaScript.</p> 
 </div>-->
 
-
+</div>

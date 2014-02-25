@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularProfileApp')
+angular.module('100App')
   .controller('peopleCtrl', function ($scope, peopleService) {
   	$scope.test = '| This will show if my Angular is working';
   	$scope.testName = 'John',

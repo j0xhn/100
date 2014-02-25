@@ -3,7 +3,7 @@
 describe('Controller: peopleCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('angularProfileApp'));
+  beforeEach(module('100App'));
 
   var peopleCtrl,
     scope;

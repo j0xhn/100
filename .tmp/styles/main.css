@@ -1,5 +1,14 @@
 /* Space out content a bit */
 
+/*Added for Angular UI Bootstrap*/
+
+.nav,
+.pagination,
+.carousel,
+.panel-title a {
+  cursor: pointer;
+}
+
 body {
   padding-top: 20px;
   padding-bottom: 20px;

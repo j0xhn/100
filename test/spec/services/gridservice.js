@@ -3,7 +3,7 @@
 describe('Service: peopleService', function () {
 
   // load the service's module
-  beforeEach(module('angularProfileApp'));
+  beforeEach(module('100App'));
 
   // instantiate service
   var peopleService;

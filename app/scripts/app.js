@@ -1,13 +1,39 @@
 'use strict';
 
-angular.module('angularProfileApp', [
-	'ui.router'
+angular.module('100App', [
+	'ui.router', 'ui.bootstrap'
 ]).config(function ($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/');
 
 var nav = {
       templateUrl: 'views/nav.html',
+      // controller: 'NavCtrl',
+      // resolve: {
+      //   user: function (userService) {
+      //     return userService.get();
+      //   },
+      //   loggedInUser: function (userService) {
+      //     return userService.getLoggedInUser();
+      //   }
+      // }
+    };
+
+var modal = {
+      templateUrl: 'views/modal.html',
+      // controller: 'NavCtrl',
+      // resolve: {
+      //   user: function (userService) {
+      //     return userService.get();
+      //   },
+      //   loggedInUser: function (userService) {
+      //     return userService.getLoggedInUser();
+      //   }
+      // }
+    };
+
+var body = {
+      templateUrl: 'views/main.html',
       // controller: 'NavCtrl',
       // resolve: {
       //   user: function (userService) {
@@ -37,23 +63,16 @@ $stateProvider
         url: '/',
         views: {
           nav: nav,
-          body: {
-            templateUrl: 'views/main.html',
-            controller: 'peopleCtrl'
-          },
-          footer: {
-          	templateUrl: 'views/footer.html'
-          }
+          body: body,
+          footer: footer,
         }
       })
-      .state('dashboard', {
-        url: '/dashboard',
+      .state('modal', {
+        url: '/',
         views: {
           nav: nav,
-          body: {
-            templateUrl: 'views/dashboard.html',
-            controller: 'DashboardCtrl'
-          }
+          body: body,
+          footer: footer,
         }
       })
 });

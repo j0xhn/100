@@ -1,9 +1,9 @@
 'use strict';
 
-angular.module('angularProfileApp')
+angular.module('100App')
   .directive('jdsPopup', function ($timeout) {
     return {
-      template: '<div class="popup" style="display: none" ng-transclude></div>',
+      templateUrl: '/views/modal.html',
       restrict: 'A',
       transclude: true,
       link: function postLink(scope, element, attrs) {
@@ -13,9 +13,19 @@ angular.module('angularProfileApp')
 
 	        targets.on('click', function(){
 	        	console.log("you just clicked");
-	        	element.find('.popup').toggle();
+	        	// use when not using bootstrap modal //
+            // element.find('.popup').toggle();
+
+            //bootstrap modal
+            $('#modal').modal('show');
+            $('#myModal').on('hidden.bs.modal', function () {
+              console.log('you hid the modal');
+              // $('body').removeClass('modal-open modal-backdrop');
+            })
 	        });
       	});
+
+
         
       }
     };

@@ -3,7 +3,7 @@
 describe('Directive: jdsPopup', function () {
 
   // load the directive's module
-  beforeEach(module('angularProfileApp'));
+  beforeEach(module('100App'));
 
   var element,
     scope;

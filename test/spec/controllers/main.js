@@ -3,7 +3,7 @@
 describe('Controller: MainCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('angularProfileApp'));
+  beforeEach(module('100App'));
 
   var MainCtrl,
     scope;
