@@ -17,27 +17,27 @@ $(function() {
 		 });	
 
 		 // $('.edit').editable('http://www.example.com/save.php');
-		$('body').on('click', '.edit', function() {
-			var oldEl = $(this),
-				newEl = $('<input class="edit-new" placeholder="" />');
+		// $('body').on('click', '.edit', function() {
+		// 	var oldEl = $(this),
+		// 		newEl = $('<input class="edit-new" placeholder="" />');
 				
 
-				// $('.save-input').prepend( " | " );
-				$('.save-input').show();
+		// 		// $('.save-input').prepend( " | " );
+		// 		$('.save-input').show();
 				
 
-				oldEl.replaceWith(newEl);
-				newEl.focus();
+		// 		oldEl.replaceWith(newEl);
+		// 		newEl.focus();
 				
 
-				$('.save-input').on('click', function(e) {
-					newEl = $('.edit-new').val();
-					// alert(newEl);
-					// newEl.replaceWith(oldEl);
-					e.preventDefault();
-					$('.save-input').hide();
-				});
-		});
+		// 		$('.save-input').on('click', function(e) {
+		// 			newEl = $('.edit-new').val();
+		// 			// alert(newEl);
+		// 			// newEl.replaceWith(oldEl);
+		// 			e.preventDefault();
+		// 			$('.save-input').hide();
+		// 		});
+		// });
 
 		//Makes lists clickable
 		$(function() {

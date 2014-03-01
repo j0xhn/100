@@ -200,11 +200,6 @@ span:hover {
   color: white;
 }
 
-input{
-	padding:0;
-	border: none;
-}
-
 
 h1 {
 
@@ -230,20 +225,6 @@ h1 {
 	font-size: 2em;
 	color: black;
 	margin:15px 5px 5px 0;	
-}
-
-textarea:focus, input:focus {
-    outline: 0;
-    border: none;
-    font-family: 'Open Sans','Helvetica';
-    font-size: 2em;
-    font-weight: 500;
-	font-size: 2em;
-	color: black;
-	margin-bottom: 5px;	
-	height: 1.5em;
-
-
 }
 
 

@@ -54,12 +54,24 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    
     <!-- endbower -->
     <!-- endbuild -->
+
+    <!-- MYSCRIPTS -->
+        <script src='scripts/main.js'></script>
+        <script src='scripts/jquery.isotope.min.js'></script>
+        <script src='http://www.appelsiini.net/download/jquery.jeditable.mini.js'></script>
+        <script src="scripts/ui-bootstrap-tpls-0.10.0.min.js"></script>
+        <script src="//www.parsecdn.com/js/parse-1.2.17.min.js"></script>
+    <!-- angular fire include -->
+        <!-- <script src="https://cdn.firebase.com/libs/angularfire/0.7.0/angularfire.min.js"></script> -->
+
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
@@ -67,12 +79,9 @@
         <script src="scripts/services/peopleService.js"></script>
         <script src="scripts/controllers/peopleCtrl.js"></script>
         <script src="scripts/directives/jds-popup.js"></script>
+        <script src="scripts/controllers/thread.js"></script>
         <!-- endbuild -->
 
-        <!-- MYSCRIPTS -->
-        <script src='scripts/main.js'></script>
-        <script src='scripts/jquery.isotope.min.js'></script>
-        <script src='http://www.appelsiini.net/download/jquery.jeditable.mini.js'></script>
-        <script src="scripts/ui-bootstrap-tpls-0.10.0.min.js"></script>
+        
 </body>
 </html>

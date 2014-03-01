@@ -5,8 +5,32 @@ angular.module('100App')
   	return [{
     "firstName": "John",
     "lastName": "Storey",
-    "link": "http//:www.johndangerstorey.com",
     "age": 25,
+    "location": "Provo",
+    "email":'johndangerstorey@gmail.com',
+    "link": "http//:www.johndangerstorey.com",
+    "bank": 5,
+    "overall": 15,
+    "overallSubtotal1": 7,
+    "overallSubtotal2": 6,
+    'top10': [
+
+    ]
+        "1": {"Dreamer",9},
+        "2": {"Adventurer",8},
+        "3": {"Doer",7},
+        "4": {"Hobbit",6},
+        "5": {"Caribbean",5},
+        "6": {"Travel",4},
+        "7": {"Eccentric",3},
+        "8": {"Forgetful",2},
+        "9": {"Selfish",2},
+        "10": {"easyGoing",2},
+    },
+    'random': [
+        "",
+        "",
+    ],
     "address": {
         "streetAddress": "21 2nd Street",
         "city": "New York",
