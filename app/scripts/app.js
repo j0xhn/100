@@ -67,12 +67,12 @@ $stateProvider
           footer: footer,
         }
       })
-      .state('modal', {
-        url: '/',
-        views: {
-          nav: nav,
-          body: body,
-          footer: footer,
-        }
-      })
+      // .state('modal', {
+      //   url: '/person',
+      //   views: {
+      //     nav: nav,
+      //     body: body,
+      //     footer: footer,
+      //   }
+      // })
 });
