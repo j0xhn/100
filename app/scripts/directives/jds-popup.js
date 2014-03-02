@@ -13,15 +13,13 @@ angular.module('100App')
 	        	targets = angular.element(document.body).find(selector);
 
 	        targets.on('click', function(){
-	        	console.log("you just clicked");
+	        	console.log("you just clicked into jdsPopup directive");
 	        	// use when not using bootstrap modal //
             // element.find('.popup').toggle();
 
             //bootstrap modal
             $('#modal').modal('show');
             $('#myModal').on('hidden.bs.modal', function () {
-              console.log('you hid the modal');
-              // $('body').removeClass('modal-open modal-backdrop');
             })
 	        });
       	}, 1000);
