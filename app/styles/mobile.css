@@ -88,9 +88,29 @@ padding: 0 0 0 5px;
 text-align: right;
 }
 
+#location_nav h1{
+  color:lightgrey;
+  padding: 8px 0 0 0;
+}
+
+#search_nav{
+  position: fixed;
+  top:6px;
+  right: 40px;
+}
+
+#search_nav input{
+  background-color: lightgrey;
+  border: none;
+  line-height: 20px;
+  padding-left: 5px;
+}
+
 #top_nav_right{
-	float:right;
-	padding: 6px 8px 0 0;	
+  padding: 5px 8px 0 0;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 #video_background {

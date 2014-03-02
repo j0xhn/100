@@ -22,7 +22,7 @@ angular.module('100App')
             $('#myModal').on('hidden.bs.modal', function () {
             })
 	        });
-      	}, 1000);
+      	}, 2000);
 
 
         

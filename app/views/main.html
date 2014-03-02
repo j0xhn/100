@@ -5,7 +5,7 @@
 
 <!-- Grid Items -->
     <ul id = 'makeCenter'>
-       <li class="person" ng-repeat='person in people'>
+       <li class="person" ng-repeat='person in people | filter:searchText'>
          <img class='img' ng-src="{{person.picture}}" ng-click="setPerson(person)"> 
           <div class='textBackground'></div>
               <p>{{person.firstName}}</p>
