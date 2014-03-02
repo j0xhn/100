@@ -11,14 +11,14 @@
 
 4) when try to click check to see if they are active, if so open modal, if not have loggin via facebook.
 
-5) adds them to corresponding database
+5) adds them to corresponding database - with corresponding catagories
   - city
   - county
   - state
   - region (east, west, south, midwest)
   - nation
   
-  with corresponding catagories
+  - unique identifier
   - firstName
   - lastName
   - age
