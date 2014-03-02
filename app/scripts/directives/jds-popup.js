@@ -2,6 +2,7 @@
 
 angular.module('100App')
   .directive('jdsPopup', function ($timeout) {
+    console.log('you made it into the jdsPopup directive');
     return {
       templateUrl: '/views/modal.html',
       restrict: 'A',
@@ -23,7 +24,7 @@ angular.module('100App')
               // $('body').removeClass('modal-open modal-backdrop');
             })
 	        });
-      	});
+      	}, 1000);
 
 
         
