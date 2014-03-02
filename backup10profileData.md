@@ -111,4 +111,11 @@ var peopleArray = [
       var dataBase = new Firebase ('https://top100.firebaseio.com/people/' + i.toString());
       dataBase.set(peopleArray[i]);
     };
+
+
+        var people = new Firebase("https://top100.firebaseio.com/locations/usa/west/utah/utahValley/provo");
+    people.on('value', function(peopleRecieved){
+        $scope.people = peopleRecieved.val();
+        console.log($scope.people);
+    });
     
