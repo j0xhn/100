@@ -5,14 +5,16 @@
 
 <!-- Grid Items -->
     <ul id = 'makeCenter'>
-       <li class="person" ng-repeat='person in people | filter:searchText'>
+       <li class="person" ng-repeat='person in people | filter:search'>
          <img class='img' ng-src="{{person.picture}}" ng-click="setPerson(person)"> 
-          <div class='textBackground'></div>
-              <p>{{person.firstName}}</p>
-          <div class='addOns'>
-              <a ng-href='#'><i class="fa fa-bolt icon_large"></i></a>
-              <i class="fa fa-comments icon_large"></i>
+          <div class='textBackground'>
+            <div class='addOns'>
+              <a ng-href='{{person.link}}'><i class="fa fa-bolt" id='left_icon'></i></a>
+              <i class="fa fa-comments" id='right_icon'></i>
+            </div>
           </div>
+              <p>{{person.firstName}}</p>
+          
        </li>
     </ul>
 

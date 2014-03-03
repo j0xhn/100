@@ -7,7 +7,6 @@ angular.module('100App')
     var people = new Firebase("https://top100.firebaseio.com/locations/usa/west/utah/utahValley/provo");
     people.on('value', function(peopleRecieved){
         $scope.people = peopleRecieved.val();
-        console.log($scope.people);
     });
 
     $scope.setPerson = function (person) {
