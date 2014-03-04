@@ -3,7 +3,7 @@
 angular.module('100App')
   .controller('threadCtrl', function ($scope) {
 
-      console.log('you got inside the thread controller');
+      // console.log('you got inside the thread controller');
       var threadFromView = $scope.threadFromView;
 
     $scope.threadCreate = function (threadFromView){

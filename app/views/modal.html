@@ -9,8 +9,13 @@
       <div class="modal-body">
 <!-- DISPLAY PERSONAL INFO -->
         <p>Name: {{selectedPerson.firstName}} {{selectedPerson.lastName}}</p>
-        <p></p>
-        <p>{{ selectedPerson }}</p>
+        <p>Age: {{ selectedPerson.age }}</p>
+        <p>Bank: {{ selectedPerson.bank }}</p>
+        <p>Comments:</p>
+        <p>{{ selectedPerson.comments }}</p>
+        <p>Email: {{ selectedPerson.email }}</p>
+        <p>Tags:</p>
+        <p>{{ selectedPerson.random }}</p>
 <!-- DISPLAY THREADS -->
         <div class='threads' ng-repeat='thread in threads'>
         </div>

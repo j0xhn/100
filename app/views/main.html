@@ -1,11 +1,11 @@
 
 <!-- Main Section -->
 
-  <div class="col" id="center" ng-controller='peopleCtrl'>
+  <div class="col" id="center">
 
 <!-- Grid Items -->
     <ul id = 'makeCenter'>
-       <li class="person" ng-repeat='person in people | filter:search'>
+       <li class="person" ng-repeat="person in allPeople | filter : search.firstName | orderBy : 'overall'">
          <img class='img' ng-src="{{person.picture}}" ng-click="setPerson(person)"> 
           <div class='textBackground'>
             <div class='addOns'>
@@ -13,11 +13,12 @@
               <i class="fa fa-comments" id='right_icon'></i>
             </div>
           </div>
-              <p>{{person.firstName}}</p>
+              <p>{{person.firstName | lowercase}} #{{person.overall}}</p>
+              
           
        </li>
     </ul>
-
+{{search}}
     <div jds-popup="img"></div>
 
     

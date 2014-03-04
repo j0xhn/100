@@ -8,7 +8,7 @@ angular.module('100App', [
 
   var nav = {
         templateUrl: 'views/nav.html',
-        // controller: 'NavCtrl',
+        // controller: 'peopleCtrl',
         // resolve: {
         //   user: function (userService) {
         //     return userService.get();
@@ -34,7 +34,7 @@ angular.module('100App', [
 
   var body = {
         templateUrl: 'views/main.html',
-        // controller: 'NavCtrl',
+        // controller: 'peopleCtrl',
         // resolve: {
         //   user: function (userService) {
         //     return userService.get();

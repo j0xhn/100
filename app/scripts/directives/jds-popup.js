@@ -2,7 +2,7 @@
 
 angular.module('100App')
   .directive('jdsPopup', function ($timeout) {
-    console.log('you made it into the jdsPopup directive');
+    // console.log('you made it into the jdsPopup directive');
     return {
       templateUrl: '/views/modal.html',
       restrict: 'A',

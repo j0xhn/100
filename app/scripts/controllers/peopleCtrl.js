@@ -1,17 +1,35 @@
 'use strict';
 
 angular.module('100App')
-  .controller('peopleCtrl', function ($scope, peopleService) {
-  	$scope.test = '| This will show if my Angular is working';
-  	
-    var people = new Firebase("https://top100.firebaseio.com/locations/usa/west/utah/utahValley/provo");
-    people.on('value', function(peopleRecieved){
-        $scope.people = peopleRecieved.val();
+  .controller('peopleCtrl', function ($scope) {
+///////////////////////////
+// MIMIC SERVICE
+///////////////////////////
+    var allPeople = {};
+    allPeople = new Firebase("https://top100.firebaseio.com/locations/usa/west/utah/utahValley/provo");
+    $scope.locationName = allPeople.name();
+    allPeople.on('value', function(peopleRecieved){
+        $scope.allPeople = peopleRecieved.val();
+        console.log($scope.locationName);
+        console.log($scope.allPeople);
     });
+///////////////////////////
+// MAKE SCOPE VARIABLES
+///////////////////////////
 
+
+///////////////////////////
+// Make clicks update person object in firebase
+///////////////////////////
+
+
+
+///////////////////////////
+// SET SELECTED PERSON
+///////////////////////////
     $scope.setPerson = function (person) {
     	console.log("This is the selected person: ");
-        console.log(person);
+      console.log(person);
     	$scope.selectedPerson = person;
     };
 
