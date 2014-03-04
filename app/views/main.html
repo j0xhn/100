@@ -5,7 +5,7 @@
 
 <!-- Grid Items -->
     <ul id = 'makeCenter'>
-       <li class="person" ng-repeat="person in allPeople | filter : search.firstName | orderBy : 'overall'">
+       <li class="person" ng-repeat="person in allPeople | filter : search | orderBy : sortField : sortOrder">
          <img class='img' ng-src="{{person.picture}}" ng-click="setPerson(person)"> 
           <div class='textBackground'>
             <div class='addOns'>
@@ -18,9 +18,20 @@
           
        </li>
     </ul>
-{{search}}
     <div jds-popup="img"></div>
+<div id='radioGone'>
+    <input type="radio" ng-model='sortField' id="name" name="toggle" value='firstName' checked>
+    <label for="name">name</label>
+    <input type="radio" ng-model='sortField' id="overall" name="toggle" value='overall'>
+    <label for="overall">overall</label>
+</div>
 
+    <input type='text' ng-model='search'>
+
+        <select class="input-medium" ng-model="sortOrder">
+        <option value="true">Descending</option>
+        <option value="false">Ascending</option>
+    </select>
     
 
     <script src='/scripts/main.js'></script>

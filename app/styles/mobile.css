@@ -235,6 +235,15 @@ text-align: right;
 	font-size: 2.5em;
 }
 
+input[type="radio"]{
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  /* Do something special with the selected state */
+  background-color: lightblue;
+}
+
 
 a {
 	text-decoration: none;
