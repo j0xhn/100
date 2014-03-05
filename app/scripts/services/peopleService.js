@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('100App').factory('peopleService', function peopleService($q, $firebase){
-
+var deferred = $q.defer();
 ///////////////////////////
 //get data by location
 ///////////////////////////
@@ -9,14 +9,16 @@ return {
     getPeople: function () {
         var FBURL = "https://top100.firebaseio.com/";
         var ref = new Firebase(FBURL + 'locations/usa/west/utah/utahValley/provo');
-        ref.on('value', function(received) {
-            var ref = received.val();
-            console.log('got all people', ref);
-        })
+        var locationName = ref.name();
+        // console.log(locationName);
         return $firebase(ref);
+    },
+    getLocationName: function(){
+        var locationName = 'provo';
+        return locationName;
     }
 };
-
+return deferred.promise;
 });
 
 

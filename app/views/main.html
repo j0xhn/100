@@ -4,10 +4,9 @@
   <div class="col" id="center">
 <!-- <span>{{ people }}</span> -->
 <!-- Grid Items -->
-<input type='text' ng-model="search">
 
     <ul id = 'makeCenter'>
-       <li tree class="person" ng-repeat="person in people | orderByPriority | filter:search | orderBy : sortField : sortOrder">
+       <li class="person" ng-repeat="person in people | orderByPriority | filter:search | orderBy : sortField : sortOrder">
          <img class='img' ng-src="{{person.picture}}" ng-click="setPerson(person)"> 
           <div class='textBackground'>
             <div class='addOns'>
@@ -23,22 +22,22 @@
     <div jds-popup="img"></div>
 
 <!--Radio Toggle Section -->
-
 <div id='radioGone'>
     <input type="radio" ng-model='sortField' id="name" name="toggle" value='firstName' checked>
     <label for="name">name</label></a>
     <input type="radio" ng-model='sortField' id="overall" name="toggle" value='overall'>
     <label for="overall">overall</label>
 </div>
+<!-- Search Bar -->
+<input type='text' ng-model="search">
 
-
-
+<!-- ascending or descending -->
 <select class="input-medium" ng-model="sortOrder">
     <option value="true">Descending</option>
     <option value="false">Ascending</option>
 </select>
 
-<div ng-controller="peopleCtrl">
+<!-- <div ng-controller="peopleCtrl">
     <h4>Single toggle</h4>
     <pre>{{singleModel}}</pre>
     <button type="button" class="btn btn-primary" ng-model="singleModel" btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
@@ -58,7 +57,7 @@
         <button type="button" class="btn btn-primary" ng-model="radioModel" btn-radio="'Middle'">Middle</button>
         <button type="button" class="btn btn-primary" ng-model="radioModel" btn-radio="'Right'">Right</button>
     </div>
-</div>
+</div> -->
 
 
     

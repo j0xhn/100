@@ -1,34 +1,25 @@
 'use strict';
-
+//this code repeats 3 times... why?
 angular.module('100App')
   .controller('peopleCtrl', function ($scope, $firebase, peopleService) {
 ///////////////////////////
-// MIMIC SERVICE
-///////////////////////////
-    // var allPeople = {};
-    // allPeople = new Firebase("https://top100.firebaseio.com/locations/usa/west/utah/utahValley/provo");
-    // $scope.locationName = allPeople.name();
-    // allPeople.on('value', function(peopleRecieved){
-    //     $scope.allPeople = peopleRecieved.val();
-    //     console.log($scope.locationName);
-    //     console.log($scope.allPeople);
-    // });
-///////////////////////////
 // MAKE SCOPE VARIABLES
 ///////////////////////////
-// var FBURL = "https://top100.firebaseio.com/";
-// var ref = new Firebase(FBURL + 'locations/usa/west/utah/utahValley/provo');
-// ref.on('value', function(received) {
-//     var ref = received.val();
-//     console.log('got all people', ref);
-// })
-// return $firebase(ref);
+
+//people
 var people = peopleService.getPeople();
 $scope.people = people.$bind($scope, 'people');
-// console.log($scope.people);
+people = $scope.people;
+console.log('all people:', $scope.people);
+
+
+//location
+var locationName = peopleService.getLocationName();
+$scope.locationName = locationName;
+console.log('Location: ',locationName);
 
 ///////////////////////////
-// Make clicks update person object in firebase
+// Make Clicks Dynamic
 ///////////////////////////
 
 
