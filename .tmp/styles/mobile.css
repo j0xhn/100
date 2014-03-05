@@ -357,9 +357,16 @@ input[type="radio"] {
   display: none;
 }
 
+input[type="radio"] + label {
+  cursor: pointer;
+  cursor: hand;
+}
+
 input[type="radio"]:checked + label {
   /* Do something special with the selected state */
   background-color: lightblue;
+  cursor: pointer;
+  cursor: hand;
 }
 
 a {

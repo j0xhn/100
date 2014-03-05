@@ -1,14 +1,14 @@
 'use strict';
 
 angular.module('100App', [
-	'ui.router', 'ui.bootstrap'
+	'ui.router', 'ui.bootstrap', 'firebase'
 ]).config(function ($stateProvider, $urlRouterProvider) {
   // UI ROUTER
   $urlRouterProvider.otherwise('/');
 
   var nav = {
         templateUrl: 'views/nav.html',
-        // controller: 'peopleCtrl',
+        controller: 'peopleCtrl',
         // resolve: {
         //   user: function (userService) {
         //     return userService.get();
@@ -34,7 +34,7 @@ angular.module('100App', [
 
   var body = {
         templateUrl: 'views/main.html',
-        // controller: 'peopleCtrl',
+        controller: 'peopleCtrl',
         // resolve: {
         //   user: function (userService) {
         //     return userService.get();

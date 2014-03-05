@@ -8,7 +8,7 @@ var peopleArray = [
     "email":'johndangerstorey@gmail.com',
     "link": "http//:www.johndangerstorey.com",
     "bank": 5,
-    "overall": 15,
+    "overall": 11,
     "overallSubtotal1": 7,
     "overallSubtotal2": 6,
     'random': [
@@ -40,7 +40,7 @@ var peopleArray = [
     "email":'Dave@gmail.com',
     "link": "#",
     "bank": 5,
-    "overall": 15,
+    "overall": 19,
     "overallSubtotal1": 5,
     "overallSubtotal2": 1,
     'random': [
@@ -105,7 +105,7 @@ var peopleArray = [
     "email":'johndangerstorey@gmail.com',
     "link": "http//:www.johndangerstorey.com",
     "bank": 5,
-    "overall": 15,
+    "overall": 10,
     "overallSubtotal1": 7,
     "overallSubtotal2": 6,
     'random': [
@@ -138,7 +138,7 @@ var peopleArray = [
     "email":'johndangerstorey@gmail.com',
     "link": "http//:www.johndangerstorey.com",
     "bank": 5,
-    "overall": 15,
+    "overall": 9,
     "overallSubtotal1": 7,
     "overallSubtotal2": 6,
     'random': [
@@ -171,7 +171,7 @@ var peopleArray = [
     "email":'johndangerstorey@gmail.com',
     "link": "http//:www.johndangerstorey.com",
     "bank": 5,
-    "overall": 15,
+    "overall": 8,
     "overallSubtotal1": 7,
     "overallSubtotal2": 6,
     'random': [
@@ -237,7 +237,7 @@ var peopleArray = [
     "email":'johndangerstorey@gmail.com',
     "link": "http//:www.johndangerstorey.com",
     "bank": 5,
-    "overall": 15,
+    "overall": 6,
     "overallSubtotal1": 7,
     "overallSubtotal2": 6,
     'random': [
@@ -270,7 +270,7 @@ var peopleArray = [
     "email":'johndangerstorey@gmail.com',
     "link": "http//:www.johndangerstorey.com",
     "bank": 5,
-    "overall": 15,
+    "overall": 7,
     "overallSubtotal1": 7,
     "overallSubtotal2": 6,
     'random': [
@@ -303,7 +303,7 @@ var peopleArray = [
     "email":'johndangerstorey@gmail.com',
     "link": "http//:www.johndangerstorey.com",
     "bank": 5,
-    "overall": 15,
+    "overall": 6,
     "overallSubtotal1": 7,
     "overallSubtotal2": 6,
     'random': [
@@ -336,7 +336,7 @@ var peopleArray = [
     "email":'johndangerstorey@gmail.com',
     "link": "http//:www.johndangerstorey.com",
     "bank": 5,
-    "overall": 15,
+    "overall": 4,
     "overallSubtotal1": 7,
     "overallSubtotal2": 6,
     'random': [
