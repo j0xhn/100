@@ -9,6 +9,16 @@
   cursor: pointer;
 }
 
+/* my styles */
+
+#tag {
+  padding: 15px 0 0 0;
+}
+
+.voteBtn {
+  padding: 10px 0 0 0;
+}
+
 body {
   padding-top: 20px;
   padding-bottom: 20px;

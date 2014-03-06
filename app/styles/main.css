@@ -1,6 +1,14 @@
 /* Space out content a bit */
 /*Added for Angular UI Bootstrap*/
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+/* my styles */
+#tag{
+  padding: 15px 0 0 0;
+}
+
+.voteBtn{
+  padding: 10px 0 0 0;
+}
 
 body {
   padding-top: 20px;

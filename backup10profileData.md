@@ -1,3 +1,4 @@
+
 var peopleArray = [
     {
     "firstName": "John D.",
@@ -11,19 +12,18 @@ var peopleArray = [
     "overall": 11,
     "overallSubtotal1": 7,
     "overallSubtotal2": 6,
-    'random': [
-        {"funny":9},
-        {"romantic":1},
-        {"dreamer":9},
-        {"adventurer":8},
-        {"doer":7},
-        {"hobbit":6},
-        {"caribbean":5},
-        {"travel":4},
-        {"eccentric":3},
-        {"forgetful":2},
-        {"selfish":2},
-        {"easyGoing":2},
+    'tags': [
+        [{"name":'funny'},{"value":1}],
+        [{"name":'romantic'},{"value":9}],
+        [{"name":'adventurer'},{"value":8}],
+        [{"name":'doer'},{"value":7}],
+        [{"name":'hobbit'},{"value":6}],
+        [{"name":'caribbean'},{"value":5}],
+        [{"name":'travel'},{"value":4}],
+        [{"name":'eccentric'},{"value":3}],
+        [{"name":'forgetful'},{"value":2}],
+        [{"name":'selfish'},{"value":1}],
+        [{"name":'easyGoing'},{"value":7}]
     ],
     "comments": [
       {"firstUser": "First Message Goes Here"},
@@ -43,7 +43,7 @@ var peopleArray = [
     "overall": 19,
     "overallSubtotal1": 5,
     "overallSubtotal2": 1,
-    'random': [
+    'tags': [
         {"funny":3},
         {"cats":5},
         {"dreamer":3},
@@ -75,7 +75,7 @@ var peopleArray = [
     "overall": 15,
     "overallSubtotal1": 7,
     "overallSubtotal2": 6,
-    'random': [
+    'tags': [
         {"kids":10},
         {"romantic":9},
         {"talk":8},
@@ -108,7 +108,7 @@ var peopleArray = [
     "overall": 10,
     "overallSubtotal1": 7,
     "overallSubtotal2": 6,
-    'random': [
+    'tags': [
         {"skateboarding":1},
         {"arizona":1},
         {"photography":9},
@@ -141,7 +141,7 @@ var peopleArray = [
     "overall": 9,
     "overallSubtotal1": 7,
     "overallSubtotal2": 6,
-    'random': [
+    'tags': [
         {"fashion":1},
         {"socialMedia":1},
         {"photography":9},
@@ -174,7 +174,7 @@ var peopleArray = [
     "overall": 8,
     "overallSubtotal1": 7,
     "overallSubtotal2": 6,
-    'random': [
+    'tags': [
         {"cute":1},
         {"adventourous":1},
         {"dreamer":9},
@@ -207,7 +207,7 @@ var peopleArray = [
     "overall": 15,
     "overallSubtotal1": 7,
     "overallSubtotal2": 6,
-    'random': [
+    'tags': [
         {"refurbishing":1},
         {"fashion":1},
         {"slc":9},
@@ -240,7 +240,7 @@ var peopleArray = [
     "overall": 6,
     "overallSubtotal1": 7,
     "overallSubtotal2": 6,
-    'random': [
+    'tags': [
         {"entrepenuer":1},
         {"technology":1},
         {"appRaptor":9},
@@ -273,7 +273,7 @@ var peopleArray = [
     "overall": 7,
     "overallSubtotal1": 7,
     "overallSubtotal2": 6,
-    'random': [
+    'tags': [
         {"innovation":1},
         {"tall":1},
         {"skater":9},
@@ -306,7 +306,7 @@ var peopleArray = [
     "overall": 6,
     "overallSubtotal1": 7,
     "overallSubtotal2": 6,
-    'random': [
+    'tags': [
         {"entrepenuer":1},
         {"realEstate":1},
         {"digitalMedia":9},
@@ -339,7 +339,7 @@ var peopleArray = [
     "overall": 4,
     "overallSubtotal1": 7,
     "overallSubtotal2": 6,
-    'random': [
+    'tags': [
         {"network":1},
         {"party":1},
         {"atdMovement":9},

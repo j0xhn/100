@@ -1,34 +1,64 @@
-<div class='modal fade' id="modal" ng-controller='threadCtrl'>
+<div class='modal fade' id="modal" ng-controller='tagCtrl'>
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
+<!-- MODAL HEADER -->
+      <!-- <div class="modal-header">
         <h4 class="modal-title">{{selectedPerson.firstName}} {{selectedPerson.lastName}} </h4>
-      </div>
+      </div> -->
 
-
+<!-- MODAL BODY -->
       <div class="modal-body">
+        <div class="entry" id="profile">
+            <div class="col" id="center_left">
+              <div id="profile_circle">
+                <img src="{{selectedPerson.picture}}">
+              </div>
+
+              <h1> {{selectedPerson.firstName}} {{selectedPerson.lastName}}</h1>
+              <!-- <h2>{{selectedPerson.random}}</h2> -->
+              <!-- (key, value) from firebase -->
+              <ul>
+                <li id='tag' ng-repeat="(key, value) in selectedPerson.tags">{{ key }} {{ value }}
+                  <div class='voteBtn'><a ng-click='upVote(selectedPerson, key)'>vote up</a></div>
+                </li>
+              </ul>
+              <!-- tag.name from firebase -->
+               <!-- <ul>
+                <li id='tag' ng-repeat="tag in selectedPerson.tags">{{tag.name}} {{tag.value}} {{tag}}
+                  <div class='voteBtn'><a ng-click='UpVote(tag)'>vote up</a></div>
+                </li>
+              </ul> -->
+
+              <button type="button" class="btn btn-success">Up Vote</button>
+              <button type="button" class="btn btn-warning">Learn More</button>
+              <button type="button" class="btn btn-danger">Down Vote</button>
+            </div><!-- /#center-left -->
+
+            <div class="col" id="center_right">
+              <!-- {{selectedPerson}} -->
+<!-- DISPLAY THREADS -->
+              <div class='threads' ng-repeat='thread in threads'>
+              </div>
+<!-- INPUT -->
+              <h2>{{threadFromView}}</h2>
+              <input type='text' name="threadFromView" placeholder='New Thread' id='threadFromView' ng-model="threadFromView">
+              <button class='btn btn-xs' ng-click="threadCreate(threadFromView)">submit thread</button>
+            </div><!--./#center_right -->
+        </div><!-- /.entry#profile -->
+
 <!-- DISPLAY PERSONAL INFO -->
-        <p>Name: {{selectedPerson.firstName}} {{selectedPerson.lastName}}</p>
+        <!-- <p>Name: {{selectedPerson.firstName}} {{selectedPerson.lastName}}</p>
         <p>Age: {{ selectedPerson.age }}</p>
         <p>Bank: {{ selectedPerson.bank }}</p>
         <p>Comments:</p>
         <p>{{ selectedPerson.comments }}</p>
         <p>Email: {{ selectedPerson.email }}</p>
         <p>Tags:</p>
-        <p>{{ selectedPerson.random }}</p>
-<!-- DISPLAY THREADS -->
-        <div class='threads' ng-repeat='thread in threads'>
+        <p>{{ selectedPerson.random }}</p> -->
+
+<!-- MODAL-FOOTER DOESN'T DISPLAY ANYTHING BUT IS REQUIRED ??? -->
+        <div class="modal-footer">
         </div>
-<!-- INPUT -->
-        <h2>{{threadFromView}}</h2>
-        <input type='text' name="threadFromView" placeholder='New Thread' id='threadFromView' ng-model="threadFromView">
-        <button class='btn btn-xs' ng-click="threadCreate(threadFromView)">submit thread</button>      
-
-
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

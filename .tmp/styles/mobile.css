@@ -322,6 +322,7 @@ body {
 
 #center_left {
   width: 30%;
+  text-align: center;
 }
 
 #center_right {
@@ -333,14 +334,19 @@ body {
   margin-top: 10 0 0 0;
 }
 
-#profile_circle {
+#profile h1 {
+  color: rgb(82, 76, 76);
+  padding: 10px 0 0 0;
+}
+
+#profile_circle img {
   /* background-color: black; */
-  background-image: url('../images/profile_pic.jpg');
+  /*background-image: url('../images/profile_pic.jpg');*/
   background-size: contain;
   display: block;
   position: relative;
-  height: 70px;
-  width: 70px;
+  height: 100px;
+  width: 100px;
   border-radius: 100%;
   margin: 0 auto;
 }
