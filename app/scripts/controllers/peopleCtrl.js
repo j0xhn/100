@@ -24,19 +24,16 @@ $scope.locationName = locationName;
 ///////////////////////////
 $scope.overallUpVote = function (person) {
     console.log('You clicked for overallUpVote')
-    console.log(person);
     person.overall++;
-    console.log(person.overall);
-  // selectedPerson.tags[tagName]++;
-};
+}
 
 ///////////////////////////
 // SET SELECTED PERSON
 ///////////////////////////
-    $scope.setPerson = function (personClick) {
+    $scope.setPerson = function (person) {
     	console.log("This is the selected person: ");
         // console.log(person);
-    	$scope.selectedPerson = personClick;
+    	$scope.selectedPerson = person;
     };
 
   });
