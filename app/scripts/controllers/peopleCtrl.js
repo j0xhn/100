@@ -24,6 +24,7 @@ $scope.locationName = locationName;
 $scope.overallUpVote = function(person){
     console.log("This is the selected person's overall Score: ");
     console.log(person.overall);
+    person.overall++;
 }
 
 ///////////////////////////
