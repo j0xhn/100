@@ -18,21 +18,25 @@ people = $scope.people;
 var locationName = peopleService.getLocationName();
 $scope.locationName = locationName;
 // console.log('Location: ',locationName);
+
 ///////////////////////////
 // CHANGE OVERALL SCORE ON CLICK
 ///////////////////////////
-$scope.overallUpVote = function(person){
-    console.log("This is the selected person's overall Score: ");
+$scope.overallUpVote = function (person) {
+    console.log('You clicked for overallUpVote')
+    console.log(person);
+    person.overall++;
     console.log(person.overall);
-}
+  // selectedPerson.tags[tagName]++;
+};
 
 ///////////////////////////
 // SET SELECTED PERSON
 ///////////////////////////
-    $scope.setPerson = function (person) {
+    $scope.setPerson = function (personClick) {
     	console.log("This is the selected person: ");
         // console.log(person);
-    	$scope.selectedPerson = person;
+    	$scope.selectedPerson = personClick;
     };
 
   });

@@ -6,17 +6,16 @@
 <!-- Grid Items -->
     <ul id = 'makeCenter'>
        <li class="person" ng-repeat="person in people | orderByPriority | filter:search | orderBy : sortField : sortOrder">
-         <img class='img' ng-src="{{person.picture}}" ng-click="setPerson(person)"> 
+         <img class='img' ng-src="{{person.picture}}" ng-click="setPerson(personClick)"> 
+         <a ng-click='overallUpVote(person)'>upvote</a>
           <div class='textBackground'>
-            <a ng-click='overallUpVote'><i class="fa fa-bolt icon_large" id='left_icon'></i></a>
             <div class='addOns'>
-               <a ng-click='overallUpVote'><i class="fa fa-bolt" id='left_icon'></i></a>
+               <a ng-click=''><i class="fa fa-bolt" id='left_icon'></i></a>
                <a href="'person.link'"><i class="fa fa-comments" id='right_icon'></i></a>
             </div>
           </div>
               <p>{{person.firstName | lowercase}} #{{person.overall}}</p>
-              
-          
+        
        </li>
 
     </ul>
