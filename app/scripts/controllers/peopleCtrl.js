@@ -23,8 +23,13 @@ $scope.locationName = locationName;
 // CHANGE OVERALL SCORE ON CLICK
 ///////////////////////////
 $scope.overallUpVote = function (person) {
-    console.log('You clicked for overallUpVote')
+    console.log('You clicked for overallUpVote');
     person.overall++;
+}
+
+$scope.overallDownVote = function (person) {
+    console.log('You clicked for overallDownVote');
+    person.overall--;
 }
 
 ///////////////////////////

@@ -196,7 +196,7 @@ body {
   height: 35px;
   position: fixed;
   background-color: #383942;
-  color: daeafd;
+  color: #daeafd;
   z-index: 2;
   display: inline-block;
 }
@@ -216,6 +216,22 @@ body {
   padding: 8px 0 0 0;
   font-weight: 100;
   font-size: 1.7em;
+}
+
+.filters {
+  position: fixed;
+  top: 0;
+  left: 200px;
+}
+
+.filters label {
+  padding: 12px 20px;
+  text-align: center;
+  border-left: thin solid grey;
+  border-right: thin solid grey;
+  margin-left: -4px;
+  /*  border-left-style:solid;
+  border-right-style:solid;*/
 }
 
 #search_nav {
@@ -262,12 +278,16 @@ body {
   display: inline-block;
   float: right;
   padding: 2px 5px 0 0;
+  cursor: pointer;
+  cursor: hand;
 }
 
 #left_icon {
   display: inline-block;
   float: left;
   padding: 2px 0 0 5px;
+  cursor: pointer;
+  cursor: hand;
 }
 
 #video_background {
@@ -366,11 +386,12 @@ input[type="radio"] {
 input[type="radio"] + label {
   cursor: pointer;
   cursor: hand;
+  color: lightgrey;
 }
 
 input[type="radio"]:checked + label {
   /* Do something special with the selected state */
-  background-color: lightblue;
+  color: lightblue;
   cursor: pointer;
   cursor: hand;
 }
@@ -386,7 +407,7 @@ span {
   -webkit-transition: all .2s ease-in-out;
 }
 
-span:hover {
+.top_nav span:hover {
   -webkit-transform: scale(1.1);
   color: white;
 }
@@ -545,6 +566,17 @@ li i {
   transition: all .3s;
 }
 
+li span {
+  font-size: 30px;
+  color: black;
+  opacity: .3;
+  line-height: 1;
+  border: thin solid lightgrey;
+  padding: 0 3px;
+  font-weight: 100;
+  background-color: lightgrey;
+}
+
 .textBackground {
   background-color: rgb(17, 16, 16);
   opacity: 50;
@@ -576,8 +608,9 @@ figure {
   padding: 2% 0 2% 0;
   top: 63px;
   position: relative;
-  /*background-color: 1CB6EC;*/
   color: #FCFCFF;
+  width: 60px;
+  margin: 0 auto;
 }
 
 .person:hover {

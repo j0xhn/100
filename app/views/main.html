@@ -1,69 +1,63 @@
 
+<div class="top_nav">
+<!--Logo -->
+    <div id="top_nav_left">
+      <img src="../images/Logo_Light_35.png" id="sidebar-toggle-left"/>
+      <div class='sidebar-open-left' id='left'>
+          <ul>
+            <li>Link #1</li>
+          </ul>
+        </div>
+    </div>
+<!--Location-->
+    <div class='input-group' id='location_nav'>
+      <h1>{{locationName}}</h1>
+    </div>
+<!--Radio Toggle Section -->
+<div class='filters' id='radioGone'>
+    <input type="radio" ng-model='sortField' id="overall" name="toggle" value='overall'>
+    <label for="overall">O V E R A L L</label>
+    <input type="radio" ng-model='sortField' id="name" name="toggle" value='firstName' checked>
+    <label for="name">H O T T I E S</label></a>
+</div>
+<!-- ascending or descending -->
+<!-- <div class="input-medium" ng-model="sortOrder">
+    <input value="true"><label>desc</label>
+    <input value="false"><label>asc</label>
+</div> -->
+
+    <div id='search_nav'>
+      <input type='search' ng-model='search' placeholder="&#xF002;">
+    </div>
+    <div id="top_nav_right">
+      <span class="fa fa-user icon_large" id="sidebar-toggle-right"></span>
+        <div class='sidebar-open-right' id='right'>
+            <ul>
+              <li>Link #1</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<br>
 <!-- Main Section -->
 
   <div class="col" id="center">
 <!-- <span>{{ people }}</span> -->
 <!-- Grid Items -->
     <ul id = 'makeCenter'>
-       <li class="person" ng-repeat="person in people | orderByPriority | filter:search | orderBy : sortField : sortOrder">
+       <li class="person" ng-repeat="person in people | orderByPriority | filter:search | orderBy : sortField : true">
          <img class='img' ng-src="{{person.picture}}" ng-click="setPerson(person)"> 
           <div class='textBackground'>
-
-            <a ng-click='overallUpVote(person)'>upvote</a>
-
             <div class='addOns'>
-               <a ng-click=''><i class="fa fa-bolt" id='left_icon'></i></a>
-               <a href="'person.link'"><i class="fa fa-comments" id='right_icon'></i></a>
+               <a ng-click='overallUpVote(person)'><i class="fa fa-arrow-up" id='left_icon'></i></a>
+               <a ng-click='overallDownVote(person)'><i class="fa fa-arrow-down" id='right_icon'></i></a>
             </div>
           </div>
-              <p>{{person.firstName | lowercase}} #{{person.overall}}</p>
-        
+              <p>{{person.firstName}}</p>
+              <span>{{person.overall}}</span>
        </li>
-
     </ul>
     <div jds-popup="img"></div>
-
-<!--Radio Toggle Section -->
-<div id='radioGone'>
-    <input type="radio" ng-model='sortField' id="name" name="toggle" value='firstName' checked>
-    <label for="name">name</label></a>
-    <input type="radio" ng-model='sortField' id="overall" name="toggle" value='overall'>
-    <label for="overall">overall</label>
-</div>
-<!-- Search Bar -->
-<input type='text' ng-model="search">
-
-<!-- ascending or descending -->
-<select class="input-medium" ng-model="sortOrder">
-    <option value="true">Descending</option>
-    <option value="false">Ascending</option>
-</select>
-
-<!-- <div ng-controller="peopleCtrl">
-    <h4>Single toggle</h4>
-    <pre>{{singleModel}}</pre>
-    <button type="button" class="btn btn-primary" ng-model="singleModel" btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
-        Single Toggle
-    </button>
-    <h4>Checkbox</h4>
-    <pre>{{checkModel}}</pre>
-    <div class="btn-group">
-        <button type="button" class="btn btn-primary" ng-model="checkModel.left" btn-checkbox>Left</button>
-        <button type="button" class="btn btn-primary" ng-model="checkModel.middle" btn-checkbox>Middle</button>
-        <button type="button" class="btn btn-primary" ng-model="checkModel.right" btn-checkbox>Right</button>
-    </div>
-    <h4>Radio</h4>
-    <pre>{{radioModel}}</pre>
-    <div class="btn-group">
-        <button type="button" class="btn btn-primary" ng-model="radioModel" btn-radio="'Left'">Left</button>
-        <button type="button" class="btn btn-primary" ng-model="radioModel" btn-radio="'Middle'">Middle</button>
-        <button type="button" class="btn btn-primary" ng-model="radioModel" btn-radio="'Right'">Right</button>
-    </div>
-</div> -->
-
-
-    
-
     <script src='/scripts/main.js'></script>
 
 </div>
