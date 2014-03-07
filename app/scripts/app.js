@@ -1,5 +1,5 @@
 'use strict';
-
+// ROUTING
 angular.module('100App', [
 	'ui.router', 'ui.bootstrap', 'firebase'
 ]).config(function ($stateProvider, $urlRouterProvider) {

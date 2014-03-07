@@ -18,7 +18,7 @@
     <input type="radio" ng-model='sortField' id="overall" name="toggle" value='overall'>
     <label for="overall">O V E R A L L</label>
     <input type="radio" ng-model='sortField' id="name" name="toggle" value='firstName' checked>
-    <label for="name">H O T T I E S</label></a>
+    <label for="name">A G E</label></a>
 </div>
 <!-- ascending or descending -->
 <!-- <div class="input-medium" ng-model="sortOrder">
@@ -31,9 +31,9 @@
     </div>
     <div id="top_nav_right">
       <span class="fa fa-user icon_large" id="sidebar-toggle-right"></span>
-        <div class='sidebar-open-right' id='right'>
+        <div class='sidebar-open-right' id='right' ng-controller='LoginCtrl'>
             <ul>
-              <li>Link #1</li>
+              <li> <a  ng-click="login">L O G I N</a> </li>
             </ul>
         </div>
     </div>
@@ -58,6 +58,10 @@
        </li>
     </ul>
     <div jds-popup="img"></div>
+
+    <div ng-controller='LoginCtrl'>
+       <li> <a  ng-click="login()">L O G I N</a> </li>
+    </div>
     <script src='/scripts/main.js'></script>
 
 </div>
