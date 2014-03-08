@@ -19,6 +19,7 @@ angular.module('100App')
         var email = user.email;
         var accessTocken = user.accessTocken;
         var id = user.id;
+        var location = user.location.name;
         console.log(user);
         console.log('User ID: ' + user.id + ', Provider: ' + user.provider+ ', PictureURL: ' + profilePic);
       } else {
@@ -27,7 +28,7 @@ angular.module('100App')
     });
       auth.login('facebook', {
         rememberMe: false,
-        scope: 'user_photos'
+        scope: 'user_location, email'
       });
      // console.log(profilePic);
     };

@@ -31,7 +31,7 @@
     </div>
     <div id="top_nav_right">
       <a ng-controller='LoginCtrl' ng-click="login()" id='loginBtn'>L O G I N</a><br>
-      <a ng-controller='LoginCtrl' ng-click="login()">A P P L Y</a><!-- <span class="fa fa-user icon_large" id="sidebar-toggle-right"></span> -->
+<!-- <span class="fa fa-user icon_large" id="sidebar-toggle-right"></span> -->
         <div class='sidebar-open-right' id='right'>
         </div>
     </div>
@@ -43,8 +43,8 @@
 <!-- <span>{{ people }}</span> -->
 <!-- Grid Items -->
     <ul id = 'makeCenter'>
-       <li class="person" ng-repeat="person in people | orderByPriority | filter:search | orderBy : sortField : true">
-         <img class='curl-top-left' ng-src="{{person.picture}}" ng-click="setPerson(person)" ng-mouseover='showOverall(person, $event)' ng-mouseleave='hideOverall(person, $event)'> 
+       <li class="person" ng-click="setPerson(person)" ng-repeat="person in people | orderByPriority | filter:search | orderBy : sortField : true">
+         <img class='curl-top-left' ng-src="{{person.picture}}" ng-mouseover='showOverall(person, $event)' ng-mouseleave='hideOverall(person, $event)'> 
           <div class='textBackground'>
 
             <div class='addOns'>
@@ -57,7 +57,7 @@
               <div class='showOverall'>{{person.overall}}</div>
        </li>
     </ul>
-    <div jds-popup="img"></div>
+    <div jds-popup="li"></div>
 
 
        
