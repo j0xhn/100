@@ -575,7 +575,7 @@ li i {
 .showOverall {
   font-size: 30px;
   color: black;
-  opacity: .3;
+  opacity: .5;
   line-height: 1;
   border: thin solid lightgrey;
   padding: 24px;
@@ -617,7 +617,7 @@ figure {
   top: 63px;
   position: relative;
   color: #FCFCFF;
-  width: 60px;
+  width: 100px;
   margin: 0 auto;
 }
 

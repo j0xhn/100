@@ -10,7 +10,7 @@ angular.module('100App')
 var people = peopleService.getPeople();
 $scope.people = people.$bind($scope, 'people');
 people = $scope.people;
-// console.log('all people:', $scope.people);
+console.log('all people from ctrl:', $scope.people);
 
 
 

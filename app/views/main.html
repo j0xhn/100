@@ -15,10 +15,11 @@
     </div>
 <!--Radio Toggle Section -->
 <div class='filters' id='radioGone'>
-    <input type="radio" ng-model='sortField' id="overall" name="toggle" value='overall'>
+    <input type="radio" ng-model='sortField' id="overall" name="toggle" value='votes' checked>
     <label for="overall">O V E R A L L</label>
-    <input type="radio" ng-model='sortField' id="name" name="toggle" value='firstName' checked>
-    <label for="name">A G E</label></a>
+    <input type="radio" ng-model='sortField' id="name" name="toggle" value='gender'>
+    <label for="name" value='gender == male'>G U Y S</label>
+    <label for="name" value='gender == female'>G I R L S</label>
 </div>
 <!-- ascending or descending -->
 <!-- <div class="input-medium" ng-model="sortOrder">
@@ -30,7 +31,7 @@
       <input type='search' ng-model='search' placeholder="&#xF002;">
     </div>
     <div id="top_nav_right">
-      <a ng-controller='LoginCtrl' ng-click="login()" id='loginBtn'>L O G I N</a><br>
+      <a ng-controller='LoginCtrl' ng-click="submit()" id='loginBtn'>L O G I N</a><br>
 <!-- <span class="fa fa-user icon_large" id="sidebar-toggle-right"></span> -->
         <div class='sidebar-open-right' id='right'>
         </div>
@@ -44,17 +45,17 @@
 <!-- Grid Items -->
     <ul id = 'makeCenter'>
        <li class="person" ng-click="setPerson(person)" ng-repeat="person in people | orderByPriority | filter:search | orderBy : sortField : true">
-         <img class='curl-top-left' ng-src="{{person.picture}}" ng-mouseover='showOverall(person, $event)' ng-mouseleave='hideOverall(person, $event)'> 
+         <img ng-src="{{person.picture}}" ng-mouseover='showOverall(person, $event)'> 
           <div class='textBackground'>
 
-            <div class='addOns'>
+           <!--  <div class='addOns'>
 
                <a ng-click='overallUpVote(person)'><i class="fa fa-arrow-up" id='left_icon'></i></a>
                <a ng-click='overallDownVote(person)'><i class="fa fa-arrow-down" id='right_icon'></i></a>
-            </div>
+            </div> -->
           </div>
-              <p>{{person.firstName}}</p>
-              <div class='showOverall'>{{person.overall}}</div>
+              <p>{{person.fullName}}</p>
+              <div class='showOverall'>{{person.votes}}</div>
        </li>
     </ul>
     <div jds-popup="li"></div>

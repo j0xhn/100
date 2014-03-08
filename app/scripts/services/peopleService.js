@@ -8,8 +8,10 @@ var FBURL = "https://top100.firebaseio.com/";
 ///////////////////////////
 return {
     getPeople: function () {
-        var ref = new Firebase(FBURL + 'locations/usa/west/utah/utahValley/provo');
+        var ref = new Firebase(FBURL + 'provo');
+        console.log(ref);
         return $firebase(ref);
+
     },
     getLocationName: function(){
         var FBURL = "https://top100.firebaseio.com/";
