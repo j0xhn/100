@@ -19,6 +19,8 @@ var locationName = peopleService.getLocationName();
 $scope.locationName = locationName;
 // console.log('Location: ',locationName);
 
+
+
 ///////////////////////////
 // CHANGE OVERALL SCORE ON CLICK
 ///////////////////////////
@@ -39,6 +41,12 @@ $scope.overallDownVote = function (person) {
     	console.log("This is the selected person: ");
         // console.log(person);
     	$scope.selectedPerson = person;
+    };
+// ng-mouseover shows overall score
+    $scope.showOverall = function (person, $event) {
+        $('.showOverall').hide();
+        $($event.target).nextAll('.showOverall').show();
+        // $($event.target).next('.person')css('margin-top:24px');
     };
 
   });

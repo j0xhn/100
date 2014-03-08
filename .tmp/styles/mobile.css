@@ -237,7 +237,11 @@ body {
 #search_nav {
   position: fixed;
   top: 6px;
-  right: 40px;
+  right: 60px;
+}
+
+#loginBtn {
+  line-height: 1.3em;
 }
 
 #search_nav input {
@@ -259,7 +263,7 @@ body {
   line-height: 20px;
   padding-left: 5px;
   outline: none;
-  width: 250px;
+  width: 200px;
 }
 
 #top_nav_right {
@@ -267,6 +271,8 @@ body {
   position: fixed;
   top: 0;
   right: 0;
+  cursor: pointer;
+  cursor: hand;
 }
 
 .addOns {
@@ -566,15 +572,17 @@ li i {
   transition: all .3s;
 }
 
-li span {
+.showOverall {
   font-size: 30px;
   color: black;
   opacity: .3;
   line-height: 1;
   border: thin solid lightgrey;
-  padding: 0 3px;
+  padding: 24px;
   font-weight: 100;
   background-color: lightgrey;
+  display: none;
+  margin-top: -28px;
 }
 
 .textBackground {
@@ -595,7 +603,7 @@ figure {
 }
 
 .person {
-  display: inline-block;
+  display: inline-table;
   width: 100px;
   height: 100px;
   margin: 0 3px 3px 0;

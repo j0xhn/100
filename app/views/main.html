@@ -30,11 +30,9 @@
       <input type='search' ng-model='search' placeholder="&#xF002;">
     </div>
     <div id="top_nav_right">
-      <span class="fa fa-user icon_large" id="sidebar-toggle-right"></span>
-        <div class='sidebar-open-right' id='right' ng-controller='LoginCtrl'>
-            <ul>
-              <li> <a  ng-click="login">L O G I N</a> </li>
-            </ul>
+      <a ng-controller='LoginCtrl' ng-click="login()" id='loginBtn'>L O G I N</a><br>
+      <a ng-controller='LoginCtrl' ng-click="login()">A P P L Y</a><!-- <span class="fa fa-user icon_large" id="sidebar-toggle-right"></span> -->
+        <div class='sidebar-open-right' id='right'>
         </div>
     </div>
 </div>
@@ -46,22 +44,24 @@
 <!-- Grid Items -->
     <ul id = 'makeCenter'>
        <li class="person" ng-repeat="person in people | orderByPriority | filter:search | orderBy : sortField : true">
-         <img class='img' ng-src="{{person.picture}}" ng-click="setPerson(person)"> 
+         <img class='curl-top-left' ng-src="{{person.picture}}" ng-click="setPerson(person)" ng-mouseover='showOverall(person, $event)' ng-mouseleave='hideOverall(person, $event)'> 
           <div class='textBackground'>
+
             <div class='addOns'>
+
                <a ng-click='overallUpVote(person)'><i class="fa fa-arrow-up" id='left_icon'></i></a>
                <a ng-click='overallDownVote(person)'><i class="fa fa-arrow-down" id='right_icon'></i></a>
             </div>
           </div>
               <p>{{person.firstName}}</p>
-              <span>{{person.overall}}</span>
+              <div class='showOverall'>{{person.overall}}</div>
        </li>
     </ul>
     <div jds-popup="img"></div>
 
-    <div ng-controller='LoginCtrl'>
-       <li> <a  ng-click="login()">L O G I N</a> </li>
-    </div>
+
+       
+
     <script src='/scripts/main.js'></script>
 
 </div>
