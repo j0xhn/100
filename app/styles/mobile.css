@@ -223,10 +223,30 @@ text-align: right;
 }
 
 #center_left {
-	width: 30%;
-  text-align: center;
+width: 100%;
+text-align: center;
+position: relative;
+margin: 0 auto;
 }
-
+.outerRank{
+  padding:5px 20px 10px;
+}
+#leftBtn{
+float: left;
+margin: -19px 0 0 -28px;
+padding: 0 5px;
+height: 18px;
+line-height: 2.2px;
+opacity: .7;
+}
+#rightBtn{
+float: right;
+margin: -19px -29px 0 0;
+padding: 0 4px;
+height: 18px;
+line-height: 2px;
+opacity: .7;
+}
 #center_right {
 	width: 70%;
 	text-align: left;
@@ -442,7 +462,10 @@ ul {
     border-width: 1px;
     border-style: dotted;
 }
-
+.signup{
+  padding: 100px;
+  text-align: center;
+}
 #makeCenter {
   margin: 0 auto;
   text-align: center;
@@ -457,6 +480,7 @@ li img {
 li i {
 	padding: 0 8px 0 8px;
 	color: white;
+  text-shadow: 1px 1.5px 2px rgb(95, 86, 86);
 	transition: all .3s;
 	-webkit-transition: all .3s;
 }

@@ -16,12 +16,28 @@
 
               <h1> {{selectedPerson.firstName}} {{selectedPerson.lastName}}</h1>
               <!-- <h2>{{selectedPerson.random}}</h2> -->
-              <!-- (key, value) from firebase -->
+<!-- (key, value) from firebase - works -->
+            <div class='outerRank'>
               <ul>
-                <li id='tag' ng-repeat="(key, value) in selectedPerson.tags">{{ key }} {{ value }}
-                  <div class='voteBtn'><a ng-click='upVote(selectedPerson, key)'>vote up</a></div>
+                <li id='tag' ng-repeat="(key, value) in selectedPerson.tags | orderBy : 'value' : true">
+                    <progressbar class="progress-striped active" value=" value " type="info"><i>{{ key }}</i></progressbar>
+                    <button class='btn btn-danger' id='leftBtn'ng-click='downVote(selectedPerson, key)'> - </button>
+                    <button class='btn btn-primary' id='rightBtn'ng-click='upVote(selectedPerson, key)'> +</button>
                 </li>
               </ul>
+            </div>
+<!-- tries to refactor data structure, couldn't get it to work -->
+<!--               <ul>
+                <li id='tag' ng-repeat="tag in selectedPerson.tags | orderBy : 'value' : true">{{ tag.k }} {{ tag.v }}
+                  <div class='voteBtn'><a ng-click='upVote(selectedPerson, tag)'>vote up</a></div>
+                </li>
+              </ul> -->
+<!-- key value from sortedTags in peopleCtrl (works but not dynamic) -->
+              <!-- <ul> 
+                <li id='tag' ng-repeat="tag in sortedTags | orderBy : 'value' : true">{{ tag.k }} {{ tag.v }}
+                  <div class='voteBtn'><a ng-click='upVote(selectedPerson, key)'>vote up</a></div>
+                </li>
+              </ul> -->
               <!-- tag.name from firebase -->
                <!-- <ul>
                 <li id='tag' ng-repeat="tag in selectedPerson.tags">{{tag.name}} {{tag.value}} {{tag}}
@@ -29,20 +45,20 @@
                 </li>
               </ul> -->
 
-              <button type="button" class="btn btn-success">Up Vote</button>
+<!--               <button type="button" class="btn btn-success">Up Vote</button>
               <button type="button" class="btn btn-warning">Learn More</button>
-              <button type="button" class="btn btn-danger">Down Vote</button>
-            </div><!-- /#center-left -->
+              <button type="button" class="btn btn-danger">Down Vote</button> -->
+            </div><!-- /#center-left
 
             <div class="col" id="center_right">
               <!-- {{selectedPerson}} -->
 <!-- DISPLAY THREADS -->
               <div class='threads' ng-repeat='thread in threads'>
-              </div>
+              </div> -->
 <!-- INPUT -->
-              <h2>{{threadFromView}}</h2>
+<!--               <h2>{{threadFromView}}</h2>
               <input type='text' name="threadFromView" placeholder='New Thread' id='threadFromView' ng-model="threadFromView">
-              <button class='btn btn-xs' ng-click="threadCreate(threadFromView)">submit thread</button>
+              <button class='btn btn-xs' ng-click="threadCreate(threadFromView)">submit thread</button> -->
             </div><!--./#center_right -->
         </div><!-- /.entry#profile -->
 
