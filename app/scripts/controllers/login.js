@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('100App')
-  .controller('LoginCtrl', function ($scope, LoginService) {
+  .controller('LoginCtrl', function ($scope) {
     
     $scope.submit = function(){
       var chatRef = new Firebase('https://top100.firebaseio.com');
@@ -26,29 +26,25 @@ angular.module('100App')
          "location" : user.location.name,
          "votes": 1,
          "dateCreated": Date.now(),
+         "overall": 1,
          "tags": {
-            "hot":0,
-            "chill":0,
-            "funny": 0,
-            "smart": 0,
-            "successful": 0,
-            "determined": 0,
-            "charitable": 0,
-            "righteous": 0,
-            "sinner": 0,
-            "badass": 0
+            "hot":20,
+            "chill":19,
+            "funny": 57,
+            "smart": 62,
+            "successful": 10,
           }
+        // get friend count ~ SELECT friend_count FROM user WHERE uid = user.id;
         });
-     
         console.log(user);
-        console.log('User ID: ' + user.id + ', Provider: ' + user.provider+ ', PictureURL: ' + picture);
+        console.log('User ID: ' + user.id + ', Provider: ' + user.provider);
       } else {
         // user is logged out
       }
     });
       auth.login('facebook', {
         rememberMe: true,
-        scope: 'user_location, email'
+        scope: 'user_location, email, basic_info'
       });
      // console.log(profilePic);
     };

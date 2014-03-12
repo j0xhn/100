@@ -222,6 +222,7 @@ body {
   position: fixed;
   top: 0;
   left: 200px;
+  display: none;
 }
 
 .filters label {

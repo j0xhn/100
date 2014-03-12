@@ -19,6 +19,11 @@
 <!-- (key, value) from firebase - works -->
             <div class='outerRank'>
               <ul>
+                <li id='tag'>
+                  <progressbar class="progress-striped active" value=" selectedPerson.overall "type="info"><i>{{ selectedPerson.overall }}</i></progressbar>
+                    <button class='btn btn-danger' id='leftBtn'ng-click='overallDownVote(selectedPerson)'> - </button>
+                    <button class='btn btn-primary' id='rightBtn'ng-click='overallUpVote(selectedPerson)'> +</button>
+                </li>
                 <li id='tag' ng-repeat="(key, value) in selectedPerson.tags | orderBy : 'value' : true">
                     <progressbar class="progress-striped active" value=" value " type="info"><i>{{ key }}</i></progressbar>
                     <button class='btn btn-danger' id='leftBtn'ng-click='downVote(selectedPerson, key)'> - </button>

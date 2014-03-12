@@ -16,46 +16,27 @@ Things to remember:
 	#center_right{
 		padding-right: 20px;
 	}
+	#search_nav input:focus{
+  width: 100px;
+	}
 }
-
-
 @media screen and (min-width: 600px) {
-
-	#left {
-		display: block;
-		background-color: white;
+	.filters{
+		display:inline-block;
 	}
-
-	#center {
-		padding-left: 123px;
-		width: 100%;
-		padding-right:123px;
+	#search_nav input:focus{
+  width: 200px;
 	}
-
-	#right {
-		display: block;
-		float: none;
-		position: fixed;
-		/* right: -123; */
-		top: -20;
-		z-index: -1;
-		background-color: white;
 }
-}
-
-
 @media screen and (min-width: 860) {
-
 	#profile_circle {
 		height: 9em;
 		width: 9em;
 	}
-
 	.entry_circle {
 		height: 9em;
 		width: 9em;
 	}
-
 	.entry {
 		height: 120px;
 		width:570px;
@@ -63,7 +44,6 @@ Things to remember:
 		text-align: center;
 		margin: 0 auto;
 	}
-
 	h1 {
 		padding-top: 20px;
 	}

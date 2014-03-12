@@ -15,7 +15,7 @@
     </div>
 <!--Radio Toggle Section -->
 <div class='filters' id='radioGone'>
-    <input type="radio" ng-model='sortField' id="overall" name="toggle" value='votes' checked>
+    <input type="radio" ng-model='sortField' id="overall" name="toggle" value='overall' checked>
     <label for="overall">O V E R A L L</label>
     <input type="radio" ng-model='sortField' id="name" name="toggle" value='gender'>
     <label for="name" value='gender == male'>G U Y S</label>
@@ -55,7 +55,7 @@
             </div> -->
           </div>
               <p>{{person.fullName}}</p>
-              <div class='showOverall'>{{person.votes}}</div>
+              <div class='showOverall'>{{person.overall}}</div>
        </li>
     </ul>
     <div jds-popup="li"></div>
