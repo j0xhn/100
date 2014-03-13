@@ -8,6 +8,7 @@ angular.module('100App')
 ///////////////////////////
     // upVote on tag
     $scope.upVote = function (selectedPerson, tagName) {
+      console.log('selectedPerson', selectedPerson)
       selectedPerson.tags[tagName]++;
     };
     // downVote on tag

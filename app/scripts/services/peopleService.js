@@ -9,7 +9,7 @@ var FBURL = "https://top100.firebaseio.com/";
 return {
     getPeople: function () {
         var ref = new Firebase(FBURL + 'provo');
-        console.log(ref);
+        // console.log(ref);
         return $firebase(ref);
 
     },
@@ -19,7 +19,7 @@ return {
         var locationName = ref.name();
         // console.log(locationName);
         return locationName;
-    }
+    },
 };
 return deferred.promise;
 });

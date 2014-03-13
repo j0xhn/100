@@ -1,6 +1,7 @@
 
 <div class="top_nav">
 <!--Logo -->
+
     <div id="top_nav_left">
       <img src="../images/Logo_Light_35.png" id="sidebar-toggle-left"/>
       <div class='sidebar-open-left' id='left'>
@@ -58,10 +59,17 @@
               <div class='showOverall'>{{person.overall}}</div>
        </li>
     </ul>
+        <div id="profile_circle_profile">
+          <p>test {{ userPicture }}</p>
+                <img src="{{ userPicture }}">
+              </div>
+<!--
     <div jds-popup="li"></div>
+-->
+    <div ng-include="'/views/modal.html'"></div>
     <div class='signup'> 
       <h1> <a ng-controller='LoginCtrl' ng-click="submit()" id='loginBtn'>C L I C K    H E R E</a></h1>
-      <p>to nominate someone for provo's top 100 influencers</p>
+      <p>to submit someone for provo's top 100 influencers</p>
     </div>
 
        
