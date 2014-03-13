@@ -402,6 +402,18 @@ body {
   margin: 0 auto;
 }
 
+#profile_circle_profile img {
+  /* background-color: black; */
+  /*background-image: url('../images/profile_pic.jpg');*/
+  background-size: contain;
+  display: block;
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
 .clearfix {
   clear: both;
 }
