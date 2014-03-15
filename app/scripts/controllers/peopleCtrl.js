@@ -23,6 +23,11 @@ var locationName = peopleService.getLocationName();
 $scope.locationName = locationName;
 // console.log('Location: ',locationName);
 
+
+$scope.resetForm = function (person) {
+    console.log('you made it inside');
+    $scope.selectors.$setPristine(true);
+}
 ///////////////////////////
 // CHANGE OVERALL SCORE ON CLICK
 ///////////////////////////
@@ -63,5 +68,10 @@ $scope.showOverall = function (person, $event) {
     $('.showOverall').hide();
     $($event.target).nextAll('.showOverall').show();
 };
+
+// Makes both radio
+$scope.$watch('search', function(v){
+  $scope.searchGender = "";
+});
 
 });

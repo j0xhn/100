@@ -15,13 +15,14 @@
       <h1>{{locationName}}</h1>
     </div>
 <!--Radio Toggle Section -->
-<div class='filters' id='radioGone'>
-    <input type="radio" ng-model='sortField' id="overall" name="toggle" value='overall' checked>
-    <label for="overall">O V E R A L L</label>
-    <input type="radio" ng-model='sortField' id="name" name="toggle" value='gender'>
-    <label for="name" value='gender == male'>G U Y S</label>
-    <label for="name" value='gender == female'>G I R L S</label>
-</div>
+<form class='filters' id='radioGone' name='selectors'>
+    <input type="radio" ng-model='sortField' id="overall" name="selectors" value='overall' checked>
+    <label for="overall" ng-click="resetForm()">O V E R A L L</label>
+    <input type="radio" ng-model='searchGender' id="male" name="selectors" value='male'>
+    <label for="male">G U Y S</label>
+     <input type="radio" ng-model='searchGender' id="female" name="selectors" value='female'>
+    <label for="female">G I R L S</label>
+</form>
 <!-- ascending or descending -->
 <!-- <div class="input-medium" ng-model="sortOrder">
     <input value="true"><label>desc</label>
@@ -33,7 +34,10 @@
     </div>
     <div id="top_nav_right">
       <a ng-controller='LoginCtrl' ng-click="submit()" id='loginBtn'>L O G I N</a><br>
-<!-- <span class="fa fa-user icon_large" id="sidebar-toggle-right"></span> -->
+    <div id="profile_circle_profile">
+      <span><img src="{{ userPicture }}"></span> 
+    </div>
+<!--       <span class="fa fa-user icon_large" id="sidebar-toggle-right"></span> -->
         <div class='sidebar-open-right' id='right'>
         </div>
     </div>
@@ -45,7 +49,7 @@
 <!-- <span>{{ people }}</span> -->
 <!-- Grid Items -->
     <ul id = 'makeCenter'>
-       <li class="person" ng-click="setPerson(person)" ng-repeat="person in people | orderByPriority | filter:search | orderBy : sortField : true">
+       <li class="person" ng-click="setPerson(person)" ng-repeat="person in people | orderByPriority | orderBy: sortField : true | filter:search | filter:searchGender:true ">
          <img ng-src="{{person.picture}}" ng-mouseover='showOverall(person, $event)'> 
           <div class='textBackground'>
 
@@ -59,13 +63,6 @@
               <div class='showOverall'>{{person.overall}}</div>
        </li>
     </ul>
-        <div id="profile_circle_profile">
-          <p>test {{ userPicture }}</p>
-                <img src="{{ userPicture }}">
-              </div>
-<!--
-    <div jds-popup="li"></div>
--->
     <div ng-include="'/views/modal.html'"></div>
     <div class='signup'> 
       <h1> <a ng-controller='LoginCtrl' ng-click="submit()" id='loginBtn'>C L I C K    H E R E</a></h1>

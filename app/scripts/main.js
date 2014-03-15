@@ -30,6 +30,9 @@ $(function() {
 			$('#demo').toggleClass('about');
 		});
 
+// on overall click clearns form
+
+	$('input')
 // Grid Javascript
 
 		// (function ($) {

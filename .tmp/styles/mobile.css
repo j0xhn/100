@@ -408,10 +408,11 @@ body {
   background-size: contain;
   display: block;
   position: relative;
-  height: 10px;
-  width: 10px;
+  width: 26px;
   border-radius: 100%;
   margin: 0 auto;
+  top: -16px;
+  right: 9px;
 }
 
 .clearfix {
@@ -434,9 +435,10 @@ input[type="radio"] + label {
 
 input[type="radio"]:checked + label {
   /* Do something special with the selected state */
-  color: lightblue;
+  color: black;
   cursor: pointer;
   cursor: hand;
+  background-color: lightslategray;
 }
 
 a {

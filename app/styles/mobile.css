@@ -262,10 +262,11 @@ opacity: .7;
   background-size: contain;
   display:block;
   position:relative;
-  height: 10px;
-  width: 10px;
+  width: 26px;
   border-radius: 100%;
   margin: 0 auto;
+  top: -16px;
+  right: 9px;
 }
 .clearfix {
 	clear: both;
@@ -287,8 +288,10 @@ input[type="radio"] + label {
 
 input[type="radio"]:checked + label {
   /* Do something special with the selected state */
-  color: lightblue;
-  cursor: pointer; cursor: hand;
+color: black;
+cursor: pointer;
+cursor: hand;
+background-color: lightslategray;
 }
 
 
