@@ -5,8 +5,8 @@ angular.module('100App')
 
 //creates new user
     $scope.submit = function(){
-      var chatRef = new Firebase('https://top100.firebaseio.com');
-      var auth = new FirebaseSimpleLogin(chatRef, function(error, user) {
+      var dbRef = new Firebase('https://top100.firebaseio.com');
+      var auth = new FirebaseSimpleLogin(dbRef, function(error, user) {
         if (error) {
           // an error occurred while attempting login
           console.log(error);
@@ -29,9 +29,10 @@ angular.module('100App')
               var lastVoteTime = peopleObject[userID].lastVoteTime;
               var diffHours = Math.round(Math.abs(currentTime - lastVoteTime)/(3600));
               if (diffHours >= 24) {
-                  console.log('add have 5 votes');
-                  var lastVoteTimeRef = chatRef.child('provo/'+userID);
+                  console.log('add 5 votes');
+                  var lastVoteTimeRef = dbRef.child('provo/'+userID);
                   lastVoteTimeRef.update({'lastLogin': currentTime});
+                  $rootScope.userLastLogin = peopleObject[userID].lastLogin;
               } else {
                   alert('you do not have any more votes');
               }

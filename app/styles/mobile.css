@@ -25,6 +25,13 @@ left: 150px;
   border-bottom: 0;
   margin-left: -4px;
   background-color: transparent;
+  color: grey;
+  display: none;
+}
+.filterButton:focus{
+  outline: none;
+  background-color: slategrey;
+  color: black;
 }
 body {
 	font-family: 'Open Sans','Helvetica';

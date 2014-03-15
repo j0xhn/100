@@ -59,7 +59,7 @@
               <h1> C O M M E N T S </h1>
 <!-- DISPLAY THREADS -->
              
-              <div class='threads' ng-repeat="comment in selectedPerson.comments"><p>{{ comment.userID }}:{{ comment.comment }}:{{ comment.upVotes }}</p><button class='btn btn-primary' id='rightBtn'ng-click='upVoteComment(selectedPerson.comment)'> +</button>
+              <div class='threads' ng-repeat="comment in selectedPerson.comments | object2Array | orderBy : 'upVotes':true"><p>{{ comment.userID }}:{{ comment.comment }}:{{ comment.upVotes }}</p><button class='btn btn-primary' id='rightBtn'ng-click='upVoteComment(comment)'> +</button>
                 </div>
               
 <!-- INPUT -->

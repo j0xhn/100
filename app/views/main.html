@@ -25,11 +25,11 @@
 </form> -->
 <!-- SORT BUTTONS -->
 <div class='sortButtons'>
-  <input type='button' value='O V E R A L L' class="filterButton" ng-click='setFilter({})'></input>
+  <input type='button' value='O V E R A L L' class="filterButton" ng-click='myOrder="overall";myOrderReverse = true; sortField=""'></input>
+  <input type='button' value="T R E N D I N G" class="filterButton" ng-click='myOrder = "lastLogin"; myOrderReverse = true;'></input>
   <input type='button' value='male' class="filterButton" ng-click='setFilter({gender: "male"})'></input>
   <input type='button' value='female' class="filterButton" ng-click='setFilter({gender: "female"})'></input>
   <input type='button' value="Order By Last Name" class="filterButton" ng-click='myOrder = "lastName"; myOrderReverse = false;'></input>
-  <input type='button' value="Order By Score" class="filterButton" ng-click='myOrder = "overall"; myOrderReverse = true;'></input>
 </div>
 <!-- ascending or descending -->
 <!-- <div class="input-medium" ng-model="sortOrder">
@@ -57,7 +57,7 @@
 <!-- <span>{{ people }}</span> -->
 <!-- Grid Items -->
     <ul id = 'makeCenter'>
-       <li class="person" ng-click="setPerson(person)" ng-repeat="person in people | orderByPriority | orderBy:myOrder:myOrderReverse | filter: sortField : true | filter:search | filter:searchGender:true ">
+       <li class="person" ng-click="setPerson(person)" ng-repeat="person in people | orderByPriority | orderBy:myOrder:myOrderReverse | filter: sortField : true | filter:search ">
          <img ng-src="{{person.picture}}" ng-mouseover='showOverall(person, $event)'> 
           <div class='textBackground'>
 
@@ -72,42 +72,12 @@
        </li>
     </ul>
     <div ng-include="'/views/modal.html'"></div>
-
-<!-- NAVBAR -->
-<button class="filter" data-filter="all">Show All</button>
-<button class="filter" data-filter=".funny">funny</button>
-<button class="filter" data-filter=".determined">determined</button>
-<button class="filter" data-filter=".hot">hot</button>
-search bar not possible: <a href='https://github.com/patrickkunka/mixitup/issues/17'>because of this</a>
-
- <div id="Container" jds-mix-it-up="people">
-
-<div class='mix funny'>funny</div>
-<div class='mix determined'>determined</div>
-<div class='mix hot'>hot</div>
-<div class='mix all'>all</div>
-  <ul id = 'makeCenter'>
-       <li class="mix person" ng-class="person.tags" ng-click="setPerson(person)" ng-repeat="person in people | filter:search" style="display: inline-block;">
-         <img ng-src="{{person.picture}}" ng-mouseover='showOverall(person, $event)'> 
-          <div class='textBackground'>
-
-           <!--  <div class='addOns'>
-
-               <a ng-click='overallUpVote(person)'><i class="fa fa-arrow-up" id='left_icon'></i></a>
-               <a ng-click='overallDownVote(person)'><i class="fa fa-arrow-down" id='right_icon'></i></a>
-            </div> -->
-          </div>
-              <p>{{person.fullName}}</p>
-              <div class='showOverall'>{{person.overall}}</div>
-       </li>
-    </ul>
-</div>
-
-
+<!-- SIGNUP -->
     <div class='signup'> 
       <h1> <a ng-controller='LoginCtrl' ng-click="submit()" id='loginBtn'>C L I C K    H E R E</a></h1>
       <p>to submit someone for provo's top 100 influencers</p>
-      <p>{{ userID }}</p>
+      <p>current user: {{ userID }}</p>
+      <p>last login: {{ userLastLogin }}</p>
     </div>
 
        

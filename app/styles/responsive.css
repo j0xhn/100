@@ -22,8 +22,8 @@ Things to remember:
 	}
 }
 @media screen and (min-width: 768px) {
-	.filters{
-		display:inline-block;
+	.filterButton{
+		display: inline-block;
 	}
 	#search_nav input:focus{
   width: 200px;
