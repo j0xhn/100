@@ -1,87 +1,123 @@
 
 <div class="top_nav">
 <!--Logo -->
-
-    <div id="top_nav_left">
-      <img src="../images/Logo_Light_35.png" id="sidebar-toggle-left"/>
-      <div class='sidebar-open-left' id='left'>
-          <ul>
-            <li>Link #1</li>
-          </ul>
-        </div>
+  <div id="top_nav_left">
+    <img src="../images/Logo_Light_35.png" id="sidebar-toggle-left"/>
+    <div class='sidebar-open-left' id='left'>
+      <ul>
+        <li>Link #1</li>
+      </ul>
     </div>
+  </div>
 <!--Location-->
-    <div class='input-group' id='location_nav'>
-      <h1>{{locationName}}</h1>
-    </div>
-<!--Radio Toggle Section -->
-<!-- <form class='filters' id='radioGone' name='selectors'>
-    <input type="radio" ng-model='sortField' id="overall" name="selectors" value='overall' checked>
-    <label for="overall" ng-click="resetForm()">O V E R A L L</label>
-    <input type="radio" ng-model='searchGender' id="male" name="selectors" value='male'>
-    <label for="male">G U Y S</label>
-     <input type="radio" ng-model='searchGender' id="female" name="selectors" value='female'>
-    <label for="female">G I R L S</label>
-</form> -->
+  <div class='input-group' id='location_nav'>
+    <h1>{{locationName}}</h1>
+  </div>
 <!-- SORT BUTTONS -->
-<div class='sortButtons'>
-  <input type='button' value='O V E R A L L' class="filterButton" ng-click='myOrder="overall";myOrderReverse = true; sortField=""'></input>
-  <input type='button' value="T R E N D I N G" class="filterButton" ng-click='myOrder = "lastLogin"; myOrderReverse = true;'></input>
-  <input type='button' value='male' class="filterButton" ng-click='setFilter({gender: "male"})'></input>
-  <input type='button' value='female' class="filterButton" ng-click='setFilter({gender: "female"})'></input>
-  <input type='button' value="Order By Last Name" class="filterButton" ng-click='myOrder = "lastName"; myOrderReverse = false;'></input>
-</div>
-<!-- ascending or descending -->
-<!-- <div class="input-medium" ng-model="sortOrder">
-    <input value="true"><label>desc</label>
-    <input value="false"><label>asc</label>
-</div> -->
-
-    <div id='search_nav'>
-      <input type='search' ng-model='search' placeholder="&#xF002;">
-    </div>
-    <div id="top_nav_right">
-      <a ng-controller='LoginCtrl' ng-click="submit()" id='loginBtn'>L O G I N</a><br>
+  <div class='sortButtons'>
+    <input type='button' value='O V E R A L L' class="filterButton" ng-click='myOrder="overall";myOrderReverse = true; sortField=""'></input>
+    <input type='button' value="T R E N D I N G" class="filterButton" ng-click='myOrder = "lastLogin"; myOrderReverse = true;'></input>
+    <input type='button' value='male' class="filterButton" ng-click='setFilter({gender: "male"})'></input>
+    <input type='button' value='female' class="filterButton" ng-click='setFilter({gender: "female"})'></input>
+    <input type='button' value="Order By Last Name" class="filterButton" ng-click='myOrder = "lastName"; myOrderReverse = false;'></input>
+  </div>
+  <div id='search_nav'>
+    <input type='search' ng-model='search' placeholder="&#xF002;">
+  </div>
+  <div id="top_nav_right">
+    <a ng-controller='LoginCtrl' ng-click="submit()" id='loginBtn'>L O G I N</a><br>
     <div id="profile_circle_profile">
       <span><img src="{{ userPicture }}"></span> 
     </div>
 <!--       <span class="fa fa-user icon_large" id="sidebar-toggle-right"></span> -->
-        <div class='sidebar-open-right' id='right'>
-        </div>
+    <div class='sidebar-open-right' id='right'>
     </div>
+  </div>
 </div>
 <br>
 <!-- Main Section -->
+<div class="col" id="center">
+<!-- PEOPLE -->
+  <ul id = 'makeCenter'>
+     <li class="person" ng-click="setPerson(person)" ng-repeat="person in people | orderByPriority | orderBy:myOrder:myOrderReverse | filter: sortField : true | filter:search ">
+       <img ng-src="{{person.picture}}" ng-mouseover='showOverall(person, $event)'> 
+        <div class='textBackground'>
+         <!--  <div class='addOns'>
+             <a ng-click='overallUpVote(person)'><i class="fa fa-arrow-up" id='left_icon'></i></a>
+             <a ng-click='overallDownVote(person)'><i class="fa fa-arrow-down" id='right_icon'></i></a>
+          </div> -->
+        </div>
+        <p>{{person.fullName}}</p>
+        <div class='showOverall'>{{person.overall}}</div>
+     </li>
+  </ul>
 
-  <div class="col" id="center">
-<!-- <span>{{ people }}</span> -->
-<!-- Grid Items -->
-    <ul id = 'makeCenter'>
-       <li class="person" ng-click="setPerson(person)" ng-repeat="person in people | orderByPriority | orderBy:myOrder:myOrderReverse | filter: sortField : true | filter:search ">
-         <img ng-src="{{person.picture}}" ng-mouseover='showOverall(person, $event)'> 
-          <div class='textBackground'>
-
-           <!--  <div class='addOns'>
-
-               <a ng-click='overallUpVote(person)'><i class="fa fa-arrow-up" id='left_icon'></i></a>
-               <a ng-click='overallDownVote(person)'><i class="fa fa-arrow-down" id='right_icon'></i></a>
-            </div> -->
-          </div>
-              <p>{{person.fullName}}</p>
-              <div class='showOverall'>{{person.overall}}</div>
-       </li>
-    </ul>
-    <div ng-include="'/views/modal.html'"></div>
+  <div class='modal fade' id="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+<!-- MODAL HEADER -->
+      <!-- <div class="modal-header">
+        <h4 class="modal-title">{{selectedPerson.firstName}} {{selectedPerson.lastName}} </h4>
+      </div> -->
+<!-- MODAL BODY -->
+      <div class="modal-body">
+        <div class="entry" id="profile">
+          <div class="col" id="center_left">
+            <div id="profile_circle">
+              <img src="{{selectedPerson.picture}}">
+            </div>
+            <h1> {{selectedPerson.firstName}} {{selectedPerson.lastName}}</h1>
+            <div class='outerRank'>
+              <ul>
+                <li id='tag'>
+                  <progressbar class="progress-striped active" value=" selectedPerson.overall "type="info"><i> {{ overallVotes }}</i></progressbar>
+                    <button class='btn btn-danger' id='leftBtn' ng-click='overallDownVote(selectedPerson, userID)'> - </button>
+                    <button class='btn btn-primary' id='rightBtn' ng-click='overallUpVote(selectedPerson, userID)'> +</button>
+                </li>
+                <li id='tag' ng-repeat="(key, value) in selectedPerson.tags | orderBy : 'value' : true">
+                    <progressbar class="progress-striped active" value=" value " type="info"><i>{{ key }}</i></progressbar>
+                    <button class='btn btn-danger' id='leftBtn'ng-click='downVote(selectedPerson, key)'> - </button>
+                    <button class='btn btn-primary' id='rightBtn'ng-click='upVote(selectedPerson, key)'> +</button>
+                </li>
+              </ul>
+<!-- INPUT TAG -->
+              <input type='text' name="tagFromView" placeholder='Submit Tag' id='tagFromView' ng-model="tagFromView">
+              <button class='btn btn-xs' ng-click="tagCreate(tagFromView, selectedPerson, userID)">submit</button>
+            </div>
+          </div><!-- /#center-left -->
+          <div class="col" id="center_right">
+            <h1> C O M M E N T S </h1>
+<!-- DISPLAY THREADS -->
+            <div class='threads' ng-repeat="comment in selectedPerson.comments | object2Array | orderBy : 'upVotes':true"><p>{{ comment.userID }}:{{ comment.comment }}:{{ comment.upVotes }}</p><button class='btn btn-primary' id='rightBtn'ng-click='upVoteComment(comment)'> +</button>
+              </div>
+<!-- INPUT -->
+            <input type='text' name="threadFromView" placeholder='New Thread' id='threadFromView' ng-model="threadFromView">
+            <button class='btn btn-xs' ng-click="commentCreate(threadFromView, selectedPerson, userID)">submit</button>
+          </div><!--./#center_right -->
+        </div><!-- /.entry#profile -->
+<!-- DISPLAY PERSONAL INFO -->
+        <!-- <p>Name: {{selectedPerson.firstName}} {{selectedPerson.lastName}}</p>
+        <p>Age: {{ selectedPerson.age }}</p>
+        <p>Bank: {{ selectedPerson.bank }}</p>
+        <p>Comments:</p>
+        <p>{{ selectedPerson.comments }}</p>
+        <p>Email: {{ selectedPerson.email }}</p>
+        <p>Tags:</p>
+        <p>{{ selectedPerson.random }}</p> -->
+<!-- MODAL-FOOTER DOESN'T DISPLAY ANYTHING BUT IS REQUIRED ??? -->
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 <!-- SIGNUP -->
-    <div class='signup'> 
-      <h1> <a ng-controller='LoginCtrl' ng-click="submit()" id='loginBtn'>C L I C K    H E R E</a></h1>
-      <p>to submit someone for provo's top 100 influencers</p>
-      <p>current user: {{ userID }}</p>
-      <p>last login: {{ userLastLogin }}</p>
-    </div>
-
-       
-
-    <script src='/scripts/main.js'></script>
+  <div class='signup'> 
+    <h1> <a ng-click="submit()" id='loginBtn'>C L I C K    H E R E</a></h1>
+    <p>to submit someone for provo's top 100 influencers</p>
+    <p>current userID: {{ userID }}</p>
+    <p>userlastLogin: {{ userLastLogin }}</p>
+  </div>
+  <script src='/scripts/main.js'></script>
 
 </div>

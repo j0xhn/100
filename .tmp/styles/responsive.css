@@ -33,7 +33,6 @@ Things to remember:
 	}
 	#center_right {
 		width: 358px;
-		background-color: wheat;
 		padding: 0 0 0 30px;
 }
 @media screen and (min-width: 860) {

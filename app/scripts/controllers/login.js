@@ -56,6 +56,9 @@ angular.module('100App')
                  "dateCreated": Date.now(),
                  "lastLogin": Date.now(),
                  "overall": 20,
+                 "overallVotes": {
+                    'initial':1
+                 },
                  "tags": {
                     "hot":20,
                     "chill":19,

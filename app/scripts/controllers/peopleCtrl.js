@@ -1,7 +1,7 @@
 'use strict';
 // ? this code repeats 3 times... why ?
 angular.module('100App')
-  .controller('peopleCtrl', function ($scope, $rootScope, $firebase, $modal, peopleService) {
+  .controller('peopleCtrl', function ($scope, $rootScope, $firebase, $modal, peopleService, $filter) {
 var dbRef = new Firebase('https://top100.firebaseio.com');
 
 $scope.setFilter = function(value){
@@ -13,9 +13,6 @@ $scope.setFilter = function(value){
 ///////////////////////////
 $scope.commentCreate = function (threadFromView, selectedPerson, userID){
     if (userID) {
-        console.log('your inside thread', threadFromView);
-        console.log(locationName, userID);
-        var commentID = userID
         var personRef = dbRef.child('/'+locationName+'/'+selectedPerson.id+'/comments/');
         personRef.push({'userID': userID,'comment': threadFromView,'upVotes':1});
     } else {
@@ -32,37 +29,42 @@ $scope.upVoteComment = function (comment){
 //people
 var people = peopleService.getPeople();
 people.$bind($scope, 'people');
-
 $scope.$watch('people', function(people) {
     // DIRTY HACK:
     if ($scope.selectedPerson) {
         $scope.selectedPerson = people[$scope.selectedPerson.id]
     }
 }, true)
-
 //location
 var locationName = peopleService.getLocationName();
 $scope.locationName = locationName;
-// console.log('Location: ',locationName);
-
-
-$scope.resetForm = function (person) {
-    console.log('you made it inside');
-    $scope.selectors.$setPristine(true);
-}
 ///////////////////////////
 // CHANGE OVERALL SCORE ON CLICK
 ///////////////////////////
-$scope.overallUpVote = function (person) {
+$scope.overallUpVote = function (selectedPerson, userID, $filter) {
     console.log('You clicked for overallUpVote');
-    person.overall++;
-
+    if (userID){
+        if(selectedPerson.overallVotes[userID]){
+            // tell them they can't vote
+            alert('you already upVoted this user');
+        } else {
+            var overallVoteRef = dbRef.child('/'+locationName+'/'+selectedPerson.id+'/overallVotes/'+userID);
+            overallVoteRef.set(1);
+        }
+    } else {
+        alert('you really should think about logging in');
+    }
+    // $scope.$apply();
+    
+    // $filter('object2Array')(selectedPerson.overallVotes);
+    // $scope.overallVotes = selectedPerson.overallVotes.length();
+    // console.log(scope.overallVotes);
+    
 }
-$scope.overallDownVote = function (person) {
+$scope.overallDownVote = function (person, userID) {
     console.log('You clicked for overallDownVote');
     person.overall--;
 }
-
 ///////////////////////////
 // SET SELECTED PERSON & TAG ARRAY
 ///////////////////////////
@@ -70,35 +72,33 @@ $scope.setPerson = function (person) {
 	// console.log("This is the selected person: ", person);
 	$scope.selectedPerson = person;
     $("#modal").modal('show'); // hack (should use angular-strap or anguar-ui)
-    $scope.selectedPersondbRef = dbRef.child(person.id);
-    console.log($scope.selectedPersonRef);
-    /*
-    //creates tag array according to value 
-    var output = person.tags || [];
-    var sortedTags = [];
-    $.each(output, function(key, value) {
-        sortedTags.push({v:value, k: key});
-    });
-    sortedTags.sort(function(a,b){
-       if(a.v > b.v){ return -1}
-        if(a.v < b.v){ return 1}
-          return 0;
-    });
-    $scope.sortedTags = sortedTags;
-    */
+    console.log($scope.selectedPerson);
+    $scope.overallVotes = Object.keys($scope.selectedPerson.overallVotes).length;
 };
 ///////////////////////////
-// MAKE SCOPE VARIABLES
-///////////////////////////
 // ng-mouseover shows overall score on selected person
+///////////////////////////
 $scope.showOverall = function (person, $event) {
     $('.showOverall').hide();
     $($event.target).nextAll('.showOverall').show();
 };
-
-// Makes both radio
-$scope.$watch('search', function(v){
-  $scope.searchGender = "";
-});
+///////////////////////////
+// TAGS
+///////////////////////////
+$scope.tagCreate = function (tagFromView, selectedPerson, userID){
+    if (userID) {
+        var personRef = dbRef.child('/'+locationName+'/'+selectedPerson.id+'/searchTags/');
+        personRef.push(tagFromView);
+    } else {
+        alert('sign in');
+    }
+}
+$scope.upVote = function (selectedPerson, tagName) {
+  console.log('selectedPerson', selectedPerson)
+  selectedPerson.tags[tagName]++;
+};
+$scope.downVote = function (selectedPerson, tagName) {
+  selectedPerson.tags[tagName]--;
+};
 
 });

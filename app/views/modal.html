@@ -5,24 +5,22 @@
       <!-- <div class="modal-header">
         <h4 class="modal-title">{{selectedPerson.firstName}} {{selectedPerson.lastName}} </h4>
       </div> -->
-
 <!-- MODAL BODY -->
       <div class="modal-body">
         <div class="entry" id="profile">
-            <div class="col" id="center_left">
-              <div id="profile_circle">
-                <img src="{{selectedPerson.picture}}">
-              </div>
-
-              <h1> {{selectedPerson.firstName}} {{selectedPerson.lastName}}</h1>
-              <!-- <h2>{{selectedPerson.random}}</h2> -->
+          <div class="col" id="center_left">
+            <div id="profile_circle">
+              <img src="{{selectedPerson.picture}}">
+            </div>
+            <h1> {{selectedPerson.firstName}} {{selectedPerson.lastName}}</h1>
+            <!-- <h2>{{selectedPerson.random}}</h2> -->
 <!-- (key, value) from firebase - works -->
             <div class='outerRank'>
               <ul>
                 <li id='tag'>
                   <progressbar class="progress-striped active" value=" selectedPerson.overall "type="info"><i> Overall: {{ selectedPerson.overall }}</i></progressbar>
-                    <button class='btn btn-danger' id='leftBtn'ng-click='overallDownVote(selectedPerson)'> - </button>
-                    <button class='btn btn-primary' id='rightBtn'ng-click='overallUpVote(selectedPerson)'> +</button>
+                    <button class='btn btn-danger' id='leftBtn'ng-click='overallDownVote(selectedPerson, userID)'> - </button>
+                    <button class='btn btn-primary' id='rightBtn'ng-click='overallUpVote(selectedPerson, userID)'> +</button>
                 </li>
                 <li id='tag' ng-repeat="(key, value) in selectedPerson.tags | orderBy : 'value' : true">
                     <progressbar class="progress-striped active" value=" value " type="info"><i>{{ key }}</i></progressbar>
@@ -31,43 +29,17 @@
                 </li>
               </ul>
             </div>
-<!-- tries to refactor data structure, couldn't get it to work -->
-<!--               <ul>
-                <li id='tag' ng-repeat="tag in selectedPerson.tags | orderBy : 'value' : true">{{ tag.k }} {{ tag.v }}
-                  <div class='voteBtn'><a ng-click='upVote(selectedPerson, tag)'>vote up</a></div>
-                </li>
-              </ul> -->
-<!-- key value from sortedTags in peopleCtrl (works but not dynamic) -->
-              <!-- <ul> 
-                <li id='tag' ng-repeat="tag in sortedTags | orderBy : 'value' : true">{{ tag.k }} {{ tag.v }}
-                  <div class='voteBtn'><a ng-click='upVote(selectedPerson, key)'>vote up</a></div>
-                </li>
-              </ul> -->
-              <!-- tag.name from firebase -->
-               <!-- <ul>
-                <li id='tag' ng-repeat="tag in selectedPerson.tags">{{tag.name}} {{tag.value}} {{tag}}
-                  <div class='voteBtn'><a ng-click='UpVote(tag)'>vote up</a></div>
-                </li>
-              </ul> -->
-
-<!--               <button type="button" class="btn btn-success">Up Vote</button>
-              <button type="button" class="btn btn-warning">Learn More</button>
-              <button type="button" class="btn btn-danger">Down Vote</button> -->
-            </div><!-- /#center-left
--->
-            <div class="col" id="center_right">
-              <h1> C O M M E N T S </h1>
+          </div><!-- /#center-left -->
+          <div class="col" id="center_right">
+            <h1> C O M M E N T S </h1>
 <!-- DISPLAY THREADS -->
-             
-              <div class='threads' ng-repeat="comment in selectedPerson.comments | object2Array | orderBy : 'upVotes':true"><p>{{ comment.userID }}:{{ comment.comment }}:{{ comment.upVotes }}</p><button class='btn btn-primary' id='rightBtn'ng-click='upVoteComment(comment)'> +</button>
-                </div>
-              
+            <div class='threads' ng-repeat="comment in selectedPerson.comments | object2Array | orderBy : 'upVotes':true"><p>{{ comment.userID }}:{{ comment.comment }}:{{ comment.upVotes }}</p><button class='btn btn-primary' id='rightBtn'ng-click='upVoteComment(comment)'> +</button>
+              </div>
 <!-- INPUT -->
-              <input type='text' name="threadFromView" placeholder='New Thread' id='threadFromView' ng-model="threadFromView">
-              <button class='btn btn-xs' ng-click="commentCreate(threadFromView, selectedPerson, userID)">submit</button>
-            </div><!--./#center_right -->
+            <input type='text' name="threadFromView" placeholder='New Thread' id='threadFromView' ng-model="threadFromView">
+            <button class='btn btn-xs' ng-click="commentCreate(threadFromView, selectedPerson, userID)">submit</button>
+          </div><!--./#center_right -->
         </div><!-- /.entry#profile -->
-
 <!-- DISPLAY PERSONAL INFO -->
         <!-- <p>Name: {{selectedPerson.firstName}} {{selectedPerson.lastName}}</p>
         <p>Age: {{ selectedPerson.age }}</p>
@@ -77,7 +49,6 @@
         <p>Email: {{ selectedPerson.email }}</p>
         <p>Tags:</p>
         <p>{{ selectedPerson.random }}</p> -->
-
 <!-- MODAL-FOOTER DOESN'T DISPLAY ANYTHING BUT IS REQUIRED ??? -->
         <div class="modal-footer">
         </div>

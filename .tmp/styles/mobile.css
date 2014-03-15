@@ -718,6 +718,7 @@ figure {
 
 .isotope .isotope-item {
   transition-duration: 0.8s;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
 }
 
