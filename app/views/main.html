@@ -64,6 +64,37 @@
        </li>
     </ul>
     <div ng-include="'/views/modal.html'"></div>
+<!-- NAVBAR -->
+<button class="filter" data-filter="all">Show All</button>
+<button class="filter" data-filter=".funny">funny</button>
+<button class="filter" data-filter=".determined">determined</button>
+<button class="filter" data-filter=".hot">hot</button>
+search bar not possible: <a href='https://github.com/patrickkunka/mixitup/issues/17'>because of this</a>
+
+ <div id="Container" jds-mix-it-up="people">
+<!-- NG REPEAT -->
+<div class='mix funny'>funny</div>
+<div class='mix determined'>determined</div>
+<div class='mix hot'>hot</div>
+<div class='mix all'>all</div>
+  <ul id = 'makeCenter'>
+       <li class="mix person" ng-class="person.tags" ng-click="setPerson(person)" ng-repeat="person in people | filter:search" style="display: inline-block;">
+         <img ng-src="{{person.picture}}" ng-mouseover='showOverall(person, $event)'> 
+          <div class='textBackground'>
+
+           <!--  <div class='addOns'>
+
+               <a ng-click='overallUpVote(person)'><i class="fa fa-arrow-up" id='left_icon'></i></a>
+               <a ng-click='overallDownVote(person)'><i class="fa fa-arrow-down" id='right_icon'></i></a>
+            </div> -->
+          </div>
+              <p>{{person.fullName}}</p>
+              <div class='showOverall'>{{person.overall}}</div>
+       </li>
+    </ul>
+</div>
+
+
     <div class='signup'> 
       <h1> <a ng-controller='LoginCtrl' ng-click="submit()" id='loginBtn'>C L I C K    H E R E</a></h1>
       <p>to submit someone for provo's top 100 influencers</p>

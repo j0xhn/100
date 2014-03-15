@@ -27,6 +27,12 @@ Things to remember:
 	#search_nav input:focus{
   width: 200px;
 	}
+	#center_left{
+		width: 200px;
+	}
+	#center_right {
+		width: 358px;
+		background-color: wheat;
 }
 @media screen and (min-width: 860) {
 	#profile_circle {

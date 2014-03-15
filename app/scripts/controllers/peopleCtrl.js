@@ -5,9 +5,7 @@ angular.module('100App')
 ///////////////////////////
 // MAKE SCOPE VARIABLES
 ///////////////////////////
-
 //people
-//$scope.people = peopleService.getPeople();
 var people = peopleService.getPeople();
 people.$bind($scope, 'people');
 
@@ -66,7 +64,7 @@ $scope.setPerson = function (person) {
 // ng-mouseover shows overall score on selected person
 $scope.showOverall = function (person, $event) {
     $('.showOverall').hide();
-    $($event.target).nextAll('.showOverall').show();
+    $($event.target).nextAll('.showOverall').css("display","table-row-group");
 };
 
 // Makes both radio

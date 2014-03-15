@@ -9,51 +9,48 @@ Things to remember:
 */
 
 /********************************/
-
 /* Responsive *******************/
-
 /********************************/
 
 @media screen and (min-width: 400px) {
-  #center_right {
-    padding-right: 20px;
-  }
-
-  #search_nav input:focus {
-    width: 100px;
-  }
+	#center_right{
+		padding-right: 20px;
+	}
+	#search_nav input:focus{
+  width: 100px;
+	}
 }
-
 @media screen and (min-width: 600px) {
-  .filters {
-    display: inline-block;
-  }
-
-  #search_nav input:focus {
-    width: 200px;
-  }
+	.filters{
+		display:inline-block;
+	}
+	#search_nav input:focus{
+  width: 200px;
+	}
+	#center_left{
+		width: 200px;
+	}
+	#center_right {
+		width: 358px;
+		background-color: wheat;
 }
-
 @media screen and (min-width: 860) {
-  #profile_circle {
-    height: 9em;
-    width: 9em;
-  }
-
-  .entry_circle {
-    height: 9em;
-    width: 9em;
-  }
-
-  .entry {
-    height: 120px;
-    width: 570px;
-    font-size: 1.2em;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  h1 {
-    padding-top: 20px;
-  }
+	#profile_circle {
+		height: 9em;
+		width: 9em;
+	}
+	.entry_circle {
+		height: 9em;
+		width: 9em;
+	}
+	.entry {
+		height: 120px;
+		width:570px;
+		font-size: 1.2em;
+		text-align: center;
+		margin: 0 auto;
+	}
+	h1 {
+		padding-top: 20px;
+	}
 }

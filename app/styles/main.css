@@ -2,6 +2,9 @@
 /*Added for Angular UI Bootstrap*/
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 /* my styles */
+#Container .mix{
+  display: none;
+}
 #tag{
 }
 .voteBtn{
