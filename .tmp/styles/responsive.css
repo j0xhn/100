@@ -15,12 +15,13 @@ Things to remember:
 @media screen and (min-width: 400px) {
 	#center_right{
 		padding-right: 20px;
+		width: 100%;
 	}
 	#search_nav input:focus{
   width: 100px;
 	}
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
 	.filters{
 		display:inline-block;
 	}
@@ -33,6 +34,7 @@ Things to remember:
 	#center_right {
 		width: 358px;
 		background-color: wheat;
+		padding: 0 0 0 30px;
 }
 @media screen and (min-width: 860) {
 	#profile_circle {

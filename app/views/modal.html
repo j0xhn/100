@@ -56,14 +56,15 @@
             </div><!-- /#center-left
 -->
             <div class="col" id="center_right">
-               {{selectedPerson}}
+              <h1> C O M M E N T S </h1>
 <!-- DISPLAY THREADS -->
-              <div class='threads' ng-repeat='thread in threads'>
-              </div>
+             
+              <div class='threads' ng-repeat="comment in selectedPerson.comments"><p>{{ comment.userID }}:{{ comment.comment }}:{{ comment.upVotes }}</p><button class='btn btn-primary' id='rightBtn'ng-click='upVoteComment(selectedPerson.comment)'> +</button>
+                </div>
+              
 <!-- INPUT -->
-               <h2>{{threadFromView}}</h2>
               <input type='text' name="threadFromView" placeholder='New Thread' id='threadFromView' ng-model="threadFromView">
-              <button class='btn btn-xs' ng-click="threadCreate(threadFromView)">submit thread</button>
+              <button class='btn btn-xs' ng-click="commentCreate(threadFromView, selectedPerson, userID)">submit</button>
             </div><!--./#center_right -->
         </div><!-- /.entry#profile -->
 

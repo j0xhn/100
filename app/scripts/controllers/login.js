@@ -20,18 +20,18 @@ angular.module('100App')
             console.log('loaded:', peopleObject)
              // for loop in here
             if (user.id in peopleObject) {
-              console.log("user already exists as", user)
               //assigns picture
               $rootScope.userPicture = 'https://graph.facebook.com/' + user.id + '/picture?width=150&height=150';
+              $rootScope.userID = user.id;
               //checks to see if last login was 24hrs ago
               var userID = user.id;
               var currentTime = Date.now();
               var lastVoteTime = peopleObject[userID].lastVoteTime;
               var diffHours = Math.round(Math.abs(currentTime - lastVoteTime)/(3600));
               if (diffHours >= 24) {
-                  alert('you have 5 votes');
-                  var lastVoteTimeRef = chatRef.child(userID);
-                  lastVoteTimeRef.push({'lastLogin': currentTime});
+                  console.log('add have 5 votes');
+                  var lastVoteTimeRef = chatRef.child('provo/'+userID);
+                  lastVoteTimeRef.update({'lastLogin': currentTime});
               } else {
                   alert('you do not have any more votes');
               }

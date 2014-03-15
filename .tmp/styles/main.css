@@ -11,6 +11,10 @@
 
 /* my styles */
 
+#threadFromView {
+  width: 80%;
+}
+
 #Container .mix {
   display: none;
 }

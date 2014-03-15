@@ -1,7 +1,30 @@
 'use strict';
 // ? this code repeats 3 times... why ?
 angular.module('100App')
-  .controller('peopleCtrl', function ($scope, $firebase, $modal, peopleService) {
+  .controller('peopleCtrl', function ($scope, $rootScope, $firebase, $modal, peopleService) {
+var chatRef = new Firebase('https://top100.firebaseio.com');
+
+$scope.setFilter = function(value){
+    console.log(value);
+    $scope.sortField = value;
+}
+///////////////////////////
+// COMMENTS
+///////////////////////////
+$scope.commentCreate = function (threadFromView, selectedPerson, userID){
+    if (userID) {
+        console.log('your inside thread', threadFromView);
+        console.log(locationName, userID);
+        var commentID = userID
+        var personRef = chatRef.child('/'+locationName+'/'+selectedPerson.id+'/comments/');
+        personRef.push({'userID': userID,'comment': threadFromView,'upVotes':1});
+    } else {
+        alert('sign in');
+    }
+}
+$scope.upVoteComment = function (comment){
+    console.log('selected Person comment:', comment)
+}
 ///////////////////////////
 // MAKE SCOPE VARIABLES
 ///////////////////////////
@@ -61,6 +84,9 @@ $scope.setPerson = function (person) {
     $scope.sortedTags = sortedTags;
     */
 };
+///////////////////////////
+// MAKE SCOPE VARIABLES
+///////////////////////////
 // ng-mouseover shows overall score on selected person
 $scope.showOverall = function (person, $event) {
     $('.showOverall').hide();

@@ -15,14 +15,22 @@
       <h1>{{locationName}}</h1>
     </div>
 <!--Radio Toggle Section -->
-<form class='filters' id='radioGone' name='selectors'>
+<!-- <form class='filters' id='radioGone' name='selectors'>
     <input type="radio" ng-model='sortField' id="overall" name="selectors" value='overall' checked>
     <label for="overall" ng-click="resetForm()">O V E R A L L</label>
     <input type="radio" ng-model='searchGender' id="male" name="selectors" value='male'>
     <label for="male">G U Y S</label>
      <input type="radio" ng-model='searchGender' id="female" name="selectors" value='female'>
     <label for="female">G I R L S</label>
-</form>
+</form> -->
+<!-- SORT BUTTONS -->
+<div class='sortButtons'>
+  <input type='button' value='O V E R A L L' class="filterButton" ng-click='setFilter({})'></input>
+  <input type='button' value='male' class="filterButton" ng-click='setFilter({gender: "male"})'></input>
+  <input type='button' value='female' class="filterButton" ng-click='setFilter({gender: "female"})'></input>
+  <input type='button' value="Order By Last Name" class="filterButton" ng-click='myOrder = "lastName"; myOrderReverse = false;'></input>
+  <input type='button' value="Order By Score" class="filterButton" ng-click='myOrder = "overall"; myOrderReverse = true;'></input>
+</div>
 <!-- ascending or descending -->
 <!-- <div class="input-medium" ng-model="sortOrder">
     <input value="true"><label>desc</label>
@@ -49,7 +57,7 @@
 <!-- <span>{{ people }}</span> -->
 <!-- Grid Items -->
     <ul id = 'makeCenter'>
-       <li class="person" ng-click="setPerson(person)" ng-repeat="person in people | orderByPriority | orderBy: sortField : true | filter:search | filter:searchGender:true ">
+       <li class="person" ng-click="setPerson(person)" ng-repeat="person in people | orderByPriority | orderBy:myOrder:myOrderReverse | filter: sortField : true | filter:search | filter:searchGender:true ">
          <img ng-src="{{person.picture}}" ng-mouseover='showOverall(person, $event)'> 
           <div class='textBackground'>
 
@@ -64,6 +72,7 @@
        </li>
     </ul>
     <div ng-include="'/views/modal.html'"></div>
+
 <!-- NAVBAR -->
 <button class="filter" data-filter="all">Show All</button>
 <button class="filter" data-filter=".funny">funny</button>
@@ -72,7 +81,7 @@
 search bar not possible: <a href='https://github.com/patrickkunka/mixitup/issues/17'>because of this</a>
 
  <div id="Container" jds-mix-it-up="people">
-<!-- NG REPEAT -->
+
 <div class='mix funny'>funny</div>
 <div class='mix determined'>determined</div>
 <div class='mix hot'>hot</div>
@@ -98,6 +107,7 @@ search bar not possible: <a href='https://github.com/patrickkunka/mixitup/issues
     <div class='signup'> 
       <h1> <a ng-controller='LoginCtrl' ng-click="submit()" id='loginBtn'>C L I C K    H E R E</a></h1>
       <p>to submit someone for provo's top 100 influencers</p>
+      <p>{{ userID }}</p>
     </div>
 
        

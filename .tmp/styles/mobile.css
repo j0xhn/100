@@ -139,6 +139,23 @@ table {
   border-spacing: 0;
 }
 
+.sortButtons {
+  position: absolute;
+  top: 0;
+  left: 150px;
+}
+
+.filterButton {
+  padding: 12px 20px;
+  text-align: center;
+  border-left: thin solid grey;
+  border-right: thin solid grey;
+  border-top: 0;
+  border-bottom: 0;
+  margin-left: -4px;
+  background-color: transparent;
+}
+
 body {
   font-family: 'Open Sans','Helvetica';
   font-size: 10px;
@@ -377,8 +394,11 @@ body {
 }
 
 #center_right {
-  width: 70%;
   text-align: left;
+}
+
+#center_right h1 {
+  text-align: center;
 }
 
 #profile {
@@ -690,7 +710,6 @@ figure {
 
 .isotope .isotope-item {
   transition-duration: 0.8s;
-  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
 }
 
