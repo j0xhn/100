@@ -70,7 +70,7 @@
             <div class='outerRank'>
               <ul>
                 <li id='tag'>
-                  <progressbar class="progress-striped active" value=" selectedPerson.overall "type="info"><i> {{ overallVotes }}</i></progressbar>
+                  <progressbar class="progress-striped active" value=" selectedPerson.overall "type="info"><i> {{ selectedPerson.overall }}</i></progressbar>
                     <button class='btn btn-danger' id='leftBtn' ng-click='overallDownVote(selectedPerson, userID)'> - </button>
                     <button class='btn btn-primary' id='rightBtn' ng-click='overallUpVote(selectedPerson, userID)'> +</button>
                 </li>

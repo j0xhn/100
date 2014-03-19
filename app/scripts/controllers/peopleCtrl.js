@@ -14,6 +14,7 @@ $scope.setFilter = function(value){
 $scope.commentCreate = function (threadFromView, selectedPerson, userID){
     if (userID) {
         var personRef = dbRef.child('/'+locationName+'/'+selectedPerson.id+'/comments/');
+        console.log("this is the personref", personRef);
         personRef.push({'userID': userID,'comment': threadFromView,'upVotes':1});
     } else {
         alert('sign in');
@@ -48,8 +49,12 @@ $scope.overallUpVote = function (selectedPerson, userID, $filter) {
             // tell them they can't vote
             alert('you already upVoted this user');
         } else {
-            var overallVoteRef = dbRef.child('/'+locationName+'/'+selectedPerson.id+'/overallVotes/'+userID);
-            overallVoteRef.set(1);
+            selectedPerson.overall++;
+            var personRef = dbRef.child('/'+locationName+'/'+selectedPerson.id+'/overallVotes/'+userID+'/');
+            console.log("this is the personref", personRef);
+            personRef.set(1);
+            selectedPerson.overall++;
+
         }
     } else {
         alert('you really should think about logging in');
@@ -61,9 +66,9 @@ $scope.overallUpVote = function (selectedPerson, userID, $filter) {
     // console.log(scope.overallVotes);
     
 }
-$scope.overallDownVote = function (person, userID) {
+$scope.overallDownVote = function (selectedPerson, userID) {
     console.log('You clicked for overallDownVote');
-    person.overall--;
+    selectedPerson.overall--;
 }
 ///////////////////////////
 // SET SELECTED PERSON & TAG ARRAY
@@ -73,7 +78,7 @@ $scope.setPerson = function (person) {
 	$scope.selectedPerson = person;
     $("#modal").modal('show'); // hack (should use angular-strap or anguar-ui)
     console.log($scope.selectedPerson);
-    $scope.overallVotes = Object.keys($scope.selectedPerson.overallVotes).length;
+    // $scope.overallVotes = Object.keys($scope.selectedPerson.overallVotes).length;
 };
 ///////////////////////////
 // ng-mouseover shows overall score on selected person

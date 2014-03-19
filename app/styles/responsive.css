@@ -34,6 +34,7 @@ Things to remember:
 	#center_right {
 		width: 358px;
 		padding: 0 0 0 30px;
+	}
 }
 @media screen and (min-width: 860) {
 	#profile_circle {
