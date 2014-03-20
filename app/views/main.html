@@ -39,7 +39,8 @@
 <div class="col" id="center">
 <!-- PEOPLE -->
   <ul id = 'makeCenter'>
-     <li class="person" ng-click="setPerson(person)" ng-repeat="person in people | orderByPriority | orderBy:myOrder:myOrderReverse | filter: sortField : true | filter:search ">
+        <!--  -->
+     <li class="person" ng-click="setPerson(person)" ng-repeat="person in people | orderByPriority | orderBy:myOrder:myOrderReverse | filter: sortField : true | filter: search || property:'tags':search:undefined:true ">
        <img ng-src="{{person.picture}}" ng-mouseover='showOverall(person, $event)'> 
         <div class='textBackground'>
          <!--  <div class='addOns'>
@@ -74,8 +75,8 @@
                     <button class='btn btn-danger' id='leftBtn' ng-click='overallDownVote(selectedPerson, userID)'> - </button>
                     <button class='btn btn-primary' id='rightBtn' ng-click='upVote("overall",selectedPerson, userID)'> +</button>
                 </li>
-                <li id='tag' ng-repeat="(key, value) in selectedPerson.tags | orderBy : value : true | limitTo: 3">
-                    <progressbar class="progress-striped active" value=" value " type="info"><i>{{ key }}</i></progressbar>
+                <li id='tag' ng-repeat="tag in selectedPerson.searchTags | orderBy:key | limitTo: 3">
+                    <progressbar class="progress-striped active" value=" tag " type="info"><i>{{ tag }}</i></progressbar>
                     <button class='btn btn-danger' id='leftBtn'ng-click='downVote(selectedPerson, key)'> - </button>
                     <button class='btn btn-primary' id='rightBtn'ng-click='upVote(key,selectedPerson, userID)'> +</button>
                 </li>

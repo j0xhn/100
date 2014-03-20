@@ -12,7 +12,8 @@
     "angularfire": "~0.7.0",
     "angular-strap": "~0.7.8",
     "mixitup": "~2.0.5",
-    "jQuery": "~2.1.0"
+    "jQuery": "~2.1.0",
+    "underscore":"*"
   },
   "devDependencies": {
     "angular-mocks": "1.2.6",

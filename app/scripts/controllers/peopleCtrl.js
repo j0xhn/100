@@ -95,8 +95,8 @@ $scope.showOverall = function (person, $event) {
 ///////////////////////////
 $scope.tagCreate = function (tagFromView, selectedPerson, userID){
     if (userID) {
-        var personRef = dbRef.child('/'+locationName+'/'+selectedPerson.id+'/searchTags/');
-        personRef.push(tagFromView);
+        var tagRef = dbRef.child('/'+locationName+'/'+selectedPerson.id+'/searchTags/');
+        tagRef.push(tagFromView);
     } else {
         alert('sign in');
     }
