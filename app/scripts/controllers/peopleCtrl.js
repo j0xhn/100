@@ -42,18 +42,21 @@ $scope.locationName = locationName;
 ///////////////////////////
 // CHANGE OVERALL SCORE ON CLICK
 ///////////////////////////
-$scope.overallUpVote = function (selectedPerson, userID, $filter) {
+$scope.upVote = function (tagName, selectedPerson, userID, $filter) {
     console.log('You clicked for overallUpVote');
     if (userID){
-        if(selectedPerson.overallVotes[userID]){
+        if( selectedPerson.votes[tagName] && selectedPerson.votes[tagName][userID] ){
             // tell them they can't vote
             alert('you already upVoted this user');
         } else {
-            selectedPerson.overall++;
-            var personRef = dbRef.child('/'+locationName+'/'+selectedPerson.id+'/overallVotes/'+userID+'/');
-            console.log("this is the personref", personRef);
-            personRef.set(1);
-            selectedPerson.overall++;
+            if(!selectedPerson.votes[tagName])
+                selectedPerson.votes[tagName] = {};
+            selectedPerson.votes[tagName][userID] = new Date();
+            if(!selectedPerson.tags[tagName])
+                selectedPerson.tags[tagName] = 1;
+            else
+                selectedPerson.tags[tagName]++;
+            console.log(selectedPerson.overall);
 
         }
     } else {
@@ -98,10 +101,10 @@ $scope.tagCreate = function (tagFromView, selectedPerson, userID){
         alert('sign in');
     }
 }
-$scope.upVote = function (selectedPerson, tagName) {
-  console.log('selectedPerson', selectedPerson)
-  selectedPerson.tags[tagName]++;
-};
+// $scope.upVote = function (selectedPerson, tagName) {
+//   console.log('selectedPerson', selectedPerson)
+//   selectedPerson.tags[tagName]++;
+// };
 $scope.downVote = function (selectedPerson, tagName) {
   selectedPerson.tags[tagName]--;
 };

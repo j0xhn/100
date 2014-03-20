@@ -70,14 +70,14 @@
             <div class='outerRank'>
               <ul>
                 <li id='tag'>
-                  <progressbar class="progress-striped active" value=" selectedPerson.overall "type="info"><i> {{ selectedPerson.overall }}</i></progressbar>
+                  <progressbar class="progress-striped active" value=" selectedPerson.tags.overall "type="info"><i>Overall={{ selectedPerson.tags.overall }}</i></progressbar>
                     <button class='btn btn-danger' id='leftBtn' ng-click='overallDownVote(selectedPerson, userID)'> - </button>
-                    <button class='btn btn-primary' id='rightBtn' ng-click='overallUpVote(selectedPerson, userID)'> +</button>
+                    <button class='btn btn-primary' id='rightBtn' ng-click='upVote("overall",selectedPerson, userID)'> +</button>
                 </li>
-                <li id='tag' ng-repeat="(key, value) in selectedPerson.tags | orderBy : 'value' : true">
+                <li id='tag' ng-repeat="(key, value) in selectedPerson.tags | orderBy : value : true | limitTo: 3">
                     <progressbar class="progress-striped active" value=" value " type="info"><i>{{ key }}</i></progressbar>
                     <button class='btn btn-danger' id='leftBtn'ng-click='downVote(selectedPerson, key)'> - </button>
-                    <button class='btn btn-primary' id='rightBtn'ng-click='upVote(selectedPerson, key)'> +</button>
+                    <button class='btn btn-primary' id='rightBtn'ng-click='upVote(key,selectedPerson, userID)'> +</button>
                 </li>
               </ul>
 <!-- INPUT TAG -->
