@@ -8,6 +8,10 @@ $scope.setFilter = function(value){
     console.log(value);
     $scope.sortField = value;
 }
+var loginPrompt = function(){
+  console.log('you clicked login');
+  $('body').toggleClass('modal-open-up');
+}
 ///////////////////////////
 // COMMENTS
 ///////////////////////////
@@ -17,11 +21,11 @@ $scope.commentCreate = function (threadFromView, selectedPerson, userID){
         console.log("this is the personref", personRef);
         personRef.push({'user': userID,'comment': threadFromView,'value':1});
     } else {
-        alert('sign in');
+        loginPrompt();
     }
 }
 $scope.upVoteComment = function (comment, selectedPerson, userID) {
-    console.log('You clicked for overallUpVote');
+    console.log('You clicked for up vote comment');
     if (userID){
         if(comment[userID]){
             // tell them they can't vote
@@ -38,7 +42,7 @@ $scope.upVoteComment = function (comment, selectedPerson, userID) {
             comment.value++;
         }
     } else {
-        alert('you really should think about logging in');
+        loginPrompt();
     }
 }
 $scope.downVoteComment = function (comment, selectedPerson, userID) {
@@ -59,7 +63,7 @@ $scope.downVoteComment = function (comment, selectedPerson, userID) {
             comment.value--;
         }
     } else {
-        alert('you really should think about logging in');
+        loginPrompt();
     }
 }
 ///////////////////////////
@@ -96,10 +100,11 @@ $scope.upVoteOverall = function (selectedPerson, userID) {
             selectedPerson.overallVotes = {value:50};
             selectedPerson.lastVote = new Date();
             selectedPerson.overallVotes[userID] = {type:1};
+            selectedPerson.overallVotes.value++;
             
         }
     } else {
-        alert('you really should think about logging in');
+        loginPrompt();
     }
 }
 $scope.downVoteOverall = function (selectedPerson, userID) {
@@ -120,7 +125,7 @@ $scope.downVoteOverall = function (selectedPerson, userID) {
             selectedPerson.overallVotes.value = 50;
         }
     } else {
-        alert('you really should think about logging in');
+        loginPrompt();
     }
 }
 ///////////////////////////
@@ -156,20 +161,18 @@ $scope.tagCreate = function (tagName, selectedPerson, userID){
             selectedPerson.votes[tagName].value++;
             }
         } else {
-            selectedPerson.votes[tagName] = {tagName:tagName,value:1};
+            selectedPerson.votes[tagName] = {tagName:tagName,value:50};
             selectedPerson.votes[tagName][userID] = {type:1};
-            var tagRef = dbRef.child('/'+locationName+'/'+selectedPerson.id+'/searchTags/');
-            tagRef.push({});
             tagName = '';
             console.log("the tagName is",tagName);
-            return tagName = '';
+            return tagName;
         }
     } else {
-        alert('sign in');
+        loginPrompt();
     }
 }
 $scope.upVote = function (tagName, selectedPerson, userID, $filter) {
-    console.log('You clicked for overallUpVote');
+    console.log('You clicked for up vote');
     if (userID){
         if(selectedPerson.votes[tagName][userID]){
             // tell them they can't vote
@@ -186,7 +189,7 @@ $scope.upVote = function (tagName, selectedPerson, userID, $filter) {
             selectedPerson.votes[tagName].value++;
         }
     } else {
-        alert('you really should think about logging in');
+        loginPrompt();
     }
 }
 $scope.downVote = function (tagName, selectedPerson, userID, $filter) {
@@ -207,7 +210,7 @@ $scope.downVote = function (tagName, selectedPerson, userID, $filter) {
             selectedPerson.votes[tagName].value--;
         }
     } else {
-        alert('you really should think about logging in');
+        loginPrompt();
     }
 }
 });

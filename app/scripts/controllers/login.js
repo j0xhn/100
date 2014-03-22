@@ -2,7 +2,11 @@
 
 angular.module('100App')
   .controller('LoginCtrl', function ($scope, $rootScope, peopleService) {
-
+//does login popup
+    $scope.loginPrompt = function(){
+      console.log('you clicked login');
+      $('body').toggleClass('modal-open-up');
+    }
 //creates new user
     $scope.submit = function(){
       var dbRef = new Firebase('https://top100.firebaseio.com');
@@ -12,30 +16,29 @@ angular.module('100App')
           console.log(error);
         } else if (user) {
           console.log('this is the user', user)
-                  //hides login
-        $( "#top_nav_right" ).find('a').hide()
+          //hides login
+          $( "#top_nav_right" ).find('a').hide()
           //checks to see if there is user
           var peopleObject = peopleService.getPeople();
           peopleObject.$on('loaded', function() {
             console.log('loaded:', peopleObject)
-             // for loop in here
+             // for loop to assign picture
             if (user.id in peopleObject) {
-              //assigns picture
               $rootScope.userPicture = 'https://graph.facebook.com/' + user.id + '/picture?width=150&height=150';
               $rootScope.userID = user.id;
               //checks to see if last login was 24hrs ago
-              var userID = user.id;
-              var currentTime = Date.now();
-              var lastVoteTime = peopleObject[userID].lastVoteTime;
-              var diffHours = Math.round(Math.abs(currentTime - lastVoteTime)/(3600));
-              if (diffHours >= 24) {
-                  console.log('add 5 votes');
-                  var lastVoteTimeRef = dbRef.child('provo/'+userID);
-                  lastVoteTimeRef.update({'lastLogin': currentTime});
-                  $rootScope.userLastLogin = peopleObject[userID].lastLogin;
-              } else {
-                  alert('you do not have any more votes');
-              }
+              // var userID = user.id;
+              // var currentTime = Date.now();
+              // var lastVoteTime = peopleObject[userID].lastVoteTime;
+              // var diffHours = Math.round(Math.abs(currentTime - lastVoteTime)/(3600));
+              // if (diffHours >= 24) {
+              //     console.log('add 5 votes');
+              //     var lastVoteTimeRef = dbRef.child('provo/'+userID);
+              //     lastVoteTimeRef.update({'lastLogin': currentTime});
+              //     $rootScope.userLastLogin = peopleObject[userID].lastLogin;
+              // } else {
+              //     alert('you do not have any more votes');
+              // }
               $rootScope.$apply();
             } else {
                 console.log("user does not exist yet")
@@ -44,7 +47,9 @@ angular.module('100App')
                 console.log(user);
                 dataBase.set({
                  "picture" : 'https://graph.facebook.com/' + user.id + '/picture?width=150&height=150',
-                 "bio": user.displayName +' is pretty much awesome.  They live in'+location+' and probably have lots of friends that do fun things on the weekend.',
+                 "bio": user.displayName +' is pretty much awesome and has lots of friends that do fun things on the weekend.',
+                 "email": user.email,
+                 "location": user.location.name,
                  "firstName" : user.first_name,
                  "lastName" : user.last_name,
                  "fullName" : user.displayName,
@@ -53,71 +58,24 @@ angular.module('100App')
                  "accessToken" : user.accessToken,
                  "id" : user.id,
                  // "location" : user.location,
-                 "votes": 1,
+                 "votes": {'interesting':{'tagName':'interesting', 'value':50},'hot':{'tagName':'hot','value':50},'fun':{'tagName':'fun','value':50}},
                  "dateCreated": Date.now(),
                  "lastLogin": Date.now(),
-                 "overall": 20,
                  "overallVotes": {
-                    'initial':1
+                    'value':50
                  },
-                 "tags": {
-                    "hot":20,
-                    "chill":19,
-                    "funny": 57,
-                    "smart": 62,
-                    "successful": 10,
-                  }
-                // get friend count ~ SELECT friend_count FROM user WHERE uid = user.id;
+                // GET friend count ~ SELECT friend_count FROM user WHERE uid = user.id;
                 });
               }
           })
           console.log('people Object:',peopleObject);
         }
       });
-          
-
-/*
-          for (var id in peopleObject){
-            console.log('    id:', id)
-            if(id === user.id){
-                console.log('you tried submiting but are already a member');
-            } else {
-                console.log('     not  match')
-                     // if there is no user - writes to firebase
-              // var dataBase = new Firebase ("https://top100.firebaseio.com/provo/" + user.id);
-              // console.log('you did not have a profile, so we will make one for:');
-              // console.log(user);
-              // dataBase.set({
-              //  "picture" : 'https://graph.facebook.com/' + user.id + '/picture?width=150&height=150',
-              //  "firstName" : user.first_name,
-              //  "lastName" : user.last_name,
-              //  "fullName" : user.displayName,
-              //  "gender" : user.gender,
-              //  "link" : user.link,
-              //  "accessToken" : user.accessToken,
-              //  "id" : user.id,
-              //  // "location" : user.location,
-              //  "votes": 1,
-              //  "dateCreated": Date.now(),
-              //  "overall": 1,
-              //  "tags": {
-              //     "hot":20,
-              //     "chill":19,
-              //     "funny": 57,
-              //     "smart": 62,
-              //     "successful": 10,
-              //   }
-              // // get friend count ~ SELECT friend_count FROM user WHERE uid = user.id;
-              // });
-            }
-          }
-        }
-       // console.log(profilePic);
-      });
-*/
       auth.login('facebook', {
         rememberMe: true,
-        scope: 'user_location, email, basic_info'
+        scope: 'email,user_location,user_birthday'
       });
+      //clears login Prompt
+      $scope.loginPrompt();
     };
 });
