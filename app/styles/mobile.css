@@ -11,6 +11,169 @@ Things to remember:
 
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+.tagBox{
+  text-align: left;
+  margin: 0 0 20px 0;
+}
+.tagBox p{
+  display:inline-block;
+  cursor: pointer;
+}
+.tagBox p:hover{
+  color: #73C9E3;
+  text-decoration: underline;
+}
+.tagBox span{
+  font-weight: 700;
+  font-size: 1.2em;
+}
+.tagBox i{
+  font-weight: 300;
+  font-size: .9em;
+  font-style: italic;
+}
+#profile input{
+  line-height: 14px;
+  padding: 2px 5px;
+}
+#submitBtn {
+  background: #73C9E3;
+  color: white;
+  text-shadow: 1px 1.5px 2px rgb(95, 86, 86);
+}
+#submitBtn:hover {
+  background: #5BC0DE;
+  color:white;
+}
+#overallBar .progress{
+  height: 20px;
+  margin-top: -2px;
+}
+.tagBtns{
+  float: right;
+  min-height: 20px;
+  position: relative;
+  width: 30%;
+  margin-right: -10px;
+}
+.tagBtns button{
+  width: 42%;
+  height: 20px;
+  opacity: .5;
+  position: relative;
+  top: -3px;
+  padding: 0;
+  background-color: transparent;
+}
+.tagBtns button:hover{
+  opacity: 1;
+}
+#buttonLeft{
+  color:rgb(237, 81, 81);
+  float: left;
+  margin-left: -5px;
+}
+#buttonRight{
+  color:#4ca6bf;
+  float:right;
+  margin-right: -5px;
+}
+.tagBtns h3{
+  margin: 0 auto;
+  width: 40px;
+  text-align: center;
+  font-weight: 300;
+  display: inline-block;
+  font-size: 1.7em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 7px;
+  color: rgb(82, 76, 76);
+}
+.tagName{
+  width: 70%;
+  float:left;
+}
+.suggestInput{
+  margin: 10px 0 0 0;
+  height: 24px;
+}
+.comments{
+  margin-top: 10px;
+  position: relative;
+}
+.comment{
+  width: 100%;
+  display: inline-block;
+}
+.comment img{
+  float: left;
+  float: left;
+  border-radius: 50%;
+  margin: 5px;
+}
+.comment p{c
+  padding: 5px;
+  margin-right: 53px;
+}
+.commentBtns{
+  min-height: 40px;
+  position: absolute;
+  width: 40px;
+  top: 0;
+  right: 0;
+}
+.commentBtns button{
+  position: absolute;
+  line-height: 1;
+  padding: 0;
+  margin: 1px;
+  background-color: transparent;
+  opacity: .5;
+}
+.commentBtns button:hover{
+  opacity: 1;
+}
+.commentBtns h3{
+  margin: 0 auto;
+  font-size: 1.7em;
+  width: 40px;
+  text-align: center;
+  font-weight: 100;
+  position: absolute;
+  top: 16px;
+}
+#commentUp{
+  color: #4ca6bf;
+  position: absolute;
+  right: 0;
+  top: -1px;
+}
+#commentDown{
+  color: rgb(237, 81, 81);
+  position: inherit;
+}
+#profile h2{
+  color: rgb(82, 76, 76);
+  padding: 10px 0 0 0;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.sideFilterButton{
+  width: 100%;
+  background: none;
+  border: none;
+}
+.sideFilterButton:focus{
+  border:none;
+  outline:none;
+  background-color: darkgrey;
+}
+ul input:nth-child(even){
+  border-top: 1px solid darkgrey;
+  border-bottom: 1px solid darkgrey;
+}
 .sortButtons{
 position: absolute;
 top: 0;
@@ -187,12 +350,12 @@ text-align: right;
 }
 
 #left {
-	padding: 0px 2px 0 0;
 	width: 123px;
 	height: 100%;
 	position: fixed;
 	left: -123;
-	margin-left: -125px;
+	margin-left: -127px;
+  background-color: lightgrey;
 	text-align: right;
 	transition: all .3s;
 	-webkit-transition: all .3s;
@@ -235,7 +398,7 @@ position: relative;
 margin: 0 auto;
 }
 .outerRank{
-  padding:5px 20px 10px;
+  padding:20px 0;
 }
 #leftBtn{
 float: left;
@@ -265,7 +428,7 @@ opacity: .7;
 
 #profile h1 {
   color: rgb(82, 76, 76);
-  padding: 10px 0 0 0;
+  padding: 16px 0 0 0;
 }
 #profile_circle img{
 	/* background-color: black; */
@@ -337,12 +500,9 @@ span{
 
 
 h1 {
-
 	font-weight: 500;
 	font-size: 2em;
 	color: black;
-	margin:0 5px 5px 0;	
-
 }
 
 #edit h1 {
@@ -382,7 +542,6 @@ h3 {
 	font-size: 1em;
 	color: 3CB5DB;
 	font-style: bold;
-	margin-bottom: 40px;
 }
 
 ul {
@@ -391,14 +550,22 @@ ul {
 	 line-height: 180%;
 	 color: #aeacac;
 }
-
 #bottomBar {
   margin: 0 5px 0 5px;
 }
-
+#tag{
+  height: 35px;
+}
+#tag p{
+  text-align: left;
+  font-size: 14px;
+  color: rgb(82, 76, 76);
+  padding: 3px;
+}
 .progress {
   margin-bottom: 0;
   margin-top: 5px;
+  height: 5px;
 }
 
 /* Right Hand Sidebar */

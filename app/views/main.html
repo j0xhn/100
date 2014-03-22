@@ -5,7 +5,11 @@
     <img src="../images/Logo_Light_35.png" id="sidebar-toggle-left"/>
     <div class='sidebar-open-left' id='left'>
       <ul>
-        <li>Link #1</li>
+        <input type='button' value='O V E R A L L' class="sideFilterButton" ng-click='myOrder="overall";myOrderReverse = true; sortField=""'></input>
+        <input type='button' value='G U Y S' class="sideFilterButton" ng-click='setFilter({gender: "male"})'></input>
+        <input type='button' value='G I R L S' class="sideFilterButton" ng-click='setFilter({gender: "female"})'></input>
+<!--         <input type='button' value="R E C E N T" class="sideFilterButton" ng-click='myOrder = "lastLogin"; myOrderReverse = true;'></input> -->
+<!--         <input type='button' value="L A S T N A M E" class="sideFilterButton" ng-click='myOrder = "lastName"; myOrderReverse = false;'></input> -->
       </ul>
     </div>
   </div>
@@ -13,13 +17,13 @@
   <div class='input-group' id='location_nav'>
     <h1>{{locationName}}</h1>
   </div>
-<!-- SORT BUTTONS -->
+<!-- TOP SORT BUTTONS -->
   <div class='sortButtons'>
-    <input type='button' value='O V E R A L L' class="filterButton" ng-click='myOrder="overall";myOrderReverse = true; sortField=""'></input>
-    <input type='button' value="T R E N D I N G" class="filterButton" ng-click='myOrder = "lastLogin"; myOrderReverse = true;'></input>
-    <input type='button' value='male' class="filterButton" ng-click='setFilter({gender: "male"})'></input>
-    <input type='button' value='female' class="filterButton" ng-click='setFilter({gender: "female"})'></input>
-    <input type='button' value="Order By Last Name" class="filterButton" ng-click='myOrder = "lastName"; myOrderReverse = false;'></input>
+    <input type='button' value='O V E R A L L' class="filterButton" ng-click='myOrder="overallVotes.value";myOrderReverse = true; sortField=""'></input>
+<!--     <input type='button' value="T R E N D I N G" class="filterButton" ng-click='myOrder = "lastLogin"; myOrderReverse = true;'></input> -->
+    <input type='button' value='G U Y S' class="filterButton" ng-click='setFilter({gender: "male"})'></input>
+     <input type='button' value='G I R L S' class="filterButton" ng-click='setFilter({gender: "female"})'></input>
+<!--    <input type='button' value="Order By Last Name" class="filterButton" ng-click='myOrder = "lastName"; myOrderReverse = false;'></input> -->
   </div>
   <div id='search_nav'>
     <input type='search' ng-model='search' placeholder="&#xF002;">
@@ -49,7 +53,7 @@
           </div> -->
         </div>
         <p>{{person.fullName}}</p>
-        <div class='showOverall'>{{person.overall}}</div>
+        <div class='showOverall'>{{person.overallVotes.value}}</div>
      </li>
   </ul>
 
@@ -70,30 +74,63 @@
             <h1> {{selectedPerson.firstName}} {{selectedPerson.lastName}}</h1>
             <div class='outerRank'>
               <ul>
+<!-- OVERALL VOTE -->
                 <li id='tag'>
-                  <progressbar class="progress-striped active" value=" selectedPerson.tags.overall "type="info"><i>Overall={{ selectedPerson.tags.overall }}</i></progressbar>
-                    <button class='btn btn-danger' id='leftBtn' ng-click='overallDownVote(selectedPerson, userID)'> - </button>
-                    <button class='btn btn-primary' id='rightBtn' ng-click='upVote("overall",selectedPerson, userID)'> +</button>
+                  <div class='tagName' id='overallBar'>
+                    <progressbar class="progress-striped active" value=" selectedPerson.overallVotes.value " type="info"><i>Overall</i></progressbar>
+                  </div>
+                  <div class='tagBtns'>
+                    <button class='btn' id='buttonLeft' ng-click='downVoteOverall(selectedPerson, userID)'><span class="glyphicon glyphicon-chevron-left"></button>
+                    <h3>{{ selectedPerson.overallVotes.value }}</h3>
+                    <button class='btn' id='buttonRight' ng-click='upVoteOverall(selectedPerson, userID)'><span class="glyphicon glyphicon-chevron-right"></button>
+                  </div>
                 </li>
-                <li id='tag' ng-repeat="tag in selectedPerson.searchTags | orderBy:key | limitTo: 3">
-                    <progressbar class="progress-striped active" value=" tag " type="info"><i>{{ tag }}</i></progressbar>
-                    <button class='btn btn-danger' id='leftBtn'ng-click='downVote(selectedPerson, key)'> - </button>
-                    <button class='btn btn-primary' id='rightBtn'ng-click='upVote(key,selectedPerson, userID)'> +</button>
+<!-- TAG VOTE -->
+                <li id='tag' ng-repeat="tag in selectedPerson.votes | object2Array | orderBy:'value':true | limitTo: 3">
+                  <div class='tagName'>
+                    <p>{{ tag.tagName }}</p>
+                    <progressbar class="progress-striped active" value=" tag.value " type="info"><i></i></progressbar>
+                  </div>
+                  <div class='tagBtns'>
+                    <button class='btn' id='buttonLeft' ng-click='downVote(tag.tagName, selectedPerson, userID)'><span class="glyphicon glyphicon-chevron-left"></button>
+                    <h3 id='tagValue'>{{ tag.value }}</h3>
+                    <button class='btn' id='buttonRight' ng-click='upVote(tag.tagName, selectedPerson, userID)'><span class="glyphicon glyphicon-chevron-right"></button>
+                  </div>
                 </li>
               </ul>
+<!-- TAG BOX-->
+              <div class='tagBox'>
+                <span>Other Tags&nbsp;</span><i>(click to vote up)</i>:&nbsp;<p ng-repeat="tag in selectedPerson.votes | object2Array | orderBy:'value':true">{{ tag.tagName }},&nbsp;</p>
+              </div>
 <!-- INPUT TAG -->
-              <input type='text' name="tagFromView" placeholder='Submit Tag' id='tagFromView' ng-model="tagFromView">
-              <button class='btn btn-xs' ng-click="tagCreate(tagFromView, selectedPerson, userID)">submit</button>
+              <form ng-submit="tagCreate(tagFromView, selectedPerson, userID)">
+                <input class='tagName' type='text' name="tagFromView" placeholder='Submit Tag' id='tagFromView' ng-model="tagFromView">
+                <button type='submit'class='btn btn-xs tagBtns' id='submitBtn' >submit</button>
+              </form>
             </div>
           </div><!-- /#center-left -->
           <div class="col" id="center_right">
-            <h1> C O M M E N T S </h1>
-<!-- DISPLAY THREADS -->
-            <div class='threads' ng-repeat="comment in selectedPerson.comments | object2Array | orderBy : 'upVotes':true"><p>{{ comment.userID }}:{{ comment.comment }}:{{ comment.upVotes }}</p><button class='btn btn-primary' id='rightBtn'ng-click='upVoteComment(comment)'> +</button>
+            <h2>About {{ selectedPerson.firstName }}</h2>
+            <p>{{ selectedPerson.bio }}</p>
+<!-- SUGGESTION INPUT -->
+            <div class='suggestInput'>
+              <form ng-submit="commentCreate(commentFromView, selectedPerson, userID)">
+                <input class='tagName'type='text' name="commentFromView" placeholder="Suggest a change to {{selectedPerson.firstName}}'s profile" ng-model="commentFromView">
+                <button type='submit' class='btn btn-xs tagBtns' id='submitBtn' >submit</button>
+              </form>
+            </div>
+<!-- SUGGESTION DISPLAY -->
+            <div class='comments' ng-repeat="comment in selectedPerson.comments | object2Array | orderBy : 'value':true">
+              <div class='comment'>
+                <img src='https://graph.facebook.com/{{comment.user}}/picture?width=25&height=25'>
+                <p>{{ comment.comment }}</p>
               </div>
-<!-- INPUT -->
-            <input type='text' name="threadFromView" placeholder='New Thread' id='threadFromView' ng-model="threadFromView">
-            <button class='btn btn-xs' ng-click="commentCreate(threadFromView, selectedPerson, userID)">submit</button>
+              <div class='commentBtns'>
+                <button class='btn' id='commentUp'ng-click='upVoteComment(comment, selectedPerson, userID)'><span class="glyphicon glyphicon-chevron-up"></span></button>
+                <button class='btn' id='commentDown'ng-click='downVoteComment(comment, selectedPerson, userID)'><span class="glyphicon glyphicon-chevron-down"></span></button>
+                <h3>{{ comment.value }}</h3>
+              </div>  
+            </div>
           </div><!--./#center_right -->
         </div><!-- /.entry#profile -->
 <!-- DISPLAY PERSONAL INFO -->

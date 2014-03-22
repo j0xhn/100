@@ -44,6 +44,7 @@ angular.module('100App')
                 console.log(user);
                 dataBase.set({
                  "picture" : 'https://graph.facebook.com/' + user.id + '/picture?width=150&height=150',
+                 "bio": user.displayName +' is pretty much awesome.  They live in'+location+' and probably have lots of friends that do fun things on the weekend.',
                  "firstName" : user.first_name,
                  "lastName" : user.last_name,
                  "fullName" : user.displayName,

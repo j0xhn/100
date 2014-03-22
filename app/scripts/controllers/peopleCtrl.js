@@ -15,14 +15,52 @@ $scope.commentCreate = function (threadFromView, selectedPerson, userID){
     if (userID) {
         var personRef = dbRef.child('/'+locationName+'/'+selectedPerson.id+'/comments/');
         console.log("this is the personref", personRef);
-        personRef.push({'userID': userID,'comment': threadFromView,'upVotes':1});
+        personRef.push({'user': userID,'comment': threadFromView,'value':1});
     } else {
         alert('sign in');
     }
 }
-$scope.upVoteComment = function (comment){
-    console.log('selected Person comment:', comment.upVotes)
-    comment.upVotes++;
+$scope.upVoteComment = function (comment, selectedPerson, userID) {
+    console.log('You clicked for overallUpVote');
+    if (userID){
+        if(comment[userID]){
+            // tell them they can't vote
+            if ( comment[userID].type === 1){
+                alert('you already up Voted this user');
+            } else {
+                comment[userID].type=1;
+                comment.value++;
+            }
+        } else {
+            //create the userId for this tagName
+            selectedPerson.lastVote = new Date();
+            comment[userID] = {type:1};
+            comment.value++;
+        }
+    } else {
+        alert('you really should think about logging in');
+    }
+}
+$scope.downVoteComment = function (comment, selectedPerson, userID) {
+    console.log('You clicked for down Vote');
+    if (userID){
+        if(comment[userID]){
+            // tell them they can't vote
+            if ( comment[userID].type === -1){
+                alert('you already down Voted this user');
+            } else {
+                comment[userID].type=-1;
+                comment.value--;
+            }
+        } else {
+            //create the userId for this tagName
+            selectedPerson.lastVote = new Date();
+            comment[userID] = {type:-1};
+            comment.value--;
+        }
+    } else {
+        alert('you really should think about logging in');
+    }
 }
 ///////////////////////////
 // MAKE SCOPE VARIABLES
@@ -42,39 +80,51 @@ $scope.locationName = locationName;
 ///////////////////////////
 // CHANGE OVERALL SCORE ON CLICK
 ///////////////////////////
-$scope.upVote = function (tagName, selectedPerson, userID, $filter) {
-    console.log('You clicked for overallUpVote');
+$scope.upVoteOverall = function (selectedPerson, userID) {
+    console.log('You clicked for up Vote');
     if (userID){
-        if( selectedPerson.votes[tagName] && selectedPerson.votes[tagName][userID] ){
+        if(selectedPerson.overallVotes[userID]){
             // tell them they can't vote
-            alert('you already upVoted this user');
+            if ( selectedPerson.overallVotes[userID].type === 1){
+                alert('you already up Voted this user');
+            } else {
+                selectedPerson.overallVotes[userID].type=1;
+                selectedPerson.overallVotes.value++;
+            }
         } else {
-            if(!selectedPerson.votes[tagName])
-                selectedPerson.votes[tagName] = {};
-            selectedPerson.votes[tagName][userID] = new Date();
-            if(!selectedPerson.tags[tagName])
-                selectedPerson.tags[tagName] = 1;
-            else
-                selectedPerson.tags[tagName]++;
-            console.log(selectedPerson.overall);
-
+            //create the userId for this tagName
+            selectedPerson.overallVotes = {value:50};
+            selectedPerson.lastVote = new Date();
+            selectedPerson.overallVotes[userID] = {type:1};
+            
         }
     } else {
         alert('you really should think about logging in');
     }
-    // $scope.$apply();
-    
-    // $filter('object2Array')(selectedPerson.overallVotes);
-    // $scope.overallVotes = selectedPerson.overallVotes.length();
-    // console.log(scope.overallVotes);
-    
 }
-$scope.overallDownVote = function (selectedPerson, userID) {
-    console.log('You clicked for overallDownVote');
-    selectedPerson.overall--;
+$scope.downVoteOverall = function (selectedPerson, userID) {
+    console.log('You clicked for down Vote');
+    if (userID){
+        if(selectedPerson.overallVotes[userID]){
+            // tell them they can't vote
+            if ( selectedPerson.overallVotes[userID].type === -1){
+                alert('you already down Voted this user');
+            } else {
+                selectedPerson.overallVotes[userID].type=-1;
+                selectedPerson.overallVotes.value--;
+            }
+        } else {
+            //create the userId for this tagName
+            selectedPerson.lastVote = new Date();
+            selectedPerson.overallVotes[userID] = {type:-1};
+            selectedPerson.overallVotes.value = 50;
+        }
+    } else {
+        alert('you really should think about logging in');
+    }
 }
 ///////////////////////////
-// SET SELECTED PERSON & TAG ARRAY
+// SET SELECTED PERSON
 ///////////////////////////
 $scope.setPerson = function (person) {
 	// console.log("This is the selected person: ", person);
@@ -84,7 +134,7 @@ $scope.setPerson = function (person) {
     // $scope.overallVotes = Object.keys($scope.selectedPerson.overallVotes).length;
 };
 ///////////////////////////
-// ng-mouseover shows overall score on selected person
+// SHOW OVERALL SCORE
 ///////////////////////////
 $scope.showOverall = function (person, $event) {
     $('.showOverall').hide();
@@ -93,20 +143,71 @@ $scope.showOverall = function (person, $event) {
 ///////////////////////////
 // TAGS
 ///////////////////////////
-$scope.tagCreate = function (tagFromView, selectedPerson, userID){
+$scope.tagCreate = function (tagName, selectedPerson, userID){
     if (userID) {
-        var tagRef = dbRef.child('/'+locationName+'/'+selectedPerson.id+'/searchTags/');
-        tagRef.push(tagFromView);
+        var tagName = angular.lowercase(tagName);
+        if (selectedPerson.votes[tagName]){
+            if ( selectedPerson.votes[tagName][userID].type === 1){
+                alert('you already up Voted this user');
+            } else {
+            //create the userId for this tagName
+            selectedPerson.lastVote = new Date();
+            selectedPerson.votes[tagName][userID] = {type:1};
+            selectedPerson.votes[tagName].value++;
+            }
+        } else {
+            selectedPerson.votes[tagName] = {tagName:tagName,value:1};
+            selectedPerson.votes[tagName][userID] = {type:1};
+            var tagRef = dbRef.child('/'+locationName+'/'+selectedPerson.id+'/searchTags/');
+            tagRef.push({});
+            tagName = '';
+            console.log("the tagName is",tagName);
+            return tagName = '';
+        }
     } else {
         alert('sign in');
     }
 }
-// $scope.upVote = function (selectedPerson, tagName) {
-//   console.log('selectedPerson', selectedPerson)
-//   selectedPerson.tags[tagName]++;
-// };
-$scope.downVote = function (selectedPerson, tagName) {
-  selectedPerson.tags[tagName]--;
-};
-
+$scope.upVote = function (tagName, selectedPerson, userID, $filter) {
+    console.log('You clicked for overallUpVote');
+    if (userID){
+        if(selectedPerson.votes[tagName][userID]){
+            // tell them they can't vote
+            if ( selectedPerson.votes[tagName][userID].type === 1){
+                alert('you already up Voted this user');
+            } else {
+                selectedPerson.votes[tagName][userID].type=1;
+                selectedPerson.votes[tagName].value++;
+            }
+        } else {
+            //create the userId for this tagName
+            selectedPerson.lastVote = new Date();
+            selectedPerson.votes[tagName][userID] = {type:1};
+            selectedPerson.votes[tagName].value++;
+        }
+    } else {
+        alert('you really should think about logging in');
+    }
+}
+$scope.downVote = function (tagName, selectedPerson, userID, $filter) {
+    console.log('You clicked for down Vote');
+    if (userID){
+        if(selectedPerson.votes[tagName][userID]){
+            // tell them they can't vote
+            if ( selectedPerson.votes[tagName][userID].type === -1){
+                alert('you already down Voted this user');
+            } else {
+                selectedPerson.votes[tagName][userID].type=-1;
+                selectedPerson.votes[tagName].value--;
+            }
+        } else {
+            //create the userId for this tagName
+            selectedPerson.lastVote = new Date();
+            selectedPerson.votes[tagName][userID] = {type:-1};
+            selectedPerson.votes[tagName].value--;
+        }
+    } else {
+        alert('you really should think about logging in');
+    }
+}
 });

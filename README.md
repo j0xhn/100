@@ -1,38 +1,24 @@
 100
 ===
+SCOPE
+===
 
-1) view the top 100 in provo
++ design tweaks
+    have "view more" for Comments
+    remove words after they are written to the firebase
++ initially view the top 100 in provo (ranked by overall score)
++ auto fill full of people based on area
 
-2) have the ability to search in bar.
+===
+OPTIONAL
+===
 
-3) sort according to most popular tags, that do auto asc and desc when clicked.
++ remove button or add class if user has already clicked
++ hover over picture brings up overall score and ability to vote up or down
++ setup another location, and landing page for initial view (add to footer "suggest" feature)
++ add "location" & "tag" menus for under the logo nav
++ add google analytics
 
-3) hover over picture brings up links to (1) view link -> opens new page (2) reachout to contact -> opens message modal to message box
 
-4) when try to click check to see if they are active, if so open modal, if not have loggin via facebook.
-
-5) adds them to corresponding database - with corresponding catagories
-  - city
-  - county
-  - state
-  - region (east, west, south, midwest)
-  - nation
-  
-  - unique identifier
-  - firstName
-  - lastName
-  - age
-  - location
-  - email
-  - prefered link
-  - upvote/downvote bank (5 per day)
-  - overall score x/18 (ability to upvote)
-  - breakdown of looks vs personality (ability to upvote)
-  - Show top 10 categories/tags & corresponding score (one word)
-  - give ability to add a tag to their profile 
-  - leave them a message (only if they are in top ranked as well, you can only communicate with your same standing of overall &|| category)
-  - (leave space for other fields in the future)
-  
-6) let them set their own privacy
 
 
