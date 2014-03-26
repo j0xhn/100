@@ -41,6 +41,16 @@
 <br>
 <!-- Main Section -->
 <div class="col" id="center">
+<!-- Banner -->
+<div class='banner'>
+  <h1>THE TOP 100</h1>
+  <h2>Find {{ locationName }}'s top 100 people that are <input type='search' ng-model='search' placeholder="enter interest" autofocus></h2>
+  <div class='actions'>
+    <button class='btn btn-default clear'>
+      <p>submit a friend</p>
+    </button>
+  </div>
+</div>
 <!-- PEOPLE -->
   <ul id = 'makeCenter'>
         <!--  -->
@@ -159,10 +169,8 @@
 </div><!-- /.modal -->
 <!-- SIGNUP -->
   <div class='signup'> 
-    <h1> <a ng-click="submit()" id='loginBtn'>C L I C K    H E R E</a></h1>
-    <p>to submit someone for provo's top 100 influencers</p>
-    <p>current userID: {{ userID }}</p>
-    <p>userlastLogin: {{ userLastLogin }}</p>
+    <img ng-controller='LoginCtrl' ng-click="submit()" src='../images/login_1.png'/>
+    <p>and nominate someone for provo's top 100</p>
   </div>
   <script src='/scripts/main.js'></script>
 

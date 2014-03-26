@@ -139,6 +139,41 @@ table {
   border-spacing: 0;
 }
 
+.actions {
+  position: absolute;
+  bottom: 8px;
+  right: 0;
+  left: 0;
+  opacity: .5;
+  display: none;
+}
+
+.banner {
+  background-image: none;
+  background-position: 50% 49%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 280px;
+  text-align: center;
+  padding: 89px 20px;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+.banner h1 {
+  font-size: 5em;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+.banner h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
 .commentSection {
   height: 280px;
   overflow-y: auto;
@@ -474,26 +509,54 @@ body {
   line-height: 1.3em;
 }
 
-#search_nav input {
+input {
   -webkit-transition: all 0.30s ease-in-out;
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
   -o-transition: all 0.30s ease-in-out;
-  background-color: rgb(218, 234, 233);
   border: none;
-  line-height: 20px;
-  padding-left: 10px;
-  font-family: 'FontAwesome';
-  width: 95px;
 }
 
-#search_nav input:focus {
+input:focus {
   background-color: white;
   border: none;
   line-height: 20px;
   padding-left: 5px;
   outline: none;
+}
+
+#search_nav input {
+  background-color: rgb(218, 234, 233);
+  padding-left: 10px;
+  font-family: 'FontAwesome';
+  width: 95px;
+  line-height: 20px;
+  border-radius: 4px;
+}
+
+#search_nav input:focus {
   width: 200px;
+}
+
+.banner input::-webkit-input-placeholder {
+  color: grey;
+}
+
+.banner input {
+  line-height: 20px;
+  line-height: 27px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 0 0 2px 5px;
+  font-weight: 100;
+  color: black;
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+}
+
+.banner input:focus {
+  background: rgba(255, 255, 255, 0.88);
+  border: none;
 }
 
 #top_nav_right {
@@ -553,7 +616,7 @@ body {
   width: 100%;
   height: 100%;
   transition: all .3s;
-  padding: 30px 2px 0 2px;
+  /*  padding: 30px 2px 0 2px;*/
 }
 
 #center ul {
@@ -886,12 +949,16 @@ ul {
 }
 
 .signup {
-  padding: 100px;
+  padding: 100px 0;
   text-align: center;
 }
 
+.signup img {
+  cursor: pointer;
+}
+
 #makeCenter {
-  margin: 0 auto;
+  margin: 5px auto;
   text-align: center;
 }
 
