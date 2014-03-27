@@ -58,7 +58,7 @@ angular.module('100App')
                  "accessToken" : user.accessToken,
                  "id" : user.id,
                  // "location" : user.location,
-                 "votes": {'interesting':{'tagName':'interesting', 'value':50},'hot':{'tagName':'hot','value':50},'fun':{'tagName':'fun','value':50}},
+                 "votes": {'interesting':{'tagName':'interesting', 'value':10},'hot':{'tagName':'hot','value':10},'fun':{'tagName':'fun','value':10}},
                  "dateCreated": Date.now(),
                  "lastLogin": Date.now(),
                  "overallVotes": {

@@ -133,7 +133,7 @@
             <em>Be sure to mention their interests, hobbies, or other key words so our super fancy algorithm can label them as influential in those areas.</em>
 <!-- SUGGESTION INPUT -->
             <div class='suggestInput'>
-              <form ng-submit="commentCreate(commentFromView, selectedPerson, userID)">
+              <form ng-submit="commentCreate(commentFromView, selectedPerson, userID)" id='commentCreateForm'>
                 <input class='tagName'type='text' name="commentFromView" placeholder="Comment" ng-model="commentFromView">
                 <button type='submit' class='btn btn-xs tagBtns' id='submitBtn' >submit</button>
               </form>

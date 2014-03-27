@@ -20,6 +20,9 @@ $scope.commentCreate = function (threadFromView, selectedPerson, userID){
         var personRef = dbRef.child('/'+locationName+'/'+selectedPerson.id+'/comments/');
         console.log("this is the personref", personRef);
         personRef.push({'user': userID,'comment': threadFromView,'value':1});
+        $( '#commentCreateForm' ).each(function(){
+        this.reset();
+        });
     } else {
         loginPrompt();
     }
@@ -122,7 +125,7 @@ $scope.downVoteOverall = function (selectedPerson, userID) {
             //create the userId for this tagName
             selectedPerson.lastVote = new Date();
             selectedPerson.overallVotes[userID] = {type:-1};
-            selectedPerson.overallVotes.value = 50;
+            selectedPerson.overallVotes.value = 49;
         }
     } else {
         loginPrompt();

@@ -162,13 +162,13 @@ table {
 }
 
 .banner h1 {
-  font-size: 5em;
+  font-size: 3em;
   margin-bottom: 20px;
   font-weight: 900;
 }
 
 .banner h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   margin-bottom: 20px;
   font-weight: 300;
   line-height: 36px;
@@ -872,11 +872,12 @@ ul {
 
 .modal-login h1 {
   top: -160px;
+  font-size: 14px;
 }
 
 .modal-login img {
-  max-width: 300px;
-  margin: 0 auto;
+  max-width: 250px;
+  margin: 15px auto;
   cursor: pointer;
   top: -130px;
 }

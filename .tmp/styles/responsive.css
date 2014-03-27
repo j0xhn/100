@@ -16,7 +16,7 @@ Things to remember:
 
 @media screen and (min-width: 420px) {
   .banner {
-    background-image: url('../images/bannerBackground.jpg');
+    background-image: url('../images/bannerBackground.png');
     height: 300px;
   }
 
@@ -30,6 +30,14 @@ Things to remember:
     width: inherit;
     text-align: left;
     border: none;
+  }
+
+  .banner h1 {
+    font-size: 5em;
+  }
+
+  .banner h2 {
+    font-size: 2em;
   }
 
   #center_right {
