@@ -44,12 +44,15 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   line-height: 36px;
 }
 .commentSection{
-  height: 280px;
+  height: 363px;
   overflow-y: auto;
 }
 .btn:focus{
   opacity: 1;
   outline: none;
+}
+.commentBox{
+
 }
 .tagBox{
   text-align: left;
@@ -72,6 +75,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   font-size: .9em;
   font-style: italic;
 }
+.tagBox form{
+  margin: 20px 0;
+  padding: 1px;
+}
 #profile input{
   line-height: 14px;
   padding: 2px 5px;
@@ -80,6 +87,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   background: #73C9E3;
   color: white;
   text-shadow: 1px 1.5px 2px rgb(95, 86, 86);
+}
+#submitBtnMinimal{
+  background: transparent;
+  border: 1px solid grey;
+  color: grey;
 }
 #submitBtn:hover {
   background: #5BC0DE;
@@ -154,7 +166,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   margin: 5px;
 }
 .comment p{
-  padding: 5px;
   margin: 4px 53px 0 0px;
 }
 .commentBtns{
@@ -196,7 +207,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 #profile h2{
   color: rgb(82, 76, 76);
-  padding: 10px 0 0 0;
   font-size: 1.4em;
   font-weight: 700;
 }
@@ -244,8 +254,8 @@ body {
 	background-repeat:no-repeat;
 	background-size:contain;
 	background-position:center;
+-webkit-font-smoothing: antialiased;
 }
-
 .col{
 	float:left;
 	box-sizing:border-box;
@@ -334,13 +344,8 @@ input{
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
   -o-transition: all 0.30s ease-in-out;
-  border: none;
 }
 input:focus{
-  background-color: white;
-  border: none;
-  line-height: 20px;
-  padding-left: 5px;
   outline: none;
 }
 #search_nav input{
@@ -350,27 +355,30 @@ input:focus{
   width: 95px;
   line-height: 20px;
   border-radius: 4px;
+  border: none;
 }
 #search_nav input:focus{
   width: 200px;
+  background-color: white;
+  line-height: 20px;
+  padding-left: 5px;
 }
 .banner input::-webkit-input-placeholder {
    color: grey;
 }
 .banner input{
-  line-height: 20px;
-  line-height: 27px;
-  background: rgba(255, 255, 255, 0.6);
-  padding: 0 0 2px 5px;
+  background: rgba(255, 255, 255, 0.4);
   font-weight: 100;
   color: black;
   border-radius: 4px;
   width: 100%;
   text-align: center;
+  padding: 5px 9px 7px 7px;
+  font-size: 18px;
+  line-height: normal;
 }
 .banner input:focus{
-  background: rgba(255, 255, 255, 0.88);
-  border: none;
+  background: rgba(255, 255, 255, 0.6);
 }
 #top_nav_right{
   padding: 10px 8px 0 0;
@@ -479,9 +487,13 @@ opacity: .7;
 }
 #center_right {
 	text-align: left;
+    width: 100%;
 }
 #center_right h1{
   text-align: center;
+}
+#center_right em{
+  font-style: italic;
 }
 #profile {
 	margin-top: 10 0 0 0;
@@ -489,7 +501,7 @@ opacity: .7;
 
 #profile h1 {
   color: rgb(82, 76, 76);
-  padding: 16px 0 0 0;
+  padding: 16px 0;
 }
 #profile_circle img{
 	/* background-color: black; */
@@ -634,8 +646,8 @@ ul {
 }
 .modal-open-up .modal-login, 
 .modal-open-up .modal-body {
-  transform: translateY(218px);
-  -webkit-transform: translateY(218px);
+  transform: translateY(533px);
+  -webkit-transform: translateY(533px);
   transition: all .3s;
   -webkit-transition: all .3s;
 }
@@ -644,8 +656,8 @@ ul {
   -webkit-transition: all .3s;
 }
 .modal-login {
-  height: 121px;
-  margin-top: -120px;
+  height: 200px;
+  margin-top: -200px;
   transition: all .3s;
   -webkit-transition: all .3s;
   position: relative;
@@ -659,20 +671,30 @@ ul {
   right: 0;
 }
 .modal-login h1{
-  margin-top:-30px;
+  top: -160px;
 }
 .modal-login img{
   max-width: 300px;
   margin: 0 auto;
   cursor: pointer;
+  top: -130px;
 }
 .modal-login a{
-  bottom: 36px;
-  color: lightgrey;
+  color: grey;
   font-weight: 100;
   cursor: pointer;
+  top: -47px;
 }
-
+#leaveModal{
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  opacity: .1;
+}
+#leaveModal:hover{
+  opacity: .5;
+  cursor: pointer;
+}
 /* Right Hand Sidebar */
 .sidebar-open-right {
 	/*border-color: black;

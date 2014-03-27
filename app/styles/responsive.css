@@ -20,6 +20,12 @@ Things to remember:
 	.banner input{
 		width: inherit;
   	text-align: left;
+  	border: none;
+	}
+	.banner input:focus{
+		width: inherit;
+  	text-align: left;
+  	border: none;
 	}
 	#center_right{
 		width: 100%;

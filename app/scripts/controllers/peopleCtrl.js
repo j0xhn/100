@@ -129,7 +129,7 @@ $scope.downVoteOverall = function (selectedPerson, userID) {
     }
 }
 ///////////////////////////
-// SET SELECTED PERSON
+// SET SELECTED PERSON INTO MODAL
 ///////////////////////////
 $scope.setPerson = function (person) {
 	// console.log("This is the selected person: ", person);
@@ -138,6 +138,10 @@ $scope.setPerson = function (person) {
     console.log($scope.selectedPerson);
     // $scope.overallVotes = Object.keys($scope.selectedPerson.overallVotes).length;
 };
+$scope.cancel = function(){
+    console.log('you clicked to cancel');
+   $("#modal").modal('hide');
+}
 ///////////////////////////
 // SHOW OVERALL SCORE
 ///////////////////////////
@@ -161,12 +165,12 @@ $scope.tagCreate = function (tagName, selectedPerson, userID){
             selectedPerson.votes[tagName].value++;
             }
         } else {
-            selectedPerson.votes[tagName] = {tagName:tagName,value:50};
+            selectedPerson.votes[tagName] = {tagName:tagName,value:1};
             selectedPerson.votes[tagName][userID] = {type:1};
-            tagName = '';
-            console.log("the tagName is",tagName);
-            return tagName;
         }
+        $( '#tagCreateForm' ).each(function(){
+        this.reset();
+        });
     } else {
         loginPrompt();
     }

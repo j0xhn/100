@@ -44,7 +44,7 @@
 <!-- Banner -->
 <div class='banner'>
   <h1>THE TOP 100</h1>
-  <h2>Find {{ locationName }}'s top 100 people that are <input type='search' ng-model='search' placeholder="enter interest" autofocus></h2>
+  <h2>Find {{ locationName }}'s top 100 people for <input type='search' ng-model='search' placeholder="enter interest" autofocus></h2>
   <div class='actions'>
     <button class='btn btn-default clear'>
       <p>submit a friend</p>
@@ -54,7 +54,7 @@
 <!-- PEOPLE -->
   <ul id = 'makeCenter'>
         <!--  -->
-     <li class="person" ng-click="setPerson(person)" ng-repeat="person in people | orderByPriority | orderBy:myOrder:myOrderReverse | filter: sortField : true | filter: search || property:'tags':search:undefined:true ">
+     <li class="person" ng-click="setPerson(person)" ng-repeat="person in people | orderByPriority | orderBy:'overallVotes.value':true| orderBy:myOrder:myOrderReverse | filter: sortField : true | filter: search || property:'tags':search:undefined:true ">
        <img ng-src="{{person.picture}}" ng-mouseover='showOverall(person, $event)'> 
         <div class='textBackground'>
          <!--  <div class='addOns'>
@@ -62,7 +62,7 @@
              <a ng-click='overallDownVote(person)'><i class="fa fa-arrow-down" id='right_icon'></i></a>
           </div> -->
         </div>
-        <p>{{person.fullName}}</p>
+        <p>{{person.firstName}} {{person.lastName}}</p>
         <div class='showOverall'>{{person.overallVotes.value}}</div>
      </li>
   </ul>
@@ -82,12 +82,14 @@
       </div>
 <!-- MODAL BODY -->
       <div class="modal-body model-open-up">
+        <i class="fa fa-times-circle icon_large" id='leaveModal' ng-click="cancel()"></i>
         <div class="entry" id="profile">
           <div class="col" id="center_left">
             <div id="profile_circle">
               <img src="{{selectedPerson.picture}}">
             </div>
-            <h1> {{selectedPerson.firstName}} {{selectedPerson.lastName}}</h1>
+            <h1> {{selectedPerson.fullName}}</h1>
+            <p>{{ selectedPerson.bio }}</p>
             <div class='outerRank'>
               <ul>
 <!-- OVERALL VOTE -->
@@ -117,21 +119,22 @@
 <!-- TAG BOX-->
               <div class='tagBox'>
                 <span>Other Tags&nbsp;</span><i>(click to vote up)</i>:&nbsp;<p ng-repeat="tag in selectedPerson.votes | object2Array | orderBy:'value':true" ng-click='upVote(tag.tagName, selectedPerson, userID)'>{{ tag.tagName }},&nbsp;</p>
-              </div>
 <!-- INPUT TAG -->
-              <form ng-submit="tagCreate(tagFromView, selectedPerson, userID)">
-                <input class='tagName' type='text' name="tagFromView" placeholder='Submit Tag' id='tagFromView' ng-model="tagFromView">
-                <button type='submit'class='btn btn-xs tagBtns' id='submitBtn' >submit</button>
-              </form>
+                <form id='tagCreateForm' ng-submit="tagCreate(tagFromView, selectedPerson, userID)">
+                  <input class='tagName' type='text' name="tagFromView" placeholder='Submit Tag' id='tagFromView' ng-model="tagFromView">
+                  <button type='submit'class='btn btn-xs tagBtns' id='submitBtnMinimal' >submit</button>
+                </form>
+              </div>
             </div>
           </div><!-- /#center-left -->
+<!-- COMMENT BOX -->
           <div class="col" id="center_right">
-            <h2>About {{ selectedPerson.firstName }}</h2>
-            <p>{{ selectedPerson.bio }}</p>
+            <h2>What is {{ selectedPerson.firstName }} great at?</h2>
+            <em>Be sure to mention their interests, hobbies, or other key words so our super fancy algorithm can label them as influential in those areas.</em>
 <!-- SUGGESTION INPUT -->
             <div class='suggestInput'>
               <form ng-submit="commentCreate(commentFromView, selectedPerson, userID)">
-                <input class='tagName'type='text' name="commentFromView" placeholder="Suggest a change to {{selectedPerson.firstName}}'s profile" ng-model="commentFromView">
+                <input class='tagName'type='text' name="commentFromView" placeholder="Comment" ng-model="commentFromView">
                 <button type='submit' class='btn btn-xs tagBtns' id='submitBtn' >submit</button>
               </form>
             </div>
