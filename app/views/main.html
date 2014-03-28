@@ -29,11 +29,10 @@
     <input type='search' ng-model='search' placeholder="&#xF002;">
   </div>
   <div id="top_nav_right">
-    <a ng-controller='LoginCtrl' ng-click="submit()" id='loginBtn'>L O G I N</a><br>
+    <a ng-controller='LoginCtrl' ng-click="submit($event)" id='loginBtn'>L O G I N</a><br>
     <div id="profile_circle_profile">
-      <span><img src="{{ userPicture }}"></span> 
+      <span><img src="{{ userPicture }}" id='sidebar-toggle-right'></span> 
     </div>
-<!--       <span class="fa fa-user icon_large" id="sidebar-toggle-right"></span> -->
     <div class='sidebar-open-right' id='right'>
     </div>
   </div>
@@ -44,7 +43,7 @@
 <!-- Banner -->
 <div class='banner'>
   <h1>THE TOP 100</h1>
-  <h2>Find {{ locationName }}'s top 100 people for <input type='search' ng-model='search' placeholder="enter interest" autofocus></h2>
+  <h2>Find {{ locationName }}'s top 100 <input type='search' ng-model='search' placeholder="enter interest" autofocus></h2>
   <div class='actions'>
     <button class='btn btn-default clear'>
       <p>submit a friend</p>
@@ -89,7 +88,8 @@
               <img src="{{selectedPerson.picture}}">
             </div>
             <h1> {{selectedPerson.fullName}}</h1>
-            <p>{{ selectedPerson.bio }}</p>
+            <p id='bio'>{{ selectedPerson.bio }}</p>
+            {{bioFromView}}
             <div class='outerRank'>
               <ul>
 <!-- OVERALL VOTE -->
@@ -121,7 +121,7 @@
                 <span>Other Tags&nbsp;</span><i>(click to vote up)</i>:&nbsp;<p ng-repeat="tag in selectedPerson.votes | object2Array | orderBy:'value':true" ng-click='upVote(tag.tagName, selectedPerson, userID)'>{{ tag.tagName }},&nbsp;</p>
 <!-- INPUT TAG -->
                 <form id='tagCreateForm' ng-submit="tagCreate(tagFromView, selectedPerson, userID)">
-                  <input class='tagName' type='text' name="tagFromView" placeholder='Submit Tag' id='tagFromView' ng-model="tagFromView">
+                  <input class='tagName' type='text' placeholder='Submit Tag' id='tagFromView' ng-model="tagFromView">
                   <button type='submit'class='btn btn-xs tagBtns' id='submitBtnMinimal' >submit</button>
                 </form>
               </div>
@@ -142,7 +142,7 @@
             <div class='commentSection'>
               <div class='comments' ng-repeat="comment in selectedPerson.comments | object2Array | orderBy : 'value':true">
                 <div class='comment'>
-                  <img src='https://graph.facebook.com/{{comment.user}}/picture?width=25&height=25'>
+                  <img src='https://graph.facebook.com/{{ comment.user }}/picture?width=25&height=25'>
                   <p>{{ comment.comment }}</p>
                 </div>
                 <div class='commentBtns'>
@@ -154,15 +154,6 @@
             </div>
           </div><!--./#center_right -->
         </div><!-- /.entry#profile -->
-<!-- DISPLAY PERSONAL INFO -->
-        <!-- <p>Name: {{selectedPerson.firstName}} {{selectedPerson.lastName}}</p>
-        <p>Age: {{ selectedPerson.age }}</p>
-        <p>Bank: {{ selectedPerson.bank }}</p>
-        <p>Comments:</p>
-        <p>{{ selectedPerson.comments }}</p>
-        <p>Email: {{ selectedPerson.email }}</p>
-        <p>Tags:</p>
-        <p>{{ selectedPerson.random }}</p> -->
 <!-- MODAL-FOOTER DOESN'T DISPLAY ANYTHING BUT IS REQUIRED ??? -->
         <div class="modal-footer">
         </div>

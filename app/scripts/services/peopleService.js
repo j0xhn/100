@@ -20,6 +20,11 @@ return {
         // console.log(locationName);
         return locationName;
     },
+
+    loginPrompt: function(){
+      console.log('you clicked login');
+      $('body').toggleClass('modal-open-up');
+    },
 };
 return deferred.promise;
 });

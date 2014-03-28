@@ -139,6 +139,13 @@ table {
   border-spacing: 0;
 }
 
+#bio {
+  width: 100%;
+  height: 50px;
+  border: none;
+  text-align: center;
+}
+
 .actions {
   position: absolute;
   bottom: 8px;
@@ -923,9 +930,14 @@ ul {
   transition: all .3s;
 }
 
+#sidebar-toggle-right {
+  transition: all .3s;
+}
+
 .sidebar-open-right #sidebar-toggle-right {
-  transform: rotate(270deg);
-  -webkit-transform: rotate(270deg);
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transition: all .3s;
 }
 
 /* Left Hand Sidebar */

@@ -4,13 +4,12 @@ angular.module('100App')
   .controller('peopleCtrl', function ($scope, $rootScope, $firebase, $modal, peopleService, $filter) {
 var dbRef = new Firebase('https://top100.firebaseio.com');
 
+$scope.loginPrompt = function(){
+    peopleService.loginPrompt();
+}
 $scope.setFilter = function(value){
     console.log(value);
     $scope.sortField = value;
-}
-var loginPrompt = function(){
-  console.log('you clicked login');
-  $('body').toggleClass('modal-open-up');
 }
 ///////////////////////////
 // COMMENTS
@@ -24,7 +23,7 @@ $scope.commentCreate = function (threadFromView, selectedPerson, userID){
         this.reset();
         });
     } else {
-        loginPrompt();
+        peopleService.loginPrompt();
     }
 }
 $scope.upVoteComment = function (comment, selectedPerson, userID) {
@@ -45,7 +44,7 @@ $scope.upVoteComment = function (comment, selectedPerson, userID) {
             comment.value++;
         }
     } else {
-        loginPrompt();
+        peopleService.loginPrompt();
     }
 }
 $scope.downVoteComment = function (comment, selectedPerson, userID) {
@@ -66,7 +65,7 @@ $scope.downVoteComment = function (comment, selectedPerson, userID) {
             comment.value--;
         }
     } else {
-        loginPrompt();
+        peopleService.loginPrompt();
     }
 }
 ///////////////////////////
@@ -107,7 +106,7 @@ $scope.upVoteOverall = function (selectedPerson, userID) {
             
         }
     } else {
-        loginPrompt();
+        peopleService.loginPrompt();
     }
 }
 $scope.downVoteOverall = function (selectedPerson, userID) {
@@ -128,19 +127,26 @@ $scope.downVoteOverall = function (selectedPerson, userID) {
             selectedPerson.overallVotes.value = 49;
         }
     } else {
-        loginPrompt();
+        peopleService.peopleService.loginPrompt();
     }
 }
 ///////////////////////////
 // SET SELECTED PERSON INTO MODAL
 ///////////////////////////
 $scope.setPerson = function (person) {
-	// console.log("This is the selected person: ", person);
 	$scope.selectedPerson = person;
     $("#modal").modal('show'); // hack (should use angular-strap or anguar-ui)
     console.log($scope.selectedPerson);
-    // $scope.overallVotes = Object.keys($scope.selectedPerson.overallVotes).length;
+    if($rootScope.userID == $scope.selectedPerson.id){
+        console.log("it's a match!")
+        //find bio & make it editable
+        $('#bio').replaceWith('<form id="bioCreate" ng-submit="bioCreate(bioFromView)"><textarea id="bio" maxlength="160" ng-model="bioFromView">'+ $scope.selectedPerson.bio +'</textarea><button type="submit" class="btn btn-xs tagBtns" id="submitBtnMinimal" >submit</button></form>')
+    }
 };
+$scope.bioCreate = function(bioFromView){
+    console.log(bioFromView)
+    console.log('stepped into bio Create')
+}
 $scope.cancel = function(){
     console.log('you clicked to cancel');
    $("#modal").modal('hide');
@@ -175,7 +181,7 @@ $scope.tagCreate = function (tagName, selectedPerson, userID){
         this.reset();
         });
     } else {
-        loginPrompt();
+        peopleService.loginPrompt();
     }
 }
 $scope.upVote = function (tagName, selectedPerson, userID, $filter) {
@@ -196,7 +202,7 @@ $scope.upVote = function (tagName, selectedPerson, userID, $filter) {
             selectedPerson.votes[tagName].value++;
         }
     } else {
-        loginPrompt();
+        peopleService.loginPrompt();
     }
 }
 $scope.downVote = function (tagName, selectedPerson, userID, $filter) {
@@ -217,7 +223,7 @@ $scope.downVote = function (tagName, selectedPerson, userID, $filter) {
             selectedPerson.votes[tagName].value--;
         }
     } else {
-        loginPrompt();
+        peopleService.loginPrompt();
     }
 }
 });

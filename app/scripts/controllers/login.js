@@ -2,20 +2,15 @@
 
 angular.module('100App')
   .controller('LoginCtrl', function ($scope, $rootScope, peopleService) {
-//does login popup
-    $scope.loginPrompt = function(){
-      console.log('you clicked login');
-      $('body').toggleClass('modal-open-up');
-    }
+
 //creates new user
-    $scope.submit = function(){
+    $scope.submit = function(fromMain){
       var dbRef = new Firebase('https://top100.firebaseio.com');
       var auth = new FirebaseSimpleLogin(dbRef, function(error, user) {
         if (error) {
           // an error occurred while attempting login
           console.log(error);
         } else if (user) {
-          console.log('this is the user', user)
           //hides login
           $( "#top_nav_right" ).find('a').hide()
           //checks to see if there is user
@@ -47,7 +42,7 @@ angular.module('100App')
                 console.log(user);
                 dataBase.set({
                  "picture" : 'https://graph.facebook.com/' + user.id + '/picture?width=150&height=150',
-                 "bio": user.firstName +' is pretty much awesome and has lots of friends that do fun things on the weekend.',
+                 "bio":'',
                  "email": user.email,
                  "location": user.location.name,
                  "firstName" : user.first_name,
@@ -67,15 +62,17 @@ angular.module('100App')
                 // GET friend count ~ SELECT friend_count FROM user WHERE uid = user.id;
                 });
               }
-          })
-          console.log('people Object:',peopleObject);
+          });
         }
       });
       auth.login('facebook', {
         rememberMe: true,
         scope: 'email,user_location,user_birthday'
       });
-      //clears login Prompt
-      $scope.loginPrompt();
+      peopleService.loginPrompt();
+      //fixes single modal toggle
+      if (fromMain){
+        peopleService.loginPrompt();
+      }
     };
 });
