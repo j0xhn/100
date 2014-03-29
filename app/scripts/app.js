@@ -1,7 +1,7 @@
 'use strict';
 // ROUTING
 angular.module('100App', [
-	'ui.router', 'ui.bootstrap', 'firebase'
+	'ui.router', 'ui.bootstrap', 'firebase','xeditable'
 ]).config(function ($stateProvider, $urlRouterProvider) {
   // UI ROUTER
   $urlRouterProvider.otherwise('/');
@@ -72,3 +72,8 @@ angular.module('100App', [
   Parse.initialize("HTTbOAqQAWAq7GFFNlPoj6smTetBrzKjtjPCyel5", "VxZKli4B50WuyxZv4AEIfzOU04YOIvS0oo4I8F0N");
   
 });
+// angular.module('100App', [
+//   'ui.router', 'ui.bootstrap', 'firebase','xeditable'
+// ]).run(function(editableOptions) {
+//   editableOptions.theme = 'bs3'; // bootstrap3 theme. Can be also 'bs2', 'default'
+// });

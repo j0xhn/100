@@ -140,7 +140,9 @@ $scope.setPerson = function (person) {
     if($rootScope.userID == $scope.selectedPerson.id){
         console.log("it's a match!")
         //find bio & make it editable
-        $('#bio').replaceWith('<form id="bioCreate" ng-submit="bioCreate(bioFromView)"><textarea id="bio" maxlength="160" ng-model="bioFromView">'+ $scope.selectedPerson.bio +'</textarea><button type="submit" class="btn btn-xs tagBtns" id="submitBtnMinimal" >submit</button></form>')
+    //     $('#bio').replaceWith('<form id="bioCreate" ng-submit="bioCreate(bioFromView)"><textarea id="bio" maxlength="160" ng-model="bioFromView">'+ $scope.selectedPerson.bio +'</textarea><button type="submit" class="btn btn-xs tagBtns" id="submitBtnMinimal" >submit</button></form>')
+    $('#bio').replaceWith( '{{selectedPerson.bio}}' )
+
     }
 };
 $scope.bioCreate = function(bioFromView){
