@@ -1,8 +1,9 @@
 'use strict';
 // ? this code repeats 3 times... why ?
 angular.module('100App')
-  .controller('peopleCtrl', function ($scope, $rootScope, $firebase, $modal, peopleService, $filter) {
+  .controller('peopleCtrl', function ($scope, $rootScope, $firebase, $modal, peopleService, $filter, $stateParams) {
 var dbRef = new Firebase('https://top100.firebaseio.com');
+$scope.param = $stateParams;
 
 $scope.loginPrompt = function(){
     peopleService.loginPrompt();

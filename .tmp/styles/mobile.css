@@ -139,6 +139,42 @@ table {
   border-spacing: 0;
 }
 
+/*Hover in Modal to Edit Text, Makes Changes to native XEDITABLE.CSS*/
+
+.editable-buttons {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+}
+
+#editField {
+  border-bottom: none;
+  color: #428bca;
+  position: relative;
+  margin: 0 0 20px 0;
+}
+
+#editField h2 {
+  border-top: 1px solid grey;
+  color: #535B63;
+  position: relative;
+  padding: 18px 0 0 5px;
+  cursor: default;
+  font-size: 14px;
+  margin: 0;
+}
+
+#editField p {
+  border-bottom: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#editField textarea,
+#editField input {
+  padding: 5px;
+}
+
 #bio {
   width: 100%;
   height: 50px;
@@ -633,6 +669,7 @@ input:focus {
   width: 100%;
   height: 100%;
   transition: all .3s;
+  box-shadow: 4px 0px 10px 1px #aaaaaa;
   /*  padding: 30px 2px 0 2px;*/
 }
 
@@ -644,15 +681,36 @@ input:focus {
 }
 
 #right {
-  width: 123px;
+  width: 300px;
   height: 100%;
   position: fixed;
-  margin-left: 28px;
-  right: -123;
-  top: -20;
+  margin: 23px 0px 0px 28px;
+  right: -300px;
+  padding: 0px 10px 10px 13px;
   z-index: 1;
   text-align: left;
   transition: all .3s;
+  cursor: default;
+}
+
+#right h1 {
+  font-weight: 900;
+  padding: 10px 0px 19px 5px;
+}
+
+#right textarea,
+#right textarea:focus,
+#right input,
+#right input:focus,
+#right form,
+#right form:focus,
+#right p:hover {
+  outline: none;
+  border: none;
+  background-color: lightgrey;
+  border-radius: 5px;
+  width: 100%;
+  color: black;
 }
 
 #center_left {
@@ -707,8 +765,6 @@ input:focus {
 }
 
 #profile_circle img {
-  /* background-color: black; */
-  /*background-image: url('../images/profile_pic.jpg');*/
   background-size: contain;
   display: block;
   position: relative;
@@ -716,6 +772,10 @@ input:focus {
   width: 100px;
   border-radius: 100%;
   margin: 0 auto;
+}
+
+#profile_circle_profile {
+  height: 0px;
 }
 
 #profile_circle_profile img {
@@ -729,6 +789,7 @@ input:focus {
   margin: 0 auto;
   top: -16px;
   right: 9px;
+  cursor: pointer;
 }
 
 .clearfix {
@@ -768,11 +829,6 @@ span {
   -webkit-transition: all .2s ease-in-out;
 }
 
-.top_nav span:hover {
-  -webkit-transform: scale(1.1);
-  color: white;
-}
-
 h1 {
   font-weight: 500;
   font-size: 2em;
@@ -798,7 +854,7 @@ h1 {
 
 h2 {
   font-style: bold;
-  font-size: 1em;
+  font-size: 2em;
   color: black;
   font-style: bold;
   margin-bottom: 7px;
@@ -925,8 +981,8 @@ ul {
 
 .sidebar-open-right #right,
 .sidebar-open-right #center {
-  transform: translateX(-123px);
-  -webkit-transform: translateX(-123px);
+  transform: translateX(-300px);
+  -webkit-transform: translateX(-300px);
   transition: all .3s;
 }
 

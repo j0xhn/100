@@ -34,6 +34,15 @@
       <span><img src="{{ userPicture }}" id='sidebar-toggle-right'></span> 
     </div>
     <div class='sidebar-open-right' id='right'>
+      <h1>Edit Profile</h1>
+      <div id='editField'>
+        <h2>Bio</h2>
+        <p editable-textarea="people[userID].bio" e-rows='3' e-cols='60' e-maxlength="140">{{ people[userID].bio }}</p>
+      </div>
+      <div id='editField'>
+        <h2>Website</h2>
+        <p editable-text="people[userID].link">{{ people[userID].link }}</p>
+      </div>
     </div>
   </div>
 </div>
@@ -52,18 +61,17 @@
 </div>
 <!-- PEOPLE -->
   <ul id = 'makeCenter'>
-        <!--  -->
-     <li class="person" ng-click="setPerson(person)" ng-repeat="person in people | orderByPriority | orderBy:'overallVotes.value':true| orderBy:myOrder:myOrderReverse | filter: sortField : true | filter: search || property:'tags':search:undefined:true ">
-       <img ng-src="{{person.picture}}" ng-mouseover='showOverall(person, $event)'> 
-        <div class='textBackground'>
-         <!--  <div class='addOns'>
-             <a ng-click='overallUpVote(person)'><i class="fa fa-arrow-up" id='left_icon'></i></a>
-             <a ng-click='overallDownVote(person)'><i class="fa fa-arrow-down" id='right_icon'></i></a>
-          </div> -->
-        </div>
-        <p>{{person.firstName}} {{person.lastName}}</p>
-        <div class='showOverall'>{{person.overallVotes.value}}</div>
-     </li>
+   <li class="person" ng-click="setPerson(person)" ng-repeat="person in people | orderByPriority | orderBy:'overallVotes.value':true| orderBy:myOrder:myOrderReverse | filter: sortField : true | filter: search || property:'tags':search:undefined:true ">
+     <img ng-src="{{person.picture}}" ng-mouseover='showOverall(person, $event)'> 
+      <div class='textBackground'>
+       <!--  <div class='addOns'>
+           <a ng-click='overallUpVote(person)'><i class="fa fa-arrow-up" id='left_icon'></i></a>
+           <a ng-click='overallDownVote(person)'><i class="fa fa-arrow-down" id='right_icon'></i></a>
+        </div> -->
+      </div>
+      <p>{{person.firstName}} {{person.lastName}}</p>
+      <div class='showOverall'>{{person.overallVotes.value}}</div>
+   </li>
   </ul>
 
   <div class='modal fade' id="modal">
@@ -88,11 +96,10 @@
               <img src="{{selectedPerson.picture}}">
             </div>
             <h1> {{selectedPerson.fullName}}</h1>
-            <p id='bio'>{{ selectedPerson.bio }}</p>
-            {{bioFromView}}
+              <p id='bio'>{{ selectedPerson.bio }}</p>
+<!-- OVERALL VOTE -->
             <div class='outerRank'>
               <ul>
-<!-- OVERALL VOTE -->
                 <li id='tag'>
                   <div class='tagName' id='overallBar'>
                     <progressbar class="progress-striped active" value=" selectedPerson.overallVotes.value " type="info"><i>Overall</i></progressbar>

@@ -18,7 +18,18 @@ angular.module('100App', [
         //   }
         // }
       };
-
+  var test = {
+        templateUrl: 'views/hello.html',
+        controller: 'peopleCtrl',
+        // resolve: {
+        //   user: function (userService) {
+        //     return userService.get();
+        //   },
+        //   loggedInUser: function (userService) {
+        //     return userService.getLoggedInUser();
+        //   }
+        // }
+      };
   var modal = {
         templateUrl: 'views/modal.html',
         // controller: 'NavCtrl',
@@ -65,15 +76,18 @@ angular.module('100App', [
             nav: nav,
             body: body,
             footer: footer,
-          }
-  });
-
-// PARSE
-  Parse.initialize("HTTbOAqQAWAq7GFFNlPoj6smTetBrzKjtjPCyel5", "VxZKli4B50WuyxZv4AEIfzOU04YOIvS0oo4I8F0N");
-  
+          }})
+        .state('user', {
+        url: "/{userID}",
+          views: {
+            nav: nav,
+            body: body,
+            footer: footer,
+          }})
+  ;
 });
-// angular.module('100App', [
-//   'ui.router', 'ui.bootstrap', 'firebase','xeditable'
-// ]).run(function(editableOptions) {
+
+// angular.module('100App', [ 'xeditable'])
+// .run(function(editableOptions) {
 //   editableOptions.theme = 'bs3'; // bootstrap3 theme. Can be also 'bs2', 'default'
 // });
