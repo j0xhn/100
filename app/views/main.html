@@ -50,12 +50,11 @@
         <div class='tagBox'>
           <p ng-repeat="tag in people[userID].votes | object2Array | orderBy:'value':true">{{ tag.tagName }},&nbsp; </p>
 <!-- INPUT TAG -->
-          <form id='tagCreateForm' ng-submit="tagCreate(tagFromView, selectedPerson, userID)">
-            <input class='tagName' type='text' placeholder='Create new tag' id='tagFromView' ng-model="tagFromView">
+          <form ng-submit="tagCreate(tagFromView, selectedPerson, userID)" id='tagCreateForm'>
+            <input class='tagName' type='text' name='tagFromView' placeholder='Create new tag' ng-model="tagFromView">
             <button type='submit'class='btn btn-xs tagBtns' id='submitBtn' >create</button>
           </form>
         </div>
-
     </div>
   </div>
 </div>
@@ -74,7 +73,7 @@
 </div>
 <!-- PEOPLE -->
   <ul id = 'makeCenter'>
-   <li class="person" ng-animate="'slide'" ng-click="setPerson(person)" ng-repeat="person in people | orderByPriority | orderBy:'overallVotes.value':true| orderBy:myOrder:myOrderReverse | filter: sortField : true | filter: search || property:'tags':search:undefined:true ">
+   <li class="person" ng-click="setPerson(person, 0)" ng-repeat="person in people | orderByPriority | orderBy:'overallVotes.value':true| orderBy:myOrder:myOrderReverse | filter: sortField : true | filter: search || property:'tags':search:undefined:true | limitTo: 100">
      <img ng-src="{{person.picture}}" ng-mouseover='showOverall(person, $event)'> 
       <div class='textBackground'>
        <!--  <div class='addOns'>
@@ -83,7 +82,15 @@
         </div> -->
       </div>
       <p>{{person.firstName}} {{person.lastName}}</p>
-      <div class='showOverall'>{{person.overallVotes.value}}</div>
+        <div class='showOverall scoreBubble'>
+          {{person.overallVotes.value}}
+        </div>
+<!--         <div class='showOverall upBubble'>
+          <a ng-click='upVoteOverall(selectedPerson, userID, 1)'><span class="glyphicon glyphicon-chevron-up"></span></a>
+        </div> -->
+        <div class='showOverall linkBubble'>
+          <a href="{{person.link}}" target='_blank'><i class="fa fa-bolt"></i></a>
+        </div>
    </li>
   </ul>
 
@@ -140,9 +147,9 @@
               <div class='tagBox'>
                 <span>Other Tags&nbsp;</span><i>(click to vote up)</i>:&nbsp;<p ng-repeat="tag in selectedPerson.votes | object2Array | orderBy:'value':true" ng-click='upVote(tag.tagName, selectedPerson, userID)'>{{ tag.tagName }},&nbsp;</p>
 <!-- INPUT TAG -->
-                <form id='tagCreateForm' ng-submit="tagCreate(tagFromView, selectedPerson, userID)">
-                  <input class='tagName' type='text' placeholder='Submit Tag' id='tagFromView' ng-model="tagFromView">
-                  <button type='submit'class='btn btn-xs tagBtns' id='submitBtnMinimal' >submit</button>
+                <form ng-submit="tagCreate(tagFromView, selectedPerson, userID)" id='tagCreateForm'>
+                  <input class='tagName' type='text' name='tagFromView' placeholder='Create new tag' ng-model="tagFromView">
+                  <button type='submit'class='btn btn-xs tagBtns' id='submitBtnMinimal' >create</button>
                 </form>
               </div>
             </div>
@@ -185,6 +192,7 @@
   <div class='signup'> 
     <img ng-controller='LoginCtrl' ng-click="submit()" src='../images/login_1.png'/>
     <p>and nominate someone for provo's top 100</p>
+    {{param}} test
   </div>
   <script src='/scripts/main.js'></script>
 

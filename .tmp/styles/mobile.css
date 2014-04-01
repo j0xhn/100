@@ -175,6 +175,10 @@ table {
   padding: 5px;
 }
 
+span:focus {
+  outline: none;
+}
+
 #bio {
   width: 100%;
   border: none;
@@ -813,8 +817,8 @@ input:focus {
   background-size: contain;
   display: block;
   position: relative;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   border-radius: 100%;
   margin: 0 auto;
 }
@@ -1118,16 +1122,50 @@ li i {
 }
 
 .showOverall {
-  font-size: 30px;
-  color: black;
-  opacity: .5;
+  font-size: 19px;
+  width: 35px;
+  height: 35px;
+  color: rgb(247, 242, 242);
+  border-radius: 50%;
+  opacity: .9;
   line-height: 1;
-  border: thin solid lightgrey;
-  padding: 24px;
-  font-weight: 100;
-  background-color: lightgrey;
+  font-weight: 900;
   display: none;
-  margin-top: -28px;
+  padding-top: 9px;
+  text-align: center;
+  transition: all .3s ease-in-out;
+  text-shadow: 1px 1.5px 2px rgb(95, 86, 86);
+  cursor: pointer;
+}
+
+.showOverall:hover {
+  -webkit-transform: scale(1.1);
+}
+
+.upBubble {
+  margin: -48px 0 0 30px;
+  height: 40px;
+  width: 40px;
+  float: center;
+  background-color: #3CB5DB;
+  color: white;
+  padding-top: 7px;
+}
+
+.upBubble span {
+  color: white;
+}
+
+.linkBubble {
+  margin: -90px -10px 0 0;
+  float: right;
+  background-color: rgb(94, 225, 141);
+}
+
+.scoreBubble {
+  margin: -89px 0px 0 -7px;
+  float: left;
+  background-color: rgb(235, 86, 86);
 }
 
 .textBackground {
@@ -1149,27 +1187,11 @@ figure {
 
 .person {
   display: inline-table;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin: 0 3px 3px 0;
   background-color: lightblue;
-  transition: all .3s ease-in-out;
-}
-
-.person.ng-enter {
-  opacity: 0;
-}
-
-.person.ng-enter-active {
-  opacity: 1;
-}
-
-.person.ng-leave {
-  opacity: 1;
-}
-
-.person.ng-leave-active {
-  opacity: 0;
+  transition: all .3s;
 }
 
 .person p {
@@ -1180,13 +1202,41 @@ figure {
   color: #FCFCFF;
   width: 100px;
   margin: 0 auto;
+  font-size: 12px;
 }
 
 .person:hover {
   background-color: rgb(178, 178, 224);
-  transform: scale(1.1);
-  transition: all .3s;
-  -webkit-transform: scale(1.1);
+  -webkit-animation: jds-pop .25s;
+  animation: jds-pop .25s;
+}
+
+@-webkit-keyframes jds-pop {
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  35% {
+    -webkit-transform: scale(1.05);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes jds-pop {
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  35% {
+    -webkit-transform: scale(1.05);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+  }
 }
 
 .grid .item-w2 {

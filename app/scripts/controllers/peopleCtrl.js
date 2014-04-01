@@ -2,78 +2,12 @@
 // ? this code repeats 3 times... why ?
 angular.module('100App')
   .controller('peopleCtrl', function ($scope, $rootScope, $firebase, $modal, peopleService, $filter, $stateParams) {
-var dbRef = new Firebase('https://top100.firebaseio.com');
-$scope.param = $stateParams;
-
-$scope.loginPrompt = function(){
-    peopleService.loginPrompt();
-}
-$scope.setFilter = function(value){
-    console.log(value);
-    $scope.sortField = value;
-}
-///////////////////////////
-// COMMENTS
-///////////////////////////
-$scope.commentCreate = function (threadFromView, selectedPerson, userID){
-    if (userID) {
-        var personRef = dbRef.child('/'+locationName+'/'+selectedPerson.id+'/comments/');
-        console.log("this is the personref", personRef);
-        personRef.push({'user': userID,'comment': threadFromView,'value':1});
-        $( '#commentCreateForm' ).each(function(){
-        this.reset();
-        });
-    } else {
-        peopleService.loginPrompt();
-    }
-}
-$scope.upVoteComment = function (comment, selectedPerson, userID) {
-    console.log('You clicked for up vote comment');
-    if (userID){
-        if(comment[userID]){
-            // tell them they can't vote
-            if ( comment[userID].type === 1){
-                alert('you already up Voted this user');
-            } else {
-                comment[userID].type=1;
-                comment.value++;
-            }
-        } else {
-            //create the userId for this tagName
-            selectedPerson.lastVote = new Date();
-            comment[userID] = {type:1};
-            comment.value++;
-        }
-    } else {
-        peopleService.loginPrompt();
-    }
-}
-$scope.downVoteComment = function (comment, selectedPerson, userID) {
-    console.log('You clicked for down Vote');
-    if (userID){
-        if(comment[userID]){
-            // tell them they can't vote
-            if ( comment[userID].type === -1){
-                alert('you already down Voted this user');
-            } else {
-                comment[userID].type=-1;
-                comment.value--;
-            }
-        } else {
-            //create the userId for this tagName
-            selectedPerson.lastVote = new Date();
-            comment[userID] = {type:-1};
-            comment.value--;
-        }
-    } else {
-        peopleService.loginPrompt();
-    }
-}
 ///////////////////////////
 // MAKE SCOPE VARIABLES
 ///////////////////////////
 //people
 var people = peopleService.getPeople();
+var isSelected = 0;
 people.$bind($scope, 'people');
 $scope.$watch('people', function(people) {
     // DIRTY HACK:
@@ -84,16 +18,93 @@ $scope.$watch('people', function(people) {
 //location
 var locationName = peopleService.getLocationName();
 $scope.locationName = locationName;
+var dbRef = new Firebase('https://top100.firebaseio.com');
+//param
+$scope.param = $stateParams;
+console.log($scope.param);
+//login prompt
+$scope.loginPrompt = function(){
+    peopleService.loginPrompt();
+}
+//setting filter with an object
+$scope.setFilter = function(value){
+    console.log(value);
+    $scope.sortField = value;
+}
+///////////////////////////
+// COMMENTS
+///////////////////////////
+$scope.commentCreate = function (threadFromView, selectedPerson, userID){
+    if (userID) {
+        var personRef = dbRef.child('/'+locationName+'/'+selectedPerson.id+'/comments/');
+        personRef.push({'user': userID,'comment': threadFromView,'value':1});
+        $( '#commentCreateForm' ).each(function(){
+        this.reset();
+        });
+        //rewards user for engagment 
+        people[userID].overallVotes.value++;
+    } else {
+        peopleService.loginPrompt();
+    }
+}
+$scope.upVoteComment = function (comment, selectedPerson, userID) {
+    console.log('You clicked for up vote comment');
+    if (userID){
+        if(comment[userID]){
+            // tell them they can't vote
+            if ( comment[userID].type === 1){
+                alert('you already voted on this');
+            } else {
+                comment[userID].type=1;
+                comment.value++;
+            }
+        } else {
+            //create the userId for this tagName
+            selectedPerson.lastVote = new Date();
+            comment[userID] = {type:1};
+            comment.value++;
+        }
+        //rewards user for engagment 
+        people[userID].overallVotes.value++;
+    } else {
+        peopleService.loginPrompt();
+    }
+}
+$scope.downVoteComment = function (comment, selectedPerson, userID) {
+    console.log('You clicked for down Vote');
+    if (userID){
+        if(comment[userID]){
+            // tell them they can't vote
+            if ( comment[userID].type === -1){
+                alert('you already voted on this');
+            } else {
+                comment[userID].type=-1;
+                comment.value--;
+            }
+        } else {
+            //create the userId for this tagName
+            selectedPerson.lastVote = new Date();
+            comment[userID] = {type:-1};
+            comment.value--;
+        }
+        //rewards user for engagment 
+        people[userID].overallVotes.value++;
+    } else {
+        peopleService.loginPrompt();
+    }
+}
 ///////////////////////////
 // CHANGE OVERALL SCORE ON CLICK
 ///////////////////////////
-$scope.upVoteOverall = function (selectedPerson, userID) {
-    console.log('You clicked for up Vote');
+$scope.upVoteOverall = function (selectedPerson, userID, fromMain) {
+    console.log('fromMain', fromMain);
+    //sets that it was up vote from Main View
+    isSelected = fromMain;
     if (userID){
         if(selectedPerson.overallVotes[userID]){
             // tell them they can't vote
             if ( selectedPerson.overallVotes[userID].type === 1){
-                alert('you already up Voted this user');
+                alert('you already voted on this');
             } else {
                 selectedPerson.overallVotes[userID].type=1;
                 selectedPerson.overallVotes.value++;
@@ -103,19 +114,20 @@ $scope.upVoteOverall = function (selectedPerson, userID) {
             selectedPerson.lastVote = new Date();
             selectedPerson.overallVotes[userID] = {type:1};
             selectedPerson.overallVotes.value++;
-            
         }
+        //rewards user for engagment 
+        people[userID].overallVotes.value++;
     } else {
         peopleService.loginPrompt();
     }
 }
 $scope.downVoteOverall = function (selectedPerson, userID) {
-    console.log('You clicked for down Vote');
+    console.log('you already voted on this');
     if (userID){
         if(selectedPerson.overallVotes[userID]){
             // tell them they can't vote
             if ( selectedPerson.overallVotes[userID].type === -1){
-                alert('you already down Voted this user');
+                alert('you already voted on this');
             } else {
                 selectedPerson.overallVotes[userID].type=-1;
                 selectedPerson.overallVotes.value--;
@@ -126,23 +138,27 @@ $scope.downVoteOverall = function (selectedPerson, userID) {
             selectedPerson.overallVotes[userID] = {type:-1};
             selectedPerson.overallVotes.value = 49;
         }
+        //rewards user for engagment 
+        people[userID].overallVotes.value++;
     } else {
-        peopleService.peopleService.loginPrompt();
+        peopleService.loginPrompt();
     }
 }
 ///////////////////////////
 // SET SELECTED PERSON INTO MODAL
 ///////////////////////////
-$scope.setPerson = function (person) {
+$scope.setPerson = function (person, fromModal) {
+    isSelected = fromModal;
 	$scope.selectedPerson = person;
-    $("#modal").modal('show'); // hack (should use angular-strap or anguar-ui)
+    if(! isSelected){
+        $("#modal").modal('show'); // hack (should use angular-strap or anguar-ui)
+    }
     console.log($scope.selectedPerson);
     if($rootScope.userID == $scope.selectedPerson.id){
         console.log("it's a match!")
         //find bio & make it editable
-    //     $('#bio').replaceWith('<form id="bioCreate" ng-submit="bioCreate(bioFromView)"><textarea id="bio" maxlength="160" ng-model="bioFromView">'+ $scope.selectedPerson.bio +'</textarea><button type="submit" class="btn btn-xs tagBtns" id="submitBtnMinimal" >submit</button></form>')
-    $('#bio').replaceWith( '{{selectedPerson.bio}}' )
-
+         // $('#bio').replaceWith('<form id="bioCreate" ng-submit="bioCreate(bioFromView)"><textarea id="bio" maxlength="160" ng-model="bioFromView">'+ $scope.selectedPerson.bio +'</textarea><button type="submit" class="btn btn-xs tagBtns" id="submitBtnMinimal" >submit</button></form>')
+    // $('#bio').replaceWith( '{{selectedPerson.bio}}' )
     }
 };
 $scope.bioCreate = function(bioFromView){
@@ -168,7 +184,7 @@ $scope.tagCreate = function (tagName, selectedPerson, userID){
         var tagName = angular.lowercase(tagName);
         if (selectedPerson.votes[tagName]){
             if ( selectedPerson.votes[tagName][userID].type === 1){
-                alert('you already up Voted this user');
+                alert('you already voted on this');
             } else {
             //create the userId for this tagName
             selectedPerson.lastVote = new Date();
@@ -182,6 +198,8 @@ $scope.tagCreate = function (tagName, selectedPerson, userID){
         $( '#tagCreateForm' ).each(function(){
         this.reset();
         });
+        //rewards user for engagment 
+        people[userID].overallVotes.value++;
     } else {
         peopleService.loginPrompt();
     }
@@ -192,7 +210,7 @@ $scope.upVote = function (tagName, selectedPerson, userID, $filter) {
         if(selectedPerson.votes[tagName][userID]){
             // tell them they can't vote
             if ( selectedPerson.votes[tagName][userID].type === 1){
-                alert('you already up Voted this user');
+                alert('you already voted on this');
             } else {
                 selectedPerson.votes[tagName][userID].type=1;
                 selectedPerson.votes[tagName].value++;
@@ -203,6 +221,8 @@ $scope.upVote = function (tagName, selectedPerson, userID, $filter) {
             selectedPerson.votes[tagName][userID] = {type:1};
             selectedPerson.votes[tagName].value++;
         }
+        //rewards user for engagment 
+        people[userID].overallVotes.value++;
     } else {
         peopleService.loginPrompt();
     }
@@ -213,7 +233,7 @@ $scope.downVote = function (tagName, selectedPerson, userID, $filter) {
         if(selectedPerson.votes[tagName][userID]){
             // tell them they can't vote
             if ( selectedPerson.votes[tagName][userID].type === -1){
-                alert('you already down Voted this user');
+                alert('you already voted on this');
             } else {
                 selectedPerson.votes[tagName][userID].type=-1;
                 selectedPerson.votes[tagName].value--;
@@ -224,6 +244,8 @@ $scope.downVote = function (tagName, selectedPerson, userID, $filter) {
             selectedPerson.votes[tagName][userID] = {type:-1};
             selectedPerson.votes[tagName].value--;
         }
+        //rewards user for engagment 
+        people[userID].overallVotes.value++;
     } else {
         peopleService.loginPrompt();
     }

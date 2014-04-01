@@ -78,7 +78,7 @@ angular.module('100App', [
             footer: footer,
           }})
         .state('user', {
-        url: "/{userID}",
+        url: "/{param:2}",
           views: {
             nav: nav,
             body: body,

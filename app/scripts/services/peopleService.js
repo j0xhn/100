@@ -23,7 +23,7 @@ return {
 
     loginPrompt: function(){
       console.log('you clicked login');
-      $('body').toggleClass('modal-open-up');
+        $('body').toggleClass('modal-open-up');
     },
 };
 return deferred.promise;
