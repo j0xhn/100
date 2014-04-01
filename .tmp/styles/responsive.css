@@ -34,10 +34,14 @@ Things to remember:
 
   .banner h1 {
     font-size: 5em;
+    display: inline-block;
+    margin-top: -35px;
   }
 
   .banner h2 {
     font-size: 2em;
+    font-weight: 300;
+    margin: 0;
   }
 
   #center_right {
@@ -50,6 +54,12 @@ Things to remember:
 }
 
 @media screen and (min-width: 768px) {
+  .banner h1 {
+    font-size: 5em;
+    display: inline-block;
+    margin: 0;
+  }
+
   .filterButton {
     display: inline-block;
   }

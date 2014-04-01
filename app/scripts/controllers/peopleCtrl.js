@@ -100,7 +100,6 @@ $scope.upVoteOverall = function (selectedPerson, userID) {
             }
         } else {
             //create the userId for this tagName
-            selectedPerson.overallVotes = {value:50};
             selectedPerson.lastVote = new Date();
             selectedPerson.overallVotes[userID] = {type:1};
             selectedPerson.overallVotes.value++;

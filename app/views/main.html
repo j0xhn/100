@@ -5,7 +5,7 @@
     <img src="../images/Logo_Light_35.png" id="sidebar-toggle-left"/>
     <div class='sidebar-open-left' id='left'>
       <ul>
-        <input type='button' value='O V E R A L L' class="sideFilterButton" ng-click='myOrder="overall";myOrderReverse = true; sortField=""'></input>
+<!--         <input type='button' value='O V E R A L L' class="sideFilterButton" ng-click='myOrder="overall";myOrderReverse = true; sortField=""'></input> -->
         <input type='button' value='G U Y S' class="sideFilterButton" ng-click='setFilter({gender: "male"})'></input>
         <input type='button' value='G I R L S' class="sideFilterButton" ng-click='setFilter({gender: "female"})'></input>
 <!--         <input type='button' value="R E C E N T" class="sideFilterButton" ng-click='myOrder = "lastLogin"; myOrderReverse = true;'></input> -->
@@ -19,7 +19,7 @@
   </div>
 <!-- TOP SORT BUTTONS -->
   <div class='sortButtons'>
-    <input type='button' value='O V E R A L L' class="filterButton" ng-click='myOrder="overallVotes.value";myOrderReverse = true; sortField=""'></input>
+<!--     <input type='button' value='O V E R A L L' class="filterButton" ng-click=' sortField= "''"'></input> -->
 <!--     <input type='button' value="T R E N D I N G" class="filterButton" ng-click='myOrder = "lastLogin"; myOrderReverse = true;'></input> -->
     <input type='button' value='G U Y S' class="filterButton" ng-click='setFilter({gender: "male"})'></input>
      <input type='button' value='G I R L S' class="filterButton" ng-click='setFilter({gender: "female"})'></input>
@@ -31,7 +31,8 @@
   <div id="top_nav_right">
     <a ng-controller='LoginCtrl' ng-click="submit($event)" id='loginBtn'>L O G I N</a><br>
     <div id="profile_circle_profile">
-      <span><img src="{{ userPicture }}" id='sidebar-toggle-right'></span> 
+      <!-- makes selectedPerson same as user -->
+      <span><img ng-click="selectedPerson = people[userID]" src="{{ userPicture }}" id='sidebar-toggle-right'></span> 
     </div>
     <div class='sidebar-open-right' id='right'>
       <h1>Edit Profile</h1>
@@ -43,6 +44,18 @@
         <h2>Website</h2>
         <p editable-text="people[userID].link">{{ people[userID].link }}</p>
       </div>
+      <div id='editField'>
+        <h2>Searchable Tags</h2>
+      </div>
+        <div class='tagBox'>
+          <p ng-repeat="tag in people[userID].votes | object2Array | orderBy:'value':true">{{ tag.tagName }},&nbsp; </p>
+<!-- INPUT TAG -->
+          <form id='tagCreateForm' ng-submit="tagCreate(tagFromView, selectedPerson, userID)">
+            <input class='tagName' type='text' placeholder='Create new tag' id='tagFromView' ng-model="tagFromView">
+            <button type='submit'class='btn btn-xs tagBtns' id='submitBtn' >create</button>
+          </form>
+        </div>
+
     </div>
   </div>
 </div>
@@ -61,7 +74,7 @@
 </div>
 <!-- PEOPLE -->
   <ul id = 'makeCenter'>
-   <li class="person" ng-click="setPerson(person)" ng-repeat="person in people | orderByPriority | orderBy:'overallVotes.value':true| orderBy:myOrder:myOrderReverse | filter: sortField : true | filter: search || property:'tags':search:undefined:true ">
+   <li class="person" ng-animate="'slide'" ng-click="setPerson(person)" ng-repeat="person in people | orderByPriority | orderBy:'overallVotes.value':true| orderBy:myOrder:myOrderReverse | filter: sortField : true | filter: search || property:'tags':search:undefined:true ">
      <img ng-src="{{person.picture}}" ng-mouseover='showOverall(person, $event)'> 
       <div class='textBackground'>
        <!--  <div class='addOns'>
@@ -161,9 +174,9 @@
             </div>
           </div><!--./#center_right -->
         </div><!-- /.entry#profile -->
-<!-- MODAL-FOOTER DOESN'T DISPLAY ANYTHING BUT IS REQUIRED ??? -->
+<!-- MODAL-FOOTER DOESN'T DISPLAY ANYTHING BUT IS REQUIRED ??? 
         <div class="modal-footer">
-        </div>
+        </div> -->
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

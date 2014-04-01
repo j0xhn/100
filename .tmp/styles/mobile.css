@@ -144,7 +144,7 @@ table {
 .editable-buttons {
   position: absolute;
   right: 0;
-  bottom: -20px;
+  top: 14px;
 }
 
 #editField {
@@ -177,7 +177,6 @@ table {
 
 #bio {
   width: 100%;
-  height: 50px;
   border: none;
   text-align: center;
 }
@@ -192,12 +191,12 @@ table {
 }
 
 .banner {
-  background-image: none;
+  background-image: url('../images/bannerBackground.png');
   background-position: 50% 49%;
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
-  height: 280px;
+  height: 220px;
   text-align: center;
   padding: 89px 20px;
   position: relative;
@@ -205,15 +204,17 @@ table {
 }
 
 .banner h1 {
+  display: none;
   font-size: 3em;
   margin-bottom: 20px;
   font-weight: 900;
+  display: none;
 }
 
 .banner h2 {
-  font-size: 1.5em;
-  margin-bottom: 20px;
-  font-weight: 300;
+  font-size: 2em;
+  margin: -30px 0 0 0;
+  font-weight: 900;
   line-height: 36px;
 }
 
@@ -244,6 +245,16 @@ table {
   text-decoration: underline;
 }
 
+#right .tagBox p {
+  color: rgb(55, 52, 52);
+}
+
+#right .tagBox p:hover {
+  color: rgb(55, 52, 52);
+  text-decoration: none;
+  cursor: text;
+}
+
 .tagBox span {
   font-weight: 700;
   font-size: 1.2em;
@@ -257,7 +268,6 @@ table {
 
 .tagBox form {
   margin: 20px 0;
-  padding: 1px;
 }
 
 #profile input {
@@ -606,6 +616,7 @@ input:focus {
   padding: 5px 9px 7px 7px;
   font-size: 18px;
   line-height: normal;
+  border: none;
 }
 
 .banner input:focus {
@@ -693,9 +704,42 @@ input:focus {
   cursor: default;
 }
 
+#right #submitBtn {
+  right: 10px;
+  bottom: -5px;
+}
+
 #right h1 {
   font-weight: 900;
   padding: 10px 0px 19px 5px;
+}
+
+#right .tagBox {
+  padding: 5px;
+  margin-top: -17px;
+  color: #428bca;
+  font-size: 11px;
+}
+
+#right .tagBox span {
+  color: #428bca;
+  font-weight: 300;
+  font-size: 11px;
+}
+
+#right .tagBox input {
+  line-height: normal;
+  padding: 5px;
+  margin-top: -10px;
+}
+
+#right button {
+  background: #73C9E3;
+  color: white;
+  text-shadow: 1px 1.5px 2px rgb(95, 86, 86);
+  border-radius: 3px;
+  border: none;
+  padding: 3px 10px;
 }
 
 #right textarea,
@@ -704,7 +748,7 @@ input:focus {
 #right input:focus,
 #right form,
 #right form:focus,
-#right p:hover {
+#editField p:hover {
   outline: none;
   border: none;
   background-color: lightgrey;
@@ -718,6 +762,7 @@ input:focus {
   text-align: center;
   position: relative;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .outerRank {
@@ -1108,7 +1153,23 @@ figure {
   height: 100px;
   margin: 0 3px 3px 0;
   background-color: lightblue;
-  transition: all .3s;
+  transition: all .3s ease-in-out;
+}
+
+.person.ng-enter {
+  opacity: 0;
+}
+
+.person.ng-enter-active {
+  opacity: 1;
+}
+
+.person.ng-leave {
+  opacity: 1;
+}
+
+.person.ng-leave-active {
+  opacity: 0;
 }
 
 .person p {
