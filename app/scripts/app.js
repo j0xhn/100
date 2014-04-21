@@ -1,7 +1,7 @@
 'use strict';
 // ROUTING
 angular.module('100App', [
-	'ui.router', 'ui.bootstrap', 'firebase','xeditable','ngAnimate'
+	'ui.router', 'ui.bootstrap', 'firebase','xeditable'
 ]).config(function ($stateProvider, $urlRouterProvider) {
   // UI ROUTER
   $urlRouterProvider.otherwise('/');

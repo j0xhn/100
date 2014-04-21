@@ -1209,6 +1209,7 @@ figure {
   background-color: rgb(178, 178, 224);
   -webkit-animation: jds-pop .25s;
   animation: jds-pop .25s;
+  /*  -webkit-transform: scale(1.03); */
 }
 
 @-webkit-keyframes jds-pop {
