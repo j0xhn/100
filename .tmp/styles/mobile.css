@@ -213,6 +213,7 @@ span:focus {
   margin-bottom: 20px;
   font-weight: 900;
   display: none;
+  max-width: 575px;
 }
 
 .banner h2 {
@@ -231,8 +232,6 @@ span:focus {
   opacity: 1;
   outline: none;
 }
-
-
 
 .tagBox {
   text-align: left;
@@ -1256,6 +1255,7 @@ figure {
 
 .isotope .isotope-item {
   transition-duration: 0.8s;
+  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
 }
 

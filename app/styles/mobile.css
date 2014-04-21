@@ -96,6 +96,7 @@ span:focus{
   margin-bottom: 20px;
   font-weight: 900;
   display: none;
+  max-width: 575px;
 }
 .banner h2{
   font-size: 2em;
