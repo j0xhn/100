@@ -295,7 +295,7 @@ ul input:nth-child(even){
 .sortButtons{
 position: absolute;
 top: 0;
-left: 150px;
+left: 190px;
 }
 .filterButton{
   padding: 12px 20px;
@@ -981,7 +981,9 @@ figure {
 
 .person:hover {
   background-color: rgb(178, 178, 224);
-  animation: jds-pop .25s;
+  -webkit-transform: scale(1.03);
+ /* animation: jds-pop .25s;*/
+
 }
 @keyframes jds-pop {
 

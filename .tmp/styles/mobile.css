@@ -233,6 +233,8 @@ span:focus {
   outline: none;
 }
 
+
+
 .tagBox {
   text-align: left;
   margin: 0 0 20px 0;
@@ -448,7 +450,7 @@ ul input:nth-child(even) {
 .sortButtons {
   position: absolute;
   top: 0;
-  left: 150px;
+  left: 190px;
 }
 
 .filterButton {
@@ -1206,8 +1208,8 @@ figure {
 
 .person:hover {
   background-color: rgb(178, 178, 224);
-  -webkit-animation: jds-pop .25s;
-  animation: jds-pop .25s;
+  -webkit-transform: scale(1.03);
+  /* animation: jds-pop .25s;*/
 }
 
 @-webkit-keyframes jds-pop {
@@ -1255,7 +1257,6 @@ figure {
 
 .isotope .isotope-item {
   transition-duration: 0.8s;
-  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
 }
 
