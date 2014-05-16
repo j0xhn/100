@@ -37,12 +37,13 @@ angular.module('100App')
               $rootScope.$apply();
             } else {
                 console.log("user does not exist yet")
-                var dataBase = new Firebase ("https://top100.firebaseio.com/provo/" + user.id);
+                var dataBase = new Firebase ("https://top100.firebaseio.com/realestate/" + user.id);
                 console.log('you did not have a profile, so we will make one for:');
                 console.log(user);
                 dataBase.set({
                  "picture" : 'https://graph.facebook.com/' + user.id + '/picture?width=150&height=150',
-                 "bio":'',
+                 "bio":'Awesome Agent in the Portland area',
+                 "role":'Agent',
                  "email": user.email,
                  "location": user.location.name,
                  "firstName" : user.first_name,
@@ -53,7 +54,7 @@ angular.module('100App')
                  "accessToken" : user.accessToken,
                  "id" : user.id,
                  // "location" : user.location,
-                 "votes": {'interesting':{'tagName':'interesting', 'value':10},'hot':{'tagName':'hot','value':10},'fun':{'tagName':'fun','value':10}},
+                 "votes": {'professional':{'tagName':'professional', 'value':10},'hustle':{'tagName':'hustle','value':10},'availability':{'tagName':'availability','value':10}},
                  "dateCreated": Date.now(),
                  "lastLogin": Date.now(),
                  "overallVotes": {

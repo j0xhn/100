@@ -8,7 +8,7 @@ var FBURL = "https://top100.firebaseio.com/";
 ///////////////////////////
 return {
     getPeople: function () {
-        var ref = new Firebase(FBURL + 'provo');
+        var ref = new Firebase(FBURL + 'realestate');
         // console.log(ref);
         return $firebase(ref);
 
