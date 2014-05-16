@@ -6,8 +6,8 @@
     <div class='sidebar-open-left' id='left'>
       <ul>
 <!--         <input type='button' value='O V E R A L L' class="sideFilterButton" ng-click='myOrder="overall";myOrderReverse = true; sortField=""'></input> -->
-        <input type='button' value='G U Y S' class="sideFilterButton" ng-click='setFilter({gender: "male"})'></input>
-        <input type='button' value='G I R L S' class="sideFilterButton" ng-click='setFilter({gender: "female"})'></input>
+        <input type='button' value='A G E N T S' class="sideFilterButton" ng-click='setFilter({role: "Agent"})'></input>
+        <input type='button' value='A P P R A I S E R S' class="sideFilterButton" ng-click='setFilter({role: "Appraiser"})'></input>
 <!--         <input type='button' value="R E C E N T" class="sideFilterButton" ng-click='myOrder = "lastLogin"; myOrderReverse = true;'></input> -->
 <!--         <input type='button' value="L A S T N A M E" class="sideFilterButton" ng-click='myOrder = "lastName"; myOrderReverse = false;'></input> -->
       </ul>
@@ -21,8 +21,8 @@
   <div class='sortButtons'>
 <!--     <input type='button' value='O V E R A L L' class="filterButton" ng-click=' sortField= "''"'></input> -->
 <!--     <input type='button' value="T R E N D I N G" class="filterButton" ng-click='myOrder = "lastLogin"; myOrderReverse = true;'></input> -->
-    <input type='button' value='G U Y S' class="filterButton" ng-click='setFilter({gender: "male"})'></input>
-     <input type='button' value='G I R L S' class="filterButton" ng-click='setFilter({gender: "female"})'></input>
+    <input type='button' value='A G E N T S' class="filterButton" ng-click='setFilter({role: "agent"})'></input>
+     <input type='button' value='A P P R A I S E R S' class="filterButton" ng-click='setFilter({role: "appraiser"})'></input>
 <!--    <input type='button' value="Order By Last Name" class="filterButton" ng-click='myOrder = "lastName"; myOrderReverse = false;'></input> -->
   </div>
   <div id='search_nav'>
@@ -126,7 +126,7 @@
               <ul>
                 <li id='tag'>
                   <div class='tagName' id='overallBar'>
-                    <progressbar class="progress-striped active" value=" selectedPerson.overallVotes.value " type="info"><i>Overall</i></progressbar>
+                    <progressbar class="progress-striped active" value=" selectedPerson.overallVotes.value " type="info"><i>{{ selectedPerson.role }}</i></progressbar>
                   </div>
                   <div class='tagBtns'>
                     <button class='btn' id='buttonLeft' ng-click='downVoteOverall(selectedPerson, userID)'><span class="glyphicon glyphicon-chevron-left"></button>
