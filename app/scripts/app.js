@@ -30,9 +30,9 @@ angular.module('100App', [
         //   }
         // }
       };
-  var modal = {
-        templateUrl: 'views/modal.html',
-        // controller: 'NavCtrl',
+  var createModal = {
+        templateUrl: 'views/createModal.html',
+        controller: 'peopleCtrl',
         // resolve: {
         //   user: function (userService) {
         //     return userService.get();
@@ -75,6 +75,7 @@ angular.module('100App', [
           views: {
             nav: nav,
             body: body,
+            createModal: createModal,
             footer: footer,
           }})
         .state('user', {
@@ -86,8 +87,3 @@ angular.module('100App', [
           }})
   ;
 });
-
-// angular.module('100App', [ 'xeditable'])
-// .run(function(editableOptions) {
-//   editableOptions.theme = 'bs3'; // bootstrap3 theme. Can be also 'bs2', 'default'
-// });

@@ -5,11 +5,8 @@
     <img src="../images/Logo_Light_35.png" id="sidebar-toggle-left"/>
     <div class='sidebar-open-left' id='left'>
       <ul>
-<!--         <input type='button' value='O V E R A L L' class="sideFilterButton" ng-click='myOrder="overall";myOrderReverse = true; sortField=""'></input> -->
         <input type='button' value='A G E N T S' class="sideFilterButton" ng-click='setFilter({role: "Agent"})'></input>
         <input type='button' value='A P P R A I S E R S' class="sideFilterButton" ng-click='setFilter({role: "Appraiser"})'></input>
-<!--         <input type='button' value="R E C E N T" class="sideFilterButton" ng-click='myOrder = "lastLogin"; myOrderReverse = true;'></input> -->
-<!--         <input type='button' value="L A S T N A M E" class="sideFilterButton" ng-click='myOrder = "lastName"; myOrderReverse = false;'></input> -->
       </ul>
     </div>
   </div>
@@ -19,21 +16,19 @@
   </div>
 <!-- TOP SORT BUTTONS -->
   <div class='sortButtons'>
-<!--     <input type='button' value='O V E R A L L' class="filterButton" ng-click=' sortField= "''"'></input> -->
-<!--     <input type='button' value="T R E N D I N G" class="filterButton" ng-click='myOrder = "lastLogin"; myOrderReverse = true;'></input> -->
-    <input type='button' value='A G E N T S' class="filterButton" ng-click='setFilter({role: "agent"})'></input>
-     <input type='button' value='A P P R A I S E R S' class="filterButton" ng-click='setFilter({role: "appraiser"})'></input>
-<!--    <input type='button' value="Order By Last Name" class="filterButton" ng-click='myOrder = "lastName"; myOrderReverse = false;'></input> -->
+    <input type='button' value='A G E N T S' class="filterButton" ng-click='setFilter({role: "Agent"})'></input>
+    <input type='button' value='A P P R A I S E R S' class="filterButton" ng-click='setFilter({role: "Appraiser"})'></input>
   </div>
   <div id='search_nav'>
     <input type='search' ng-model='search' placeholder="&#xF002;">
   </div>
   <div id="top_nav_right">
-    <a ng-controller='LoginCtrl' ng-click="submit($event)" id='loginBtn'>L O G I N</a><br>
+    <a ng-controller='LoginCtrl' ng-click="submitLogin($event)" id='loginBtn'>L O G I N</a><br>
     <div id="profile_circle_profile">
       <!-- makes selectedPerson same as user -->
       <span><img ng-click="selectedPerson = people[userID]" src="{{ userPicture }}" id='sidebar-toggle-right'></span> 
     </div>
+<!-- ACCOUNT INFO -->
     <div class='sidebar-open-right' id='right'>
       <h1>Edit Profile</h1>
       <div id='editField'>
@@ -47,6 +42,10 @@
       <div id='editField'>
         <h2>Website</h2>
         <p editable-text="people[userID].link">{{ people[userID].link }}</p>
+      </div>
+      <div id='editField'>
+        <h2>Picture Link</h2>
+        <p editable-text="people[userID].picture">{{ people[userID].picture }}</p>
       </div>
       <div id='editField'>
         <h2>Searchable Tags</h2>
@@ -68,6 +67,12 @@
 <!-- Banner -->
 <div class='banner'>
   <h1>THE BEST PEOPLE TO HELP YOU FIND A HOME</h1>
+<!--   <ol class='process'>
+    <li>Step 1. </li>
+    <li>Step 2. </li>
+    <li>Step 3. </li>
+    <li>Step 4. </li>
+  </ol> -->
   <h2><input type='search' ng-model='search' placeholder="search criteria" autofocus></h2>
   <div class='actions'>
     <button class='btn btn-default clear'>
@@ -192,11 +197,13 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+<!-- CREATE -->
+  
 <!-- SIGNUP -->
-  <div class='signup'> 
-    <img ng-controller='LoginCtrl' ng-click="submit()" src='../images/login_1.png'/>
-    <p>and nominate someone for provo's top 100</p>
-    {{param}} test
+<!-- SUBMIT PROFILE -->
+  <div class='signup'>
+   <a ng-click="callCreateModal($event)" id='createBtn'><h1>Nominate someone for Portland's top Real Estate Agents</h1></a>
+<!-- testing for URL Parameters      {{param}} test -->
   </div>
   <script src='/scripts/main.js'></script>
 

@@ -141,6 +141,59 @@ table {
 
 /*Hover in Modal to Edit Text, Makes Changes to native XEDITABLE.CSS*/
 
+#halfInput {
+  width: 47%;
+}
+
+#halfInput + #halfInput {
+  margin-left: 4%;
+}
+
+.modal input {
+  line-height: 14px;
+  padding: 2px 5px;
+}
+
+.createModal input {
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 9px 11px;
+  font-size: 17px;
+}
+
+.createModal h2 {
+  color: #4D3E3E;
+  font-weight: 600;
+  padding: 20px;
+  margin-bottom: 12px;
+  background-color: lightblue;
+}
+
+.modal-dialog.createModal {
+  margin: 54px auto;
+  padding: 0 20px;
+  max-width: 400px;
+}
+
+.createModal .modal-content {
+  text-align: center;
+  max-width: 400px;
+}
+
+.createModal .modal-body {
+  padding: 20px;
+}
+
+ol.process ol {
+  padding: 44px;
+  margin-top: -62px;
+  display: block;
+}
+
+.process li {
+  display: inline;
+}
+
 .editable-buttons {
   position: absolute;
   right: 0;
@@ -273,11 +326,6 @@ span:focus {
 
 .tagBox form {
   margin: 20px 0;
-}
-
-#profile input {
-  line-height: 14px;
-  padding: 2px 5px;
 }
 
 #submitBtn {
@@ -1101,6 +1149,10 @@ ul {
 }
 
 .signup img {
+  cursor: pointer;
+}
+
+.signup h1 {
   cursor: pointer;
 }
 

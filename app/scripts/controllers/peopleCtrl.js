@@ -169,6 +169,18 @@ $scope.cancel = function(){
     console.log('you clicked to cancel');
    $("#modal").modal('hide');
 }
+
+///////////////////////////
+// createModal 
+///////////////////////////
+$scope.callCreateModal = function (e) {
+   console.log('you called Create Modal');
+    $("#createModal").modal('show'); // hack (should use angular-strap or anguar-ui)
+}
+$scope.cancelCreateModal = function(e){
+    console.log('you clicked to cancel');
+   $("#createModal").modal('hide');
+}
 ///////////////////////////
 // SHOW OVERALL SCORE
 ///////////////////////////

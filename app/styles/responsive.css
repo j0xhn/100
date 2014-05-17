@@ -66,6 +66,10 @@ Things to remember:
 		width: 358px;
 		padding: 0 0 0 30px;
 	}
+	.modal-dialog.createModal {
+		max-width: 400px;
+		margin: 100px auto;
+	}
 }
 @media screen and (min-width: 860px) {
 }

@@ -12,6 +12,49 @@ Things to remember:
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 /*Hover in Modal to Edit Text, Makes Changes to native XEDITABLE.CSS*/
+#halfInput {
+  width: 47%;
+}
+#halfInput + #halfInput{
+  margin-left: 4%;
+}
+.modal input{
+  line-height: 14px;
+  padding: 2px 5px;
+}
+.createModal input {
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 9px 11px;
+  font-size: 17px;
+}
+.createModal h2{
+  color: #4D3E3E;
+  font-weight: 600;
+  padding: 20px;
+  margin-bottom: 12px;
+  background-color: lightblue;
+}
+.modal-dialog.createModal {
+  margin: 54px auto;
+  padding: 0 20px;
+  max-width: 400px;
+}
+.createModal .modal-content{
+  text-align: center;
+  max-width: 400px;
+}
+.createModal .modal-body{
+  padding: 20px;
+}
+ol.process ol {
+  padding: 44px;
+  margin-top: -62px;
+  display: block;
+}
+.process li {
+  display: inline;
+}
 .editable-buttons{
   position: absolute;
   right:0;
@@ -146,10 +189,6 @@ span:focus{
 }
 .tagBox form{
   margin: 20px 0;
-}
-#profile input{
-  line-height: 14px;
-  padding: 2px 5px;
 }
 #submitBtn {
   background: #73C9E3;
@@ -882,6 +921,9 @@ ul {
   text-align: center;
 }
 .signup img{
+  cursor: pointer;
+}
+.signup h1{
   cursor: pointer;
 }
 #makeCenter {
