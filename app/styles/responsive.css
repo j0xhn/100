@@ -14,7 +14,7 @@ Things to remember:
 
 @media screen and (min-width: 420px) {
 	.banner{
-	  background-image: url('../images/bannerBackground.png');
+	  background-image: url('../images/bannerBackground.jpg');
 	  height: 300px;
 	}
 	.banner input{
@@ -26,16 +26,6 @@ Things to remember:
 		width: inherit;
 	  	text-align: left;
 	  	border: none;
-	}
-	.banner h1{
-		font-size: 4em;
-	    display: inline-block;
-	    margin-top: -35px;
-	}
-	.banner h2{
-		font-size: 2em;
-	  	font-weight: 300;
-	  	margin: 0;
 	}
 	#center_right{
 		width: 100%;
@@ -51,7 +41,13 @@ Things to remember:
 	    margin: 0;
 	}
   	.banner h2{
-		margin: 30px 0 0 0;
+		margin-top: 30px;
+	}
+	.desktop{
+		display: inline-block;
+	}
+	.mobile{
+		display: none;
 	}
 	.filterButton{
 		display: inline-block;
@@ -76,5 +72,8 @@ Things to remember:
 @media screen and (min-width: 1200px) {
 	.banner{
   		height: 400px;
+	}
+	.banner h1{
+	    margin-top: 47px;
 	}
 }
