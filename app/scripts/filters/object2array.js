@@ -11,9 +11,6 @@ angular.module('100App')
     }
   });
 
-
-
-
 function property(){
     function parseString(input){
         return input.split(".");
