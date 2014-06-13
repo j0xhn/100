@@ -1,5 +1,4 @@
 'use strict';
-
 angular.module('100App')
   .filter('object2Array', function () {
     return function(input) {
@@ -10,9 +9,6 @@ angular.module('100App')
       return out;
     }
   });
-
-
-
 
 function property(){
     function parseString(input){
