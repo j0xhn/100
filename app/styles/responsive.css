@@ -14,7 +14,7 @@ Things to remember:
 
 @media screen and (min-width: 420px) {
 	.banner{
-	  background-image: url('../images/bannerBackground.jpg');
+	  background-image: url('../images/bannerBackground.JPG');
 	  height: 300px;
 	}
 	.banner input{

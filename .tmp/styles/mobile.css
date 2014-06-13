@@ -248,7 +248,7 @@ span:focus {
 }
 
 .banner {
-  background-image: url('../images/bannerBackground.jpg');
+  background-image: url('../images/bannerBackground.JPG');
   background-position: 50% 49%;
   background-repeat: no-repeat;
   background-size: 120%;
@@ -1185,7 +1185,8 @@ ul {
 }
 
 li img {
-  width: 100%;
+  width: 150px;
+  height: 150px;
   margin-bottom: -96px;
   transition: all .3s;
 }

@@ -3,7 +3,7 @@
 angular.module('100App')
   .controller('LoginCtrl', function ($scope, $rootScope, peopleService) {
 // creates new user via createModal
-    $scope.createCourse = function(fullNameFromView, pictureURLFromView, websiteFromView, phoneNumberFromView, addressFromView, priceFromView, admittanceFromView){
+    $scope.createCourse = function(fullNameFromView, pictureURLFromView, websiteFromView, phoneNumberFromView, addressFromView, priceFromView, admittanceFromView, cancel){
       console.log('You made it in to Create Modal');
       var courseID = Date.now();
       var dataBase = new Firebase ("https://top100.firebaseio.com/golf/" + courseID);
@@ -20,9 +20,13 @@ angular.module('100App')
                  "overallVotes": {
                     'value':30
                  },
-                });
+      });
+      $( '#courseCreateForm' ).each(function(){
+        this.reset()
+      });
+      $("#createModal").modal('hide');
 
-    }
+    };
 //creates new user from Facebook using Firebase
     $scope.submitLogin = function(fromMain){
       var dbRef = new Firebase('https://top100.firebaseio.com');
