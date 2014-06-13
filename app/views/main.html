@@ -103,7 +103,7 @@
            <a ng-click='overallDownVote(person)'><i class="fa fa-arrow-down" id='right_icon'></i></a>
         </div> -->
       </div>
-      <p>{{person.firstName}} {{person.lastName}}</p>
+      <p>{{person.fullName}}</p>
         <div class='showOverall scoreBubble'>
           {{person.overallVotes.value}}
         </div>
@@ -138,13 +138,14 @@
               <img src="{{selectedPerson.picture}}">
             </div>
             <h1> {{selectedPerson.fullName}}</h1>
+              <a href="{{selectedPerson.link}}">{{selectedPerson.link}}</a>
               <p id='bio'>{{ selectedPerson.bio }}</p>
 <!-- OVERALL VOTE -->
             <div class='outerRank'>
               <ul>
                 <li id='tag'>
                   <div class='tagName' id='overallBar'>
-                    <progressbar class="progress-striped active" value=" selectedPerson.overallVotes.value " type="info"><i>{{ selectedPerson.role }}</i></progressbar>
+                    <progressbar class="progress-striped active" value=" selectedPerson.overallVotes.value " type="info"><i>Overall</i></progressbar>
                   </div>
                   <div class='tagBtns'>
                     <button class='btn' id='buttonLeft' ng-click='downVoteOverall(selectedPerson, userID)'><span class="glyphicon glyphicon-chevron-left"></button>
@@ -178,8 +179,8 @@
           </div><!-- /#center-left -->
 <!-- COMMENT BOX -->
           <div class="col" id="center_right">
-            <h2>What is {{ selectedPerson.firstName }} great at?</h2>
-            <em>Be sure to mention their strengths or other key words so our super fancy algorithm can label them as influential in those areas.</em>
+            <h2>Leave a comment about {{selectedPerson.fullName}}.</h2>
+            <em>Be sure to mention good things as well as bad things to give future golfers a heads up.</em>
 <!-- SUGGESTION INPUT -->
             <div class='suggestInput'>
               <form ng-submit="commentCreate(commentFromView, selectedPerson, userID)" id='commentCreateForm'>

@@ -3,27 +3,22 @@
 angular.module('100App')
   .controller('LoginCtrl', function ($scope, $rootScope, peopleService) {
 // creates new user via createModal
-    $scope.createUser = function(firstNameFromView, lastNameFromView, pictureURLFromView, bioFromView, websiteFromView, emailFromView, roleFromView, housesSold, tag1FromView, tag2FromView, tag3FromView ){
+    $scope.createCourse = function(fullNameFromView, pictureURLFromView, websiteFromView, phoneNumberFromView, addressFromView, priceFromView, admittanceFromView){
       console.log('You made it in to Create Modal');
-      var userID = Date.now();
-      var dataBase = new Firebase ("https://top100.firebaseio.com/realestate/" + userID);
-      var fullNameFromView = firstNameFromView + ' ' + lastNameFromView;
-      console.log(firstNameFromView, lastNameFromView, pictureURLFromView, bioFromView, emailFromView, roleFromView, housesSold, tag1FromView, tag2FromView, tag3FromView);
-      console.log(fullNameFromView);
+      var courseID = Date.now();
+      var dataBase = new Firebase ("https://top100.firebaseio.com/golf/" + courseID);
       dataBase.set({
                  "picture" : pictureURLFromView,
-                 "bio":bioFromView,
-                 "role":roleFromView,
-                 "email": emailFromView,
-                 "location": 'Portland',
-                 "firstName" : lastNameFromView,
-                 "lastName" : firstNameFromView,
+                 "phoneNumber":phoneNumberFromView,
+                 "address": addressFromView,
+                 "price" : priceFromView,
+                 "admittance": admittanceFromView,
                  "fullName" : fullNameFromView,
                  "link" : websiteFromView,
-                 "votes": {tag1FromView:{'tagName':tag1FromView, 'value':10},tag2FromView:{'tagName':tag2FromView,'value':10}, tag3FromView:{'tagName':tag3FromView,'value':10}},
-                 "dateCreated": userID,
+                 "votes": {'course':{'tagName':"Tees and Fairways", 'value':10},'green':{'tagName':'Green Condition','value':10}, 'value':{'tagName':"Bang for Your Buck",'value':10}},
+                 "dateCreated": courseID,
                  "overallVotes": {
-                    'value':50
+                    'value':30
                  },
                 });
 

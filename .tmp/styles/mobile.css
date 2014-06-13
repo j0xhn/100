@@ -309,6 +309,8 @@ span:focus {
   outline: none;
 }
 
+
+
 .tagBox {
   text-align: left;
   margin: 0 0 20px 0;
@@ -1330,7 +1332,6 @@ figure {
 
 .isotope .isotope-item {
   transition-duration: 0.8s;
-  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
 }
 

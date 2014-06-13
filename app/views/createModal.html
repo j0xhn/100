@@ -5,21 +5,17 @@
       <div class="modal-body">
         <i class="fa fa-times-circle icon_large" id='leaveModal' ng-click="cancelCreateModal()"></i>
 <!-- FORM -->
-        <form ng-controller='LoginCtrl' ng-submit="createUser(firstNameFromView, lastNameFromView, pictureURLFromView, bioFromView, websiteFromView, emailFromView, roleFromView, housesSold, tag1FromView, tag2FromView, tag3FromView)" id='tagCreateForm'>
-          <h2>Nominate</h2>
-          <input id='halfInput' name="firstNameFromView" placeholder="First Name" ng-model="firstNameFromView">
-          <input id='halfInput' name="lastNameFromView" placeholder="Last Name" ng-model="lastNameFromView">
+        <form ng-controller='LoginCtrl' ng-submit="createCourse(fullNameFromView, pictureURLFromView, websiteFromView, phoneNumberFromView, addressFromView, priceFromView, admittanceFromView)" id='tagCreateForm'>
+          <h2>Submit Gold Course</h2>
+          <input class='col-xs-12' name="fullNameFromView" placeholder="Course Name" ng-model="fullNameFromView">
           <input class='col-xs-12' name='pictureURLFromView' Placeholder='Profile Picture URL' ng-model='pictureURLFromView'>
-          <input class='col-xs-12' name="bioFromView" placeholder="Tagline" ng-model="bioFromView">
           <input class='col-xs-12' name="websiteFromView" placeholder="Website" ng-model="websiteFromView">
-          <input class='col-xs-12' name="emailFromView" placeholder="Email" ng-model="emailFromView">
-          <input id='halfInput' name="roleFromView" placeholder="Role" ng-model="roleFromView">
-          <input id='halfInput' name="housesSold" placeholder="Houses Sold" ng-model="housesSold">
-          <h2>Searchable Tags</h2>
-          <input class='col-xs-12' name="tag1FromView" placeholder="Searchabel tag 1" ng-model="tag1FromView">
-          <input class='col-xs-12' name="tag2FromView" placeholder="Searchabel tag 2" ng-model="tag2FromView">
-          <input class='col-xs-12' name="tag3FromView" placeholder="Searchabel tag 3" ng-model="tag3FromView">
-          <button type='submit'class='btn btn-xs' id='submitBtn' >Submit</button>
+          <input class='col-xs-12' name="phoneNumberFromView" placeholder="Phone Number" ng-model="phoneNumberFromView">
+          <input class='col-xs-12' name="addressFromView" placeholder="Address" ng-model="addressFromView">
+          <input class='col-xs-12' name="priceFromView" placeholder="Price" ng-model="priceFromView">
+          <input class='col-xs-12' name="admittanceFromView" placeholder="Admitance" ng-model="admittanceFromView">
+
+          <button type='submit'class='btn btn-xs' id='submitBtn'>Submit</button>
         </div><!-- /.row -->
 <!-- MODAL-FOOTER DOESN'T DISPLAY ANYTHING BUT IS REQUIRED ??? 
         <div class="modal-footer">
