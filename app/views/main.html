@@ -97,13 +97,13 @@
   <ul id = 'makeCenter'>
    <li class="person" ng-click="setPerson(person, 0)" ng-repeat="person in people | orderByPriority | orderBy:'overallVotes.value':true| orderBy:myOrder:myOrderReverse | filter: sortField : true | filter: search || property:'tags':search:undefined:true | limitTo: 100">
      <img ng-src="{{person.picture}}" ng-mouseover='showOverall(person, $event)'> 
-      <div class='textBackground'>
-       <!--  <div class='addOns'>
+<!--       <div class='textBackground'>
+        <div class='addOns'>
            <a ng-click='overallUpVote(person)'><i class="fa fa-arrow-up" id='left_icon'></i></a>
            <a ng-click='overallDownVote(person)'><i class="fa fa-arrow-down" id='right_icon'></i></a>
-        </div> -->
+        </div>
       </div>
-      <p>{{person.fullName}}</p>
+      <p>{{person.fullName}}</p> -->
         <div class='showOverall scoreBubble'>
           {{person.overallVotes.value}}
         </div>
@@ -137,9 +137,12 @@
             <div id="profile_circle">
               <img src="{{selectedPerson.picture}}">
             </div>
-            <h1> {{selectedPerson.fullName}}</h1>
-              <a href="{{selectedPerson.link}}">{{selectedPerson.link}}</a>
-              <p id='bio'>{{ selectedPerson.bio }}</p>
+              <p id='bio'>
+                {{selectedPerson.address}} <br>
+                <a href="tel:+{{selectedPerson.callablePhoneNumber}}">{{selectedPerson.phoneNumber}}</a> <br>
+                ${{selectedPerson.price}} <small>course + cart</small></p> <br>
+              <a href="{{selectedPerson.link}}">Contact Course</a>
+
 <!-- OVERALL VOTE -->
             <div class='outerRank'>
               <ul>

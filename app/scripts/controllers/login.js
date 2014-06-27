@@ -6,10 +6,13 @@ angular.module('100App')
     $scope.createCourse = function(fullNameFromView, pictureURLFromView, websiteFromView, phoneNumberFromView, addressFromView, priceFromView, admittanceFromView, cancel){
       console.log('You made it in to Create Modal');
       var courseID = Date.now();
+      var callablePhoneNumberWithSpaces = phoneNumberFromView.replace(/[^\w\s]/gi,'');
+      var callablePhoneNumber = callablePhoneNumberWithSpaces.replace(' ','');
       var dataBase = new Firebase ("https://top100.firebaseio.com/golf/" + courseID);
       dataBase.set({
                  "picture" : pictureURLFromView,
                  "phoneNumber":phoneNumberFromView,
+                 "callablePhoneNumber":callablePhoneNumber,
                  "address": addressFromView,
                  "price" : priceFromView,
                  "admittance": admittanceFromView,

@@ -236,6 +236,13 @@ span:focus {
   width: 100%;
   border: none;
   text-align: center;
+  font-size: 14px;
+  padding: 10px 0 0 0;
+}
+
+#bio small {
+  font-style: italic;
+  font-size: 10px;
 }
 
 .actions {
@@ -891,7 +898,6 @@ input:focus {
   position: relative;
   height: 150px;
   width: 150px;
-  border-radius: 100%;
   margin: 0 auto;
 }
 
@@ -1234,13 +1240,13 @@ li i {
 }
 
 .linkBubble {
-  margin: -90px -10px 0 0;
+  margin: -64px -10px 0 0;
   float: right;
   background-color: rgb(94, 225, 141);
 }
 
 .scoreBubble {
-  margin: -89px 0px 0 -7px;
+  margin: -64px 0px 0 -7px;
   float: left;
   background-color: rgb(235, 86, 86);
 }

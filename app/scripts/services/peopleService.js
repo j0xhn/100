@@ -7,6 +7,12 @@ var FBURL = "https://top100.firebaseio.com/";
 //get data by location
 ///////////////////////////
 return {
+    getCurator: function () {
+        var adminID = 100000478960804;
+        var curator = new Firebase(FBURL + "provo/" + adminID);
+        return curator;
+    },
+
     getPeople: function () {
         var ref = new Firebase(FBURL + 'golf');
         // console.log(ref);
@@ -14,7 +20,6 @@ return {
 
     },
     getLocationName: function(){
-        var FBURL = "https://top100.firebaseio.com/";
         var ref = new Firebase(FBURL + 'locations/usa/west/utah/utahValley/provo');
         var locationName = ref.name();
         // console.log(locationName);

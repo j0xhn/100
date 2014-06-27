@@ -1,0 +1,3178 @@
+{
+  "golf" : {
+    "1403744025315" : {
+      "price" : "32",
+      "fullName" : "Meadow Brook Golf Course",
+      "admittance" : "Public",
+      "address" : "4197 South 1300 West, Taylorsville, Utah 84123",
+      "overallVotes" : {
+        "value" : 30
+      },
+      "link" : "www.slcountygolf.com/cMeadowBrook/index.html",
+      "phoneNumber" : "(385) 468-1500",
+      "dateCreated" : 1403744025315,
+      "picture" : "http://www.worldgolf.com/courses/logo/thumb/12856.jpg",
+      "votes" : {
+        "green" : {
+          "tagName" : "Green Condition",
+          "value" : 10
+        },
+        "course" : {
+          "tagName" : "Tees and Fairways",
+          "value" : 10
+        },
+        "value" : {
+          "tagName" : "Bang for Your Buck",
+          "value" : 10
+        }
+      }
+    },
+    "1403743265035" : {
+      "price" : "15",
+      "fullName" : "Jordan River Par-3 Golf Course",
+      "admittance" : "Public",
+      "address" : "1200 N. Redwood Road Salt Lake City, Utah 84116",
+      "overallVotes" : {
+        "value" : 30
+      },
+      "link" : "www.slc-golf.com/jordan-river.html",
+      "phoneNumber" : "(801) 533-4527",
+      "dateCreated" : 1403743265035,
+      "picture" : "https://scontent-a.xx.fbcdn.net/hphotos-frc1/v/t1.0-9/576240_453535924672208_1670216085_n.jpg?oh=1cde41869632d7fa5d5b12309e592332&oe=540D17D7",
+      "votes" : {
+        "green" : {
+          "tagName" : "Green Condition",
+          "value" : 10
+        },
+        "course" : {
+          "tagName" : "Tees and Fairways",
+          "value" : 10
+        },
+        "value" : {
+          "tagName" : "Bang for Your Buck",
+          "value" : 10
+        }
+      }
+    },
+    "1403707935620" : {
+      "price" : "17",
+      "fullName" : "Fore Lakes Golf Course",
+      "admittance" : "Public",
+      "address" : "1285 West 4700 South Taylorsville, UT 84123",
+      "overallVotes" : {
+        "value" : 30
+      },
+      "link" : "www.forelakesgc.com",
+      "phoneNumber" : "(801) 266-8621",
+      "dateCreated" : 1403707935620,
+      "picture" : "http://www.citydeals.com/media/ForeLakesGolfCourse/ForeLakesGolfCourse-TaylorsvilleUT/m1_forelakesgolfcourse_ut.gif",
+      "votes" : {
+        "green" : {
+          "tagName" : "Green Condition",
+          "value" : 10
+        },
+        "course" : {
+          "tagName" : "Tees and Fairways",
+          "value" : 10
+        },
+        "value" : {
+          "tagName" : "Bang for Your Buck",
+          "value" : 10
+        }
+      }
+    },
+    "1402686327456" : {
+      "price" : "35",
+      "fullName" : "Bonneville Golf Club",
+      "admittance" : "Public",
+      "address" : "954 Connor Street, Salt Lake City, Utah 84108",
+      "overallVotes" : {
+        "value" : 30
+      },
+      "link" : "www.bonnevillegolfclub.com",
+      "phoneNumber" : "(801) 583-9513",
+      "dateCreated" : 1402686327456,
+      "picture" : "http://imavex.vo.llnwd.net/o18/clients/saltlakecitygolf/images/Course_Logos/bonneville-logo.gif",
+      "votes" : {
+        "green" : {
+          "tagName" : "Green Condition",
+          "value" : 10
+        },
+        "course" : {
+          "tagName" : "Tees and Fairways",
+          "value" : 10
+        },
+        "value" : {
+          "tagName" : "Bang for Your Buck",
+          "value" : 10
+        }
+      }
+    },
+    "1402686969651" : {
+      "price" : "15",
+      "fullName" : "Central Valley Golf Course",
+      "admittance" : "Public",
+      "address" : "600 West 3300 South Salt Lake City, Utah 84119",
+      "overallVotes" : {
+        "value" : 30
+      },
+      "link" : "www.centralvalleygolfcourse.net",
+      "phoneNumber" : "(801) 973-6271",
+      "dateCreated" : 1402686969651,
+      "picture" : "http://d2tbfnbweol72x.cloudfront.net/84119/files/2012/06/logo.png",
+      "votes" : {
+        "green" : {
+          "tagName" : "Green Condition",
+          "value" : 10
+        },
+        "course" : {
+          "tagName" : "Tees and Fairways",
+          "value" : 10
+        },
+        "value" : {
+          "tagName" : "Bang for Your Buck",
+          "value" : 10
+        }
+      }
+    },
+    "1402687507499" : {
+      "price" : "17",
+      "fullName" : "Copper Golf Club",
+      "admittance" : "Public",
+      "address" : "8975 West 2600 South Magna, Utah 84044",
+      "overallVotes" : {
+        "value" : 30
+      },
+      "link" : "www.coppergolfclub.com",
+      "phoneNumber" : "(801) 250-6396",
+      "dateCreated" : 1402687507499,
+      "picture" : "http://coppergolfclub.com/Copper%20Golf%20Club%20Content/2012/04/coppergolf-lowres-e1335887813315.jpg",
+      "votes" : {
+        "green" : {
+          "tagName" : "Green Condition",
+          "value" : 10
+        },
+        "course" : {
+          "tagName" : "Tees and Fairways",
+          "value" : 10
+        },
+        "value" : {
+          "tagName" : "Bang for Your Buck",
+          "value" : 10
+        }
+      }
+    },
+    "1403712835961" : {
+      "price" : "21",
+      "fullName" : "Forest Dale Golf Course",
+      "admittance" : "Public",
+      "address" : "2375 South 900 East Salt Lake City, Utah 84106",
+      "overallVotes" : {
+        "value" : 30
+      },
+      "link" : "http://www.slc-golf.com/forest-dale.html",
+      "phoneNumber" : "(801) 483-5420",
+      "dateCreated" : 1403712835961,
+      "picture" : "http://imavex.vo.llnwd.net/o18/clients/saltlakecitygolf/images/Forest_Dale/FDLadiesLeague4.jpg",
+      "votes" : {
+        "green" : {
+          "tagName" : "Green Condition",
+          "value" : 10
+        },
+        "course" : {
+          "tagName" : "Tees and Fairways",
+          "value" : 10
+        },
+        "value" : {
+          "tagName" : "Bang for Your Buck",
+          "value" : 10
+        }
+      }
+    },
+    "1403742448886" : {
+      "price" : "44",
+      "fullName" : "Glendale Golf Course",
+      "admittance" : "Public",
+      "address" : "2100 South 1640 West Salt Lake City, Utah 84119",
+      "overallVotes" : {
+        "value" : 30
+      },
+      "link" : "www.slc-golf.com/glendale.html",
+      "phoneNumber" : "(801) 974-2403",
+      "dateCreated" : 1403742448886,
+      "picture" : "http://i1230.photobucket.com/albums/ee493/griffenmerrill/glendale-logocopy.png",
+      "votes" : {
+        "green" : {
+          "tagName" : "Green Condition",
+          "value" : 10
+        },
+        "course" : {
+          "tagName" : "Tees and Fairways",
+          "value" : 10
+        },
+        "value" : {
+          "tagName" : "Bang for Your Buck",
+          "value" : 10
+        }
+      }
+    }
+  },
+  "realestate" : {
+    "123456" : {
+      "role" : "Appraiser",
+      "lastName" : "Ziowowski",
+      "location" : "Clinton, New Jersey",
+      "fullName" : "Marshall Bean",
+      "accessToken" : "CAADxvZBY3njQBAAZAszhbZCXs3Q8tIIcA1erGqHMc6oq5agwQNETbR7xiJ1Nej8KUJLyqJNwomWAwNuUOIR7BNJmXYt4wBpadbFEdH7IsrfHCsnNSaGkFRZAHIFCdcGZCKkTabNUrJbO9IKLiFIdCnfgE4PVbRZAiQZABNFClIo0NVxi4JTrKaKZCoA3w4IDr3AZD",
+      "bio" : "Marshal Bean is an Entrepenuer developing Indie Provo",
+      "overallVotes" : {
+        "value" : 50,
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/cabobean",
+      "lastVote" : "2014-03-28T01:35:19.748Z",
+      "gender" : "male",
+      "lastLogin" : 1395686851113,
+      "email" : "cabobean@gmail.com",
+      "dateCreated" : 1395686851113,
+      "picture" : "http://static.trulia-cdn.com/userimg/26771/6692997_1380840445_m.jpg",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 50
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 50
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 50
+        }
+      },
+      "firstName" : "Bob",
+      "id" : "17802483"
+    },
+    "1400541972961" : {
+      "role" : "Broker",
+      "lastName" : "Allan",
+      "location" : "Portland",
+      "fullName" : "Allan Roberts",
+      "bio" : "Your Realtor for Life!",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "http://agragent.com/",
+      "email" : "503-997-2542",
+      "dateCreated" : 1400541972961,
+      "picture" : "https://www.facebook.com/photo.php?fbid=1154159847318&set=a.1499279475093.66966.1027323151&type=1&theater",
+      "votes" : {
+        "tag1FromView" : {
+          "tagName" : "Buyer's Agent",
+          "value" : 10
+        },
+        "tag3FromView" : {
+          "tagName" : "Consulting, Transition Specialist",
+          "value" : 10
+        },
+        "tag2FromView" : {
+          "tagName" : "Listing Agent",
+          "value" : 10
+        }
+      },
+      "firstName" : "Roberts"
+    },
+    "1400541968762" : {
+      "role" : "Broker",
+      "lastName" : "Allan",
+      "location" : "Portland",
+      "fullName" : "Allan Roberts",
+      "bio" : "Your Realtor for Life!",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "http://agragent.com/",
+      "email" : "503-997-2542",
+      "dateCreated" : 1400541968762,
+      "picture" : "https://www.facebook.com/photo.php?fbid=1154159847318&set=a.1499279475093.66966.1027323151&type=1&theater",
+      "votes" : {
+        "tag1FromView" : {
+          "tagName" : "Buyer's Agent",
+          "value" : 10
+        },
+        "tag3FromView" : {
+          "tagName" : "Consulting, Transition Specialist",
+          "value" : 10
+        },
+        "tag2FromView" : {
+          "tagName" : "Listing Agent",
+          "value" : 10
+        }
+      },
+      "firstName" : "Roberts"
+    },
+    "1400542102770" : {
+      "role" : "Broker",
+      "lastName" : "Allan",
+      "location" : "Portland",
+      "fullName" : "Allan Roberts",
+      "bio" : "Your Realtor for Life!",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "http://agragent.com/",
+      "email" : "503-997-2542",
+      "dateCreated" : 1400542102770,
+      "picture" : "http://static.trulia-cdn.com/userimg/50253/12563330_1379872882_m.jpg",
+      "votes" : {
+        "tag1FromView" : {
+          "tagName" : "Buyer's Agent",
+          "value" : 10
+        },
+        "tag3FromView" : {
+          "tagName" : "Consulting, Transition Specialist",
+          "value" : 10
+        },
+        "tag2FromView" : {
+          "tagName" : "Listing Agent",
+          "value" : 10
+        }
+      },
+      "firstName" : "Roberts"
+    },
+    "193307468" : {
+      "role" : "Agent",
+      "lastName" : "Hill",
+      "location" : "Troutdale, Oregon",
+      "fullName" : "Bryson C. Hill",
+      "accessToken" : "CAADxvZBY3njQBAM9hZBUfeHmqeBdbWHZCo70mYbl9fJ34Cf1Tg9JvoD7Dd0w7oNFTnX0aLR1FnbQ62QLwD7sdxOwJJyFGQWJeqyiQC1KpokU6jfkNQSJS3ig1BvZA3H10uLtsmcpGjYKgxZBNCx4AtCthJ0VK60FQ4ysJoq7VZBQNom6kxTqvI3hdhCFklkF0ZD",
+      "bio" : "Awesome Agent in the Portland area",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/BrysonCHill",
+      "gender" : "male",
+      "lastLogin" : 1400283956706,
+      "email" : "bryson.hill@gmail.com",
+      "dateCreated" : 1400283956706,
+      "picture" : "https://graph.facebook.com/193307468/picture?width=150&height=150",
+      "votes" : {
+        "professional" : {
+          "tagName" : "professional",
+          "value" : 10
+        },
+        "availability" : {
+          "tagName" : "availability",
+          "value" : 10
+        },
+        "hustle" : {
+          "tagName" : "hustle",
+          "value" : 10
+        }
+      },
+      "firstName" : "Bryson",
+      "id" : "193307468"
+    },
+    "1400390752042" : {
+      "role" : "Agent",
+      "lastName" : "Zach",
+      "location" : "Portland",
+      "fullName" : "Zach Goshen",
+      "bio" : "I Do Work",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.linkedin.com/pub/zach-blend/7/283/b5b",
+      "email" : "zachrocks@gmail.com",
+      "dateCreated" : 1400390752042,
+      "picture" : "https://www.linkedin.com/mpr/pub/image-liQ5y5PyXTtsnrxkG9C_0JORppXnbZUHlzQ00DeLpkONbCEuliQ0f7syprAtqUChxW-9/zach-blend.jpg",
+      "votes" : {
+        "tag1FromView" : {
+          "tagName" : "Good",
+          "value" : 10
+        },
+        "tag3FromView" : {
+          "tagName" : "Work",
+          "value" : 10
+        },
+        "tag2FromView" : {
+          "tagName" : "Hard",
+          "value" : 10
+        }
+      },
+      "firstName" : "Goshen"
+    },
+    "203101784" : {
+      "role" : "Agent",
+      "lastName" : "Storey",
+      "location" : "Provo, Utah",
+      "fullName" : "John D. Storey",
+      "accessToken" : "CAADxvZBY3njQBAKSFOF6K4ZCM4tHdnZBpL4vs8R8ZAZBz5M1zn22dS2VBzz5NMBl94gIIcP8PVhUj9NFmXAXp6WLlG1qjhg7fgqFw06dQDZCY9tUVfY9tPUi9KqrBRx8wh9XxZAzZBGcgx7hYIHf8ti0sC3ZBOimZB9uJxZCIQcS4iS297ZBZCzZCG3p5nlzjYdowAVQEZD",
+      "bio" : "Awesome Agent in the Portland area",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/johndangerstorey",
+      "gender" : "male",
+      "lastLogin" : 1402558087636,
+      "email" : "johndangerstorey@gmail.com",
+      "dateCreated" : 1402558087635,
+      "picture" : "https://graph.facebook.com/203101784/picture?width=150&height=150",
+      "votes" : {
+        "professional" : {
+          "tagName" : "professional",
+          "value" : 10
+        },
+        "availability" : {
+          "tagName" : "availability",
+          "value" : 10
+        },
+        "hustle" : {
+          "tagName" : "hustle",
+          "value" : 10
+        }
+      },
+      "firstName" : "John",
+      "id" : "203101784"
+    },
+    "1400542080019" : {
+      "role" : "Broker",
+      "lastName" : "Allan",
+      "location" : "Portland",
+      "fullName" : "Allan Roberts",
+      "bio" : "Your Realtor for Life!",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "http://agragent.com/",
+      "email" : "503-997-2542",
+      "dateCreated" : 1400542080019,
+      "picture" : "http://static.trulia-cdn.com/userimg/50253/12563330_1379872882_m.jpg",
+      "votes" : {
+        "tag1FromView" : {
+          "tagName" : "Buyer's Agent",
+          "value" : 10
+        },
+        "tag3FromView" : {
+          "tagName" : "Consulting, Transition Specialist",
+          "value" : 10
+        },
+        "tag2FromView" : {
+          "tagName" : "Listing Agent",
+          "value" : 10
+        }
+      },
+      "firstName" : "Roberts"
+    },
+    "1400542029576" : {
+      "role" : "Broker",
+      "lastName" : "Allan",
+      "location" : "Portland",
+      "fullName" : "Allan Roberts",
+      "bio" : "Your Realtor for Life!",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "http://agragent.com/",
+      "email" : "503-997-2542",
+      "dateCreated" : 1400542029576,
+      "picture" : "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&docid=1UNsBdmfXVc8jM&tbnid=QudsISkZXbpbZM:&ved=0CAUQjRw&url=http%3A%2F%2Fwww.trulia.com%2Fdirectory%2F-agent-Allan%2BRoberts%2F&ei=LJN6U5e2LtiwoQSrz4CoDQ&bvm=bv.67229260,d.cGU&psig=AFQjCNHWqU7RF81y8ueLxo7oM8gB9-HbJw&ust=1400628395376586",
+      "votes" : {
+        "tag1FromView" : {
+          "tagName" : "Buyer's Agent",
+          "value" : 10
+        },
+        "tag3FromView" : {
+          "tagName" : "Consulting, Transition Specialist",
+          "value" : 10
+        },
+        "tag2FromView" : {
+          "tagName" : "Listing Agent",
+          "value" : 10
+        }
+      },
+      "firstName" : "Roberts"
+    }
+  },
+  "provo" : {
+    "1512969658" : {
+      "lastName" : "Garn",
+      "location" : "Provo, Utah",
+      "fullName" : "Jordan Garn",
+      "accessToken" : "CAADxvZBY3njQBAFQgydbC905cpPp8xoZBtvCdfhOZAMOFoaQ7ZCNTYZC1KRM7fOwCaG3USlNQV3ihizHMFmZAkIYQ5Y3UYJzJNzxlTq8IHFMJUStw8WReWWuA5iVXosoljR1zyCMwv2yMgv0Wb6XPzZBN1sEAiQX61DRYZCnjTpw3xeha6SETnYu",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 51,
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/jordangarn.fb",
+      "lastVote" : "2014-03-27T20:50:02.199Z",
+      "comments" : {
+        "-JJ42o7ZmVn4ufl_GBsm" : {
+          "comment" : "Jordan is a great guy, probably one of the smartest I know.  He's helped me make an iPhone App for my Hobbit project and was my workout buddy for a bit.",
+          "user" : "203101784",
+          "value" : 2,
+          "715882688" : {
+            "type" : 1
+          }
+        }
+      },
+      "gender" : "male",
+      "lastLogin" : 1395940314158,
+      "email" : "jordashtalon@gmail.com",
+      "dateCreated" : 1395940314158,
+      "picture" : "https://graph.facebook.com/1512969658/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "apps" : {
+          "tagName" : "apps",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "iphone apps" : {
+          "tagName" : "iphone apps",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "coding" : {
+          "tagName" : "coding",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Jordan",
+      "id" : "1512969658"
+    },
+    "1245698137" : {
+      "lastName" : "Arnett",
+      "location" : "Orem, Utah",
+      "fullName" : "Chaddicus Xavier Arnett",
+      "accessToken" : "CAADxvZBY3njQBABMKmBbj6KV2AySyb7VvbWwAVdMEcdZCgkLmN4ys3ZAnCwYD1EBeg2FdTyXXNByD3WS0d6AuiA8fQGzoDnZBwAiAPV1QNGGDJfZCNwtWpjpG4EUKKXN5pyx6l7RzOZAhaOxFUHwCfwcgSio7Ixa8IutB4EoKIeDkZBdoeGCPlq7enupQBd5uYZD",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/chadjeffreyarnett",
+      "gender" : "male",
+      "lastLogin" : 1395991897511,
+      "email" : "chjarnett@googlemail.com",
+      "dateCreated" : 1395991897511,
+      "picture" : "https://graph.facebook.com/1245698137/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Chaddicus",
+      "id" : "1245698137"
+    },
+    "17800862" : {
+      "lastName" : "Rea",
+      "location" : "Provo, Utah",
+      "fullName" : "Eric Rea",
+      "accessToken" : "CAADxvZBY3njQBAGUmOBM63wZC4poLecS3CodFouneshiHHFv39II1M2NxiI86HF19QxF9pCJEirFexsgVI3UuRZBPPiJOqrGZBaza184ufZBT5lhiZB8dlTrbb9zeAyoGpiAKDfUytebH7SMcUqFMdymBPOoZAHNnnH1j9w7jWgb49NNuR5tZBqb7c4WiZBnqSjMZD",
+      "bio" : "yo yo",
+      "overallVotes" : {
+        "value" : 51
+      },
+      "link" : "https://www.facebook.com/ericwilliamrea",
+      "gender" : "male",
+      "lastLogin" : 1400360287875,
+      "email" : "ericwilliamrea@gmail.com",
+      "dateCreated" : 1400360287875,
+      "picture" : "https://graph.facebook.com/17800862/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "iphone" : {
+          "17800862" : {
+            "type" : 1
+          },
+          "tagName" : "iphone",
+          "value" : 1
+        },
+        "undefined" : {
+          "17800862" : {
+            "type" : 1
+          },
+          "value" : 1
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        },
+        "hello" : {
+          "17800862" : {
+            "type" : 1
+          },
+          "tagName" : "hello",
+          "value" : 1
+        }
+      },
+      "firstName" : "Eric",
+      "id" : "17800862"
+    },
+    "193307521" : {
+      "lastName" : "Davis",
+      "location" : "Provo, Utah",
+      "fullName" : "Bradley Davis",
+      "accessToken" : "CAADxvZBY3njQBAOwwannAXU55dWWcC5Oh8MoWRAq7XgQdUzgdkqLVeKydIIpkZCOiLFjLPMAQpeeYm9uPURGaEBvoMZCDxPiy6ucDwMw3L4Vij2T20k51Cb9NNwFGquPi47B1JCAlZAIDSAChenzKhRDFtPzJ8BV9FdwjnvQAmrzqq2azJ5OJFDkPBsdnTsZD",
+      "bio" : "Bradley Davis is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 50,
+        "203101784" : {
+          "type" : -1
+        }
+      },
+      "link" : "https://www.facebook.com/bradley.carl.davis",
+      "lastVote" : "2014-04-02T01:22:46.338Z",
+      "comments" : {
+        "-JJ4x3XX82KFCnAFQOdV" : {
+          "comment" : "Am I doing this right?",
+          "875915304" : {
+            "type" : 1
+          },
+          "user" : "875915304",
+          "value" : 1,
+          "203101784" : {
+            "type" : -1
+          }
+        },
+        "-JJ4wycGBekygmUHpMN_" : {
+          "comment" : "Innovator and do-er",
+          "user" : "875915304",
+          "value" : 1,
+          "203101784" : {
+            "type" : -1
+          }
+        },
+        "-JJKq3KK82Oncn7iSvJB" : {
+          "comment" : "he got a hair cut not too long ago",
+          "user" : "570698620",
+          "value" : 1
+        },
+        "-JJ-0k8mIjNtK2I9_sBS" : {
+          "comment" : "He has a really good sense of style.  Awesome roommate and a good friend.  Betos runs for days!",
+          "user" : "203101784",
+          "value" : 2,
+          "203101784" : {
+            "type" : 1
+          }
+        }
+      },
+      "gender" : "male",
+      "lastLogin" : 1395533757382,
+      "email" : "bradleycarl26@gmail.com",
+      "dateCreated" : 1395533757382,
+      "picture" : "https://graph.facebook.com/193307521/picture?width=150&height=150",
+      "votes" : {
+        "social media" : {
+          "tagName" : "social media",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "betos" : {
+          "tagName" : "betos",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 49,
+          "203101784" : {
+            "type" : -1
+          }
+        },
+        "coding" : {
+          "tagName" : "coding",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "twitter" : {
+          "tagName" : "twitter",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "indie" : {
+          "tagName" : "indie",
+          "value" : 50,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "fun" : {
+          "875915304" : {
+            "type" : 1
+          },
+          "tagName" : "fun",
+          "570698620" : {
+            "type" : 1
+          },
+          "value" : 53,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 50
+        },
+        "cats" : {
+          "tagName" : "cats",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "fashion" : {
+          "193307521" : {
+            "type" : 1
+          },
+          "tagName" : "fashion",
+          "570698620" : {
+            "type" : -1
+          },
+          "value" : 50,
+          "203101784" : {
+            "type" : 1
+          }
+        }
+      },
+      "firstName" : "Bradley",
+      "id" : "193307521"
+    },
+    "193307685" : {
+      "lastName" : "Davis",
+      "fullName" : "Jeff Davis",
+      "accessToken" : "CAADxvZBY3njQBAAiGgV3aKN63F2388lGhxqlrgmy171CnE1lBfYIpmeIZAjTPwwMvlRNNc4jrF9PpPRqMSba6KcExIXJHSZBwVzNDNVFetbfHVbUflxDNSkh1YfPlOMBGJ7ZBMzhRvk0L4BjWCen8H8SY8CVJLOdJGwwAAWziKZCitJsv3nwA",
+      "bio" : "No I'm really whatever",
+      "overallVotes" : {
+        "193307685" : {
+          "type" : 1
+        },
+        "value" : 53,
+        "193307468" : {
+          "type" : 1
+        },
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/profile.php?id=193307685",
+      "lastVote" : "2014-05-09T23:00:00.689Z",
+      "comments" : {
+        "-JIdVffLXGL5IWagDcyj" : {
+          "comment" : "first comment",
+          "193307685" : {
+            "type" : 1
+          },
+          "user" : "585465715",
+          "value" : 2,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "-JJVEI0sWGSNFg9-rC4Q" : {
+          "comment" : "test",
+          "user" : "203101784",
+          "value" : 1
+        }
+      },
+      "gender" : "male",
+      "lastLogin" : 1395028127382,
+      "overall" : 68,
+      "searchTags" : {
+        "-JISA4x3DrbzO6_5nw5Q" : "kobe bryant"
+      },
+      "dateCreated" : 1395028127382,
+      "picture" : "https://graph.facebook.com/193307685/picture?width=150&height=150",
+      "votes" : {
+        "motorcyles" : {
+          "tagName" : "motorcyles",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "construction" : {
+          "tagName" : "construction",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "hobbit lover" : {
+          "tagName" : "hobbit lover",
+          "value" : 1,
+          "100002528567117" : {
+            "type" : 1
+          }
+        },
+        "hot" : {
+          "type" : 1,
+          "tagName" : "hot",
+          "585465715" : {
+            "type" : 1
+          },
+          "value" : 14,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "cool" : {
+          "tagName" : "cool",
+          "585465715" : {
+            "type" : 1
+          },
+          "value" : 16,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "iphone apps" : {
+          "tagName" : "iphone apps",
+          "value" : 1,
+          "100002528567117" : {
+            "type" : 1
+          }
+        },
+        "strong" : {
+          "tagName" : "strong",
+          "585465715" : {
+            "type" : 1
+          },
+          "value" : 1
+        },
+        "house" : {
+          "tagName" : "house",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "building" : {
+          "tagName" : "building",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "basketball" : {
+          "tagName" : "basketball",
+          "585465715" : {
+            "type" : 1
+          },
+          "value" : 1
+        },
+        "provo" : {
+          "tagName" : "provo",
+          "585465715" : {
+            "type" : 1
+          },
+          "value" : 1
+        },
+        "sports" : {
+          "tagName" : "sports",
+          "585465715" : {
+            "type" : 1
+          },
+          "value" : 1
+        },
+        "kobe bryant" : {
+          "type" : 1,
+          "tagName" : "kobe bryant",
+          "585465715" : {
+            "type" : 1
+          },
+          "value" : 18,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "test" : {
+          "tagName" : "test",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "business" : {
+          "tagName" : "business",
+          "585465715" : {
+            "type" : 1
+          },
+          "value" : 1
+        }
+      },
+      "firstName" : "Jeff",
+      "id" : "193307685"
+    },
+    "621621993" : {
+      "lastName" : "Sharp",
+      "location" : "Provo, Utah",
+      "fullName" : "Cahlan Sharp",
+      "accessToken" : "CAADxvZBY3njQBALJSfjK8ZAlMmdE9aYLHNbtCmpBBQCZAkXmnOZBCjnCUIppG8v6Mbyz79RZBgueQaDSvmuLn38eONjSpbLOhVyb3Ca7BtgW24ZAL0AXq6uTV4US3jSOAOrOIIo3ZCROvSPXN1JpQVZADIVfa3A1rqAEvTw9FwW4tZBLavWZC1KZAGM",
+      "bio" : "Founder at Dev Mountain.",
+      "overallVotes" : {
+        "621621993" : {
+          "type" : 1
+        },
+        "value" : 53,
+        "1054603794" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/cahlan",
+      "lastVote" : "2014-04-14T17:43:51.991Z",
+      "comments" : {
+        "-JJV8dKAHyiLlRRLF2fb" : {
+          "comment" : "I think I'm pretty swell at being awesome.",
+          "621621993" : {
+            "type" : 1
+          },
+          "user" : "621621993",
+          "value" : 2,
+          "193307468" : {
+            "type" : -1
+          }
+        }
+      },
+      "gender" : "male",
+      "lastLogin" : 1396403729792,
+      "email" : "cahlan@gmail.com",
+      "dateCreated" : 1396403729792,
+      "picture" : "https://graph.facebook.com/621621993/picture?width=150&height=150",
+      "votes" : {
+        "photogaphy" : {
+          "tagName" : "photogaphy",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 11,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Cahlan",
+      "id" : "621621993"
+    },
+    "17808718" : {
+      "lastName" : "Boland",
+      "location" : "Tempe, Arizona",
+      "fullName" : "Bobby Boland",
+      "accessToken" : "CAADxvZBY3njQBABNfPC9VIbFs9WKiymAtmEn4uDN77wF3OP6WBKJ0m8MkUZAedaEcRClinm79YCczFmODMMiviv08KRdEbnKHlcWtZB4PCOnozqWuXYTVpHRC4X0JO2iZAUHIKvWVqLQXLXjasfONfDObaZB586kRhMRmMGdLtfk1HLqb3ZCGZA",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/bobby.boland",
+      "gender" : "male",
+      "lastLogin" : 1395944194973,
+      "email" : "robertwboland@gmail.com",
+      "dateCreated" : 1395944194973,
+      "picture" : "https://graph.facebook.com/17808718/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Bobby",
+      "id" : "17808718"
+    },
+    "867040104" : {
+      "lastName" : "Patterson",
+      "location" : "Provo, Utah",
+      "fullName" : "Johnny Patterson",
+      "accessToken" : "CAADxvZBY3njQBAOMCkdIDLAZAZBv5JFC2Llq79VPRqk7xUjLhrZBjBTUSLhR9xkFTRsJVut6bmWInh0yawzPXHgPTkGoUpNp4KHHZCBMixp0wLC46qS3CSY92rABihIzvd4ZCvAfl0Hzo9vQ8PmRyZAmUZBu3QhHnWbCf1ZBFlWt5OTK83mzT5cH4ZCNAHJ4acnq0ZD",
+      "bio" : "",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/johnny.patterson.750",
+      "gender" : "male",
+      "lastLogin" : 1403761256298,
+      "email" : "experiencejohnny@gmail.com",
+      "dateCreated" : 1403761256298,
+      "picture" : "https://graph.facebook.com/867040104/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Johnny",
+      "id" : "867040104"
+    },
+    "100000302208145" : {
+      "lastName" : "Bresnahan",
+      "location" : "West Jordan, Utah",
+      "fullName" : "Dave Bresnahan",
+      "accessToken" : "CAADxvZBY3njQBALsB1i7dqB7SYJg4FpFZBeb9wFcWtzY7FCK35YdJMWvUeEnTGuuztjTkrYO6HPiM1c6dnAqblLH4wUufzc0QKy0zJ9DJINKr9ZCPk180ASlh3GPij3uBvsdq4ETKKPmEMkDywcBNa2gwk4YGSm6firoMyNs5CIFIWZAq7sj7CyQNXApU30ZD",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 51,
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/davebres",
+      "lastVote" : "2014-04-01T19:24:14.790Z",
+      "gender" : "male",
+      "lastLogin" : 1395909259164,
+      "email" : "david@bresnahan.org",
+      "dateCreated" : 1395909259164,
+      "picture" : "https://graph.facebook.com/100000302208145/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 11,
+          "193307468" : {
+            "type" : 1
+          }
+        },
+        "actor" : {
+          "tagName" : "actor",
+          "value" : 1,
+          "193307468" : {
+            "type" : 1
+          }
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Dave",
+      "id" : "100000302208145"
+    },
+    "875915304" : {
+      "lastName" : "Daniels",
+      "location" : "Provo, Utah",
+      "fullName" : "Madison Drew Daniels",
+      "accessToken" : "CAADxvZBY3njQBAEsUZBYZCiVtwZCgo57PRZCgMSWQCbqlvxxJh1NOz8v23vJBqtyU4snMZBJDK3CXgZCULzUbZB9khnn36ZAZAfpH0uxO8zrDnlhPJiDUC4RLcxd7gv8AvvKZCuBr5NFq4QajbBTU9fbBXwZCUJh6NtsEeH8G96l0LEJHWGdGVKzXCIG",
+      "bio" : "Madison Drew Daniels is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/madison.daniels",
+      "gender" : "male",
+      "lastLogin" : 1395534247497,
+      "email" : "tikiman_8@hotmail.com",
+      "dateCreated" : 1395534247497,
+      "picture" : "https://graph.facebook.com/875915304/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 50
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 50
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 50
+        }
+      },
+      "firstName" : "Madison",
+      "id" : "875915304"
+    },
+    "306100099" : {
+      "lastName" : "Onoles",
+      "location" : "Provo, Utah",
+      "fullName" : "Bruno Onoles",
+      "accessToken" : "CAADxvZBY3njQBABrBbbAnbbyt93xRcJ9UsHo2iQ7kf4GdBtVDnHruCZACQAfqtxSzX0ZCh81DbME5mtlmVSh3CrrJuKbi3tc4RQIH3uqx8cz1SI5L4sGFIfl2WZBTmQmgrBqlgjeWkxfTZBEnu86Qw988jj8qFvQuZCU6GBVz5gqE6nMHwK5ss",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 51,
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/bruno.onoles",
+      "lastVote" : "2014-03-31T23:59:34.175Z",
+      "gender" : "male",
+      "lastLogin" : 1395929373617,
+      "email" : "bruno.onoles@gmail.com",
+      "dateCreated" : 1395929373617,
+      "picture" : "https://graph.facebook.com/306100099/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "306100099" : {
+            "type" : 1
+          },
+          "tagName" : "hot",
+          "value" : 11
+        },
+        "fun" : {
+          "306100099" : {
+            "type" : 1
+          },
+          "tagName" : "fun",
+          "value" : 11
+        },
+        "interesting" : {
+          "306100099" : {
+            "type" : 1
+          },
+          "tagName" : "interesting",
+          "value" : 11
+        }
+      },
+      "firstName" : "Bruno",
+      "id" : "306100099"
+    },
+    "17802904" : {
+      "lastName" : "Tueller",
+      "location" : "Provo, Utah",
+      "lastVoteTime" : 1394388560035,
+      "fullName" : "Jd Tueller",
+      "accessToken" : "CAADxvZBY3njQBAL03F9aqFpvV9ZBd4bs12mXg1nJKkPJdarvdMyo7a6bRp1HEed5CVBIk0HRBN7JfQL02W1ut7yEUv0fekkuGr9veYUvhAWyGSObL9JQHeeFuidByLLyhpILyvQPRTe3zkDhlfl8D8F9LEH1Rj49nYXQ06FSaacF0q6CUyl8vSRy2iNfsZD",
+      "bio" : "JD founded a Development Shop called App Raptors and is really smart.  He's a whiz at games and always lets Dev Mountain borrow his HDMI to Thunderbolt extension.",
+      "overallVotes" : {
+        "value" : 51,
+        "100002074621120" : {
+          "type" : 1
+        }
+      },
+      "myOrderReverse" : false,
+      "link" : "https://www.facebook.com/JdTueller",
+      "lastVote" : "2014-03-27T15:08:15.238Z",
+      "comments" : {
+        "-JIp7fytYRum3XG6dE3L" : {
+          "comment" : "You should say that he is great at 2048!",
+          "user" : "100002074621120",
+          "value" : 1
+        }
+      },
+      "gender" : "male",
+      "lastLogin" : 1394388560035,
+      "overall" : 59,
+      "email" : "jdtueller@gmail.com",
+      "dateCreated" : 1394388560035,
+      "picture" : "https://graph.facebook.com/17802904/picture?width=150&height=150",
+      "votes" : {
+        "chill" : {
+          "tagName" : "chill",
+          "585465715" : {
+            "type" : -1
+          },
+          "value" : 0
+        },
+        "Smart" : {
+          "tagName" : "Smart",
+          "585465715" : {
+            "type" : 1
+          },
+          "value" : 4
+        },
+        "App Raptor" : {
+          "tagName" : "App Raptor",
+          "585465715" : {
+            "type" : -1
+          },
+          "value" : 0
+        },
+        "nice" : {
+          "tagName" : "nice",
+          "585465715" : {
+            "type" : -1
+          },
+          "value" : 0
+        },
+        "smart" : {
+          "tagName" : "smart",
+          "value" : 50,
+          "100002074621120" : {
+            "type" : 1
+          }
+        },
+        "Chill" : {
+          "tagName" : "Chill",
+          "585465715" : {
+            "type" : -1
+          },
+          "value" : 0
+        },
+        "Awesome Boat" : {
+          "tagName" : "Awesome Boat",
+          "585465715" : {
+            "type" : 1
+          },
+          "value" : 1
+        },
+        "tech" : {
+          "tagName" : "tech",
+          "585465715" : {
+            "type" : -1
+          },
+          "value" : 1,
+          "715882688" : {
+            "type" : 1
+          }
+        },
+        "awesome boat" : {
+          "tagName" : "awesome boat",
+          "585465715" : {
+            "type" : -1
+          },
+          "value" : 0
+        }
+      },
+      "firstName" : "Jd",
+      "id" : "17802904"
+    },
+    "17831886" : {
+      "lastName" : "Richards",
+      "location" : "Provo, Utah",
+      "fullName" : "Tyler Jordan Richards",
+      "accessToken" : "CAADxvZBY3njQBAAZCYstUls4ha3x55W5bCXLJgqTRtB9uLcPhI1bGluu902WvN1tIpMUlkT47BJMBtaTN6DZCHxfZAdKgHQLZB4oqqqZAjUEI22H0gXLNyziby1vmtd5ZC25v7t9nePmxpI2tHldnqHkGrNfd7G4X3Qms1SWsDQDVTlsYZBjpc7o",
+      "bio" : "Hi. I am T.Rich!",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.trich.me",
+      "gender" : "male",
+      "lastLogin" : 1396392494633,
+      "email" : "tylerjordanrichards@gmail.com",
+      "dateCreated" : 1396392494633,
+      "picture" : "https://graph.facebook.com/17831886/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Tyler",
+      "id" : "17831886"
+    },
+    "765120843" : {
+      "lastName" : "Andelin",
+      "location" : "Salt Lake City, Utah",
+      "fullName" : "Todd Andelin",
+      "accessToken" : "CAADxvZBY3njQBALZCS8a9zhWlhCLstVtumCG1NKngZCZA8K5bZBs54zLgZAhSrXkSBpj1bSUco9ZAclwEgpZA797InZB5bmzn7aw2a9LCZAo8Fig0xHg1JW7SeUEL6K7qwToRElk9nS9uzLCIKjrvzg8yp5qbjR4TY6MTOZC3jTZCSRM98Ynku5VBMZCaRAZCgJXwG3PsZD",
+      "bio" : "Ghetto i'm in the shizzle hizzle, izzle, mah nizzle things, sollicitudizzle boom shackalack, nulla. Crunk crazy, nisi egestas facilisizzle crunk, neque away consequizzle velizzle, mollizzle shiznit libero sheezy izzle crackalackin. Break it down aptent taciti ghetto rizzle shizznit torquent per conubia nostra, pizzle inceptos sheezy. Aliquizzle maurizzle uhuh ... yih!",
+      "overallVotes" : {
+        "585465715" : {
+          "type" : -1
+        },
+        "value" : 50,
+        "203101784" : {
+          "type" : -1
+        }
+      },
+      "myOrderReverse" : false,
+      "link" : "https://www.facebook.com/todd.andelin",
+      "lastVote" : "2014-03-27T06:45:07.463Z",
+      "comments" : {
+        "-JIdVlVIOMieUkRADwa1" : {
+          "comment" : "first comment",
+          "user" : "585465715",
+          "value" : 1
+        }
+      },
+      "gender" : "male",
+      "overall" : 39,
+      "email" : "toddolavi@yahoo.com",
+      "dateCreated" : 1394317086708,
+      "picture" : "https://graph.facebook.com/765120843/picture?width=150&height=150",
+      "votes" : {
+        "tagName" : 1,
+        "overall" : {
+          "585465715" : "2014-03-20T01:54:59.773Z"
+        },
+        "fashion" : {
+          "tagName" : "fashion",
+          "585465715" : {
+            "type" : 1
+          },
+          "value" : 1
+        }
+      },
+      "firstName" : "Todd",
+      "id" : "765120843"
+    },
+    "1087165541" : {
+      "lastName" : "Tallent",
+      "location" : "Provo, Utah",
+      "fullName" : "Paul Tallent",
+      "accessToken" : "CAADxvZBY3njQBABZAtnFmTn0zC8jbdpixw5OOj7IOYZABYExum1IaqItGDVBsYlxUuC1ZADsZBkxmTlZBONJcgGSZC6TcEACsIhbQ7YvJ1hZCgJ4efFLi6yHgDEyTYA3kGOVZBkYOwq8gsGw0ZBWEOiEZBKaYl3u58ZAz55EK8ZAifKNszjZB6Gmrak8cu",
+      "bio" : "",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/pptallent",
+      "gender" : "male",
+      "lastLogin" : 1396391589991,
+      "email" : "prtallent@gmail.com",
+      "dateCreated" : 1396391589991,
+      "picture" : "https://graph.facebook.com/1087165541/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Paul",
+      "id" : "1087165541"
+    },
+    "203000072" : {
+      "lastName" : "George",
+      "location" : "Salt Lake City, Utah",
+      "fullName" : "Chris George",
+      "accessToken" : "CAADxvZBY3njQBALM3ZC5Nzq9jo3w3j4a4ojGZBfU6vswH1UdRpEv4pc0XSDXpRKK2RBcP9C5KhZCdajEM4MxuYGkZCBV2GrJskelFJMDKzMnw4cxCD7mZAWVp01zZC8yZCxgXG7fVhors1qUbOg5AkGtQw9jXenL1kCJZClws9mTwYiTuX5tgxFrZC6m3UZBRzMr9MZD",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/chrisgeorge05",
+      "gender" : "male",
+      "lastLogin" : 1395934937676,
+      "email" : "g_rider05@hotmail.com",
+      "dateCreated" : 1395934937676,
+      "picture" : "https://graph.facebook.com/203000072/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Chris",
+      "id" : "203000072"
+    },
+    "100000984473754" : {
+      "lastName" : "Hickman",
+      "fullName" : "Mathew Hickman",
+      "accessToken" : "CAADxvZBY3njQBAIMx2WsvZB2N14Cj8mU22oh0LUORLw3iQwUuHRJnw8SMdcMzOJV0W6tHvYK6zJu1nL1NPzeIjsuaFxkZC04EDzTF1WSRYhaVU3c183VK8tvHsmNRiwJc9EIL47M3LsILoulNPqjAfPr7PcT7Mz0tarsPJ5ygIZB1One1dTbgeH5xSjjDHcZD",
+      "bio" : "Ghetto i'm in the shizzle hizzle, izzle, mah nizzle things, sollicitudizzle boom shackalack, nulla. Crunk crazy, nisi egestas facilisizzle crunk, neque away consequizzle velizzle, mollizzle shiznit libero sheezy izzle crackalackin. Break it down aptent taciti ghetto rizzle shizznit torquent per conubia nostra, pizzle inceptos sheezy. Aliquizzle maurizzle uhuh ... yih!",
+      "overallVotes" : {
+        "value" : 50,
+        "100002528567117" : {
+          "type" : 1
+        }
+      },
+      "myOrderReverse" : false,
+      "link" : "https://www.facebook.com/mathew.hickman.3",
+      "lastVote" : "2014-03-22T23:34:04.354Z",
+      "comments" : {
+        "-JIdVmUIu8A9sXqnCZlK" : {
+          "comment" : "first comment",
+          "user" : "585465715",
+          "value" : 1
+        }
+      },
+      "gender" : "male",
+      "overall" : 88,
+      "searchTags" : {
+        "-JIMokivPiCCg16MYYsJ" : "university of utah"
+      },
+      "dateCreated" : 1394672027382,
+      "picture" : "https://graph.facebook.com/100000984473754/picture?width=150&height=150",
+      "votes" : {
+        "tagName" : 1,
+        "undefined" : {
+          "585465715" : "2014-03-20T02:28:07.363Z"
+        },
+        "overall" : {
+          "585465715" : "2014-03-20T01:55:08.391Z"
+        }
+      },
+      "firstName" : "Mathew",
+      "id" : "100000984473754"
+    },
+    "1350938100" : {
+      "lastName" : "Groom",
+      "location" : "Orem, Utah",
+      "fullName" : "Jane Anne Groom",
+      "accessToken" : "CAADxvZBY3njQBAPGsBe41LQ61rWwRAETasmkKnItjmsbahQMVvZCLTvAwgW5peyHSDoP72fbZCboQDQndfZC5oSmKZC1yCeQyPleVVH5ZAVcTWB9uQIpOhgolFeiMjP0cSNkYe72ZBT21pqI3LMCiJ7bt6mdRNStYZAdIVcp9VCE7APDFgQ6cK3M",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 51,
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/janiceisonly.groom",
+      "lastVote" : "2014-03-28T23:42:35.557Z",
+      "gender" : "female",
+      "lastLogin" : 1395939731567,
+      "email" : "janeone123@hotmail.com",
+      "dateCreated" : 1395939731567,
+      "picture" : "https://graph.facebook.com/1350938100/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        },
+        "cats" : {
+          "tagName" : "cats",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        }
+      },
+      "firstName" : "Jane",
+      "id" : "1350938100"
+    },
+    "17802483" : {
+      "lastName" : "Bean",
+      "location" : "Clinton, New Jersey",
+      "fullName" : "Marshall Bean",
+      "accessToken" : "CAADxvZBY3njQBAAZAszhbZCXs3Q8tIIcA1erGqHMc6oq5agwQNETbR7xiJ1Nej8KUJLyqJNwomWAwNuUOIR7BNJmXYt4wBpadbFEdH7IsrfHCsnNSaGkFRZAHIFCdcGZCKkTabNUrJbO9IKLiFIdCnfgE4PVbRZAiQZABNFClIo0NVxi4JTrKaKZCoA3w4IDr3AZD",
+      "bio" : "Marshal Bean is an Entrepenuer developing Indie Provo",
+      "overallVotes" : {
+        "value" : 50,
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/cabobean",
+      "lastVote" : "2014-03-28T01:35:19.748Z",
+      "gender" : "male",
+      "lastLogin" : 1395686851113,
+      "email" : "cabobean@gmail.com",
+      "dateCreated" : 1395686851113,
+      "picture" : "https://graph.facebook.com/17802483/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 50
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 50
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 50
+        }
+      },
+      "firstName" : "Marshall",
+      "id" : "17802483"
+    },
+    "585465715" : {
+      "lastName" : "Curtis",
+      "fullName" : "Jacob Dee Curtis",
+      "accessToken" : "CAADxvZBY3njQBAH6C5xGVjLmbitNQuVj3fAFxB1BnmkvhErk2v03EPBtMXsZBU0h3qsXhbVisYLvMCwGnVzfQVAYXHfqylZAfXnPbttQUAENrwZCuebwa5wgoa700YZARjCgIyjTKdhwSHyOWcw1YpLHoZBIECnygcdraf7Kn1tFkTjibz4j5H76qpFWh4c6YZD",
+      "bio" : "Jacob Dee Curtis is pretty much awesome has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "585465715" : {
+          "type" : 1
+        },
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/jacob.d.curtis",
+      "lastVote" : "2014-03-22T20:24:15.289Z",
+      "comments" : {
+        "-JIfPamnlFFHkxdlZqFm" : {
+          "comment" : "He is always willing to help out.  Nice guy.",
+          "585465715" : {
+            "type" : 1
+          },
+          "user" : "585465715",
+          "value" : 2
+        },
+        "-JIfSmzSny6umjytoXaC" : {
+          "comment" : "another comment",
+          "user" : "585465715",
+          "value" : 1
+        },
+        "-JIfQiSm976c6r3_0BON" : {
+          "comment" : "second comment",
+          "585465715" : {
+            "type" : 1
+          },
+          "user" : "585465715",
+          "value" : 2
+        }
+      },
+      "gender" : "male",
+      "lastLogin" : 1395517702368,
+      "overall" : 20,
+      "dateCreated" : 1395517702368,
+      "picture" : "https://graph.facebook.com/585465715/picture?width=150&height=150",
+      "votes" : {
+        "iphone apps" : {
+          "tagName" : "iphone apps",
+          "value" : 50,
+          "100002528567117" : {
+            "type" : 1
+          }
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 50
+        }
+      },
+      "firstName" : "Jacob",
+      "id" : "585465715"
+    },
+    "1114527987" : {
+      "lastName" : "Thomas",
+      "location" : "Provo, Utah",
+      "fullName" : "Drew Thomas",
+      "accessToken" : "CAADxvZBY3njQBADKX5RZAzCeBvMXu58mxpLicN5ZCkFF7LVGCCanPyrFgsOXZCwr0zZBE3TrLMcxHZCZAefofaIQvd6I2DLPfhfygHqSw9X6bvATJw5zoK3a09J2wllDxXirZBH8ZC1ycHYEZBHdV6TNjKOoLA8jnhZCtEjZC2T8ivmOUy0hJpj7FyPr",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/drew.thomas.35574",
+      "gender" : "male",
+      "lastLogin" : 1395986125641,
+      "email" : "thomas.drew.scott@gmail.com",
+      "dateCreated" : 1395986125641,
+      "picture" : "https://graph.facebook.com/1114527987/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Drew",
+      "id" : "1114527987"
+    },
+    "570698620" : {
+      "lastName" : "Etzel",
+      "location" : "Provo, Utah",
+      "fullName" : "Dallas Etzel",
+      "accessToken" : "CAADxvZBY3njQBALfRPROjcZCsPeJw40ZAfgJyuXJ1zMzaZB67eLzG1NZBtlNbPvcfANZCJQ3xFO5BDhW3ZCG5ZC711eY1cZCPqr0OzzFkg66Y1SWdoOAyFmMtTNYCvHMSViuyWFdLZCuRPZCuhXCDE9pNlAZCdcBhmFZBfRXVQ3I1xgsxX88oPFSZAVeJokTCl6CzTgqkZD",
+      "bio" : "I am from chicago area. I skateboard. i love viewing photos and making photography. i love cats. i am young",
+      "overallVotes" : {
+        "value" : 51,
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/dallyboycatlover",
+      "lastVote" : "2014-04-03T17:23:40.879Z",
+      "gender" : "male",
+      "lastLogin" : 1396230501803,
+      "email" : "dallasetzel@gmail.com",
+      "dateCreated" : 1396230501803,
+      "picture" : "https://graph.facebook.com/570698620/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 11,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Dallas",
+      "id" : "570698620"
+    },
+    "629935127" : {
+      "lastName" : "Stevens",
+      "location" : "Lindon, Utah",
+      "fullName" : "S. Mckay Stevens",
+      "accessToken" : "CAADxvZBY3njQBAOhZAs5OOFcz3EhZApvX0GA8SIRkn0rskkHOPYDsRVvY9cJC2ZBoo8yi2nCkzJLHnw7jgyBuYyKYpSR9xFfbSIozVTfLw9ZB66FbadypJcUalDTtCYSH5bruXnFZCcw069cMIB2MX1pSdrdSX0mEQuLPIcMhvVnNyUxZAljG5QH80J2m7VRVgZD",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/s.mckay.stevens",
+      "comments" : {
+        "-JJU07SuVQVGCcLptAIk" : {
+          "comment" : "We worked together on Road to the Shire, the hobbit documentary.  Great experience",
+          "user" : "203101784",
+          "value" : 1
+        }
+      },
+      "gender" : "male",
+      "lastLogin" : 1395941128106,
+      "email" : "smckaystevens@gmail.com",
+      "dateCreated" : 1395941128106,
+      "picture" : "https://graph.facebook.com/629935127/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "editing" : {
+          "tagName" : "editing",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "video" : {
+          "tagName" : "video",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "S. Mckay",
+      "id" : "629935127"
+    },
+    "1006031256" : {
+      "lastName" : "Hill",
+      "location" : "Provo, Utah",
+      "fullName" : "McKenna Hill",
+      "accessToken" : "CAADxvZBY3njQBAAeK5TME4QE7VPsp4cQFfvkwtYuQe5Hkjcc57OY6RhAPl0AqZCVazrMQTYbzcYI4pLFMM7wO0xAZBTHWubcv25u1qbg6qVIEDUX1lPZAt0E6RQhSEXqQKx6oWqxyQ5YCu4xCPZBMeWgJ0bh9wkcgbho7nBHzKLQeQZA7QE4SE",
+      "bio" : "plays guitar. speaks in hashtags. mission-bound.",
+      "overallVotes" : {
+        "1006031256" : {
+          "type" : -1
+        },
+        "value" : 51,
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.twitter.com/kennakay17",
+      "lastVote" : "2014-04-02T17:38:58.320Z",
+      "comments" : {
+        "-JJ3iiDLP6iPJoya3Gah" : {
+          "comment" : "music",
+          "user" : "1006031256",
+          "1006031256" : {
+            "type" : 1
+          },
+          "value" : 1
+        },
+        "-JJ3ihNB5zUjuCEBsj8t" : {
+          "comment" : "guitar",
+          "user" : "1006031256",
+          "value" : 1
+        },
+        "-JJ3isLpgFEdbp4hQ8pd" : {
+          "comment" : "twitter",
+          "user" : "1006031256",
+          "value" : 1
+        },
+        "-JJ3iqTdm-RfLVDtFS1Y" : {
+          "comment" : "animals",
+          "user" : "1006031256",
+          "1006031256" : {
+            "type" : 1
+          },
+          "value" : 1
+        },
+        "-JJ67COgxNuKcKbW_6zK" : {
+          "comment" : "Cats",
+          "user" : "193307468",
+          "value" : 2,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "-JJ3itVyB9pgZjBacou8" : {
+          "comment" : "business",
+          "user" : "1006031256",
+          "value" : 1
+        },
+        "-JJ3iiD5_6dNtZ4NFe2V" : {
+          "comment" : "music",
+          "user" : "1006031256",
+          "1006031256" : {
+            "type" : 1
+          },
+          "value" : 1
+        },
+        "-JJ3ifUfrMNbgezI-ALs" : {
+          "comment" : "cats",
+          "user" : "1006031256",
+          "1006031256" : {
+            "type" : -1
+          },
+          "value" : 0,
+          "193307468" : {
+            "type" : 1
+          },
+          "203101784" : {
+            "type" : -1
+          }
+        }
+      },
+      "gender" : "female",
+      "lastLogin" : 1395943677609,
+      "email" : "igallop4u@gmail.com",
+      "dateCreated" : 1395943677609,
+      "picture" : "https://graph.facebook.com/1006031256/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "guitar" : {
+          "tagName" : "guitar",
+          "1006031256" : {
+            "type" : 1
+          },
+          "value" : 1
+        },
+        "twitter" : {
+          "tagName" : "twitter",
+          "1006031256" : {
+            "type" : 1
+          },
+          "value" : 1
+        },
+        "music" : {
+          "tagName" : "music",
+          "1006031256" : {
+            "type" : 1
+          },
+          "value" : 1
+        },
+        "marketing" : {
+          "tagName" : "marketing",
+          "1006031256" : {
+            "type" : 1
+          },
+          "value" : 1
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        },
+        "cats" : {
+          "tagName" : "cats",
+          "1006031256" : {
+            "type" : 1
+          },
+          "value" : 1
+        },
+        "animals" : {
+          "tagName" : "animals",
+          "1006031256" : {
+            "type" : 1
+          },
+          "value" : 1
+        },
+        "business" : {
+          "tagName" : "business",
+          "1006031256" : {
+            "type" : 1
+          },
+          "value" : 1
+        }
+      },
+      "firstName" : "McKenna",
+      "id" : "1006031256"
+    },
+    "17829018" : {
+      "lastName" : "Taylor",
+      "location" : "Provo, Utah",
+      "fullName" : "Anders Taylor",
+      "accessToken" : "CAADxvZBY3njQBANJLAl6W8m4RztS61tEkcZCao3KZBUJWlmcSXkEBRdDGBG3RDvnPY9N3f1dVJopXqplQzmWZBSQyfCfK9zHc43jGzm3AMCxw1nycJgInkEcrnGXpPJjtUHGLPTgJqBfOhEkzJDlRCJZChSkZBWCF4PvdUrlLxoBdZAWTSZCxQBQZAgAQeDNEp58ZD",
+      "bio" : "Anders Taylor is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 51,
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/anders.taylor1",
+      "lastVote" : "2014-03-28T06:12:27.399Z",
+      "comments" : {
+        "-JJ-D-knGWQpul8tOE4b" : {
+          "comment" : "Great guy.  He's an awesome community builder and loves talking about container homes with me.  Super chill.",
+          "user" : "203101784",
+          "value" : 3,
+          "203101784" : {
+            "type" : 1
+          },
+          "715882688" : {
+            "type" : 1
+          }
+        }
+      },
+      "gender" : "male",
+      "lastLogin" : 1395854591582,
+      "email" : "billnted@byu.net",
+      "dateCreated" : 1395854591582,
+      "picture" : "https://graph.facebook.com/17829018/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 50
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 50
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 52,
+          "203101784" : {
+            "type" : 1
+          },
+          "715882688" : {
+            "type" : 1
+          }
+        }
+      },
+      "firstName" : "Anders",
+      "id" : "17829018"
+    },
+    "728035031" : {
+      "lastName" : "Lee",
+      "location" : "Provo, Utah",
+      "fullName" : "Colton Lee",
+      "accessToken" : "CAADxvZBY3njQBAFOZBXlHdSg7qGn7bGjhDLRsRozsPftdsa2PEedwk4Dsx76Ca0TdfCMPGGZAgvNyW6ulDF8xHRzSHrHz1ACQNfZAbsmSTKsNmcpKg3PvNv9WBR35NrZCET6FnJxjQgyLZBA3BvQ3kpMva2fPi6z4VfqWOi6LoxKBSLNmXM3yd",
+      "bio" : "",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/coltonjoshualee",
+      "gender" : "male",
+      "lastLogin" : 1396392717588,
+      "email" : "coltjlee@gmail.com",
+      "dateCreated" : 1396392717588,
+      "picture" : "https://graph.facebook.com/728035031/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Colton",
+      "id" : "728035031"
+    },
+    "193307468" : {
+      "lastName" : "Hill",
+      "schnapper" : 1,
+      "fullName" : "Bryson C. Hill",
+      "accessToken" : "CAADxvZBY3njQBAF092nEysVz8CkQycyGMtV6mDSlqwX7vAPj2DzwktpzGQsnyTHcDkSdlbigezvRYlZCpU3TdZBeOUf3ulZBWj1LyHd3rAsoumgSjOckFgAXsIgSxTi8LzEqLzZC4J52aE2A7ERNJsAPivTuKe7ambNCRcY4Gd4JarytFZC54r",
+      "bio" : "King of the Hill.",
+      "overallVotes" : {
+        "value" : 56,
+        "193307468" : {
+          "type" : 1
+        },
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/BrysonCHill",
+      "lastVote" : "2014-05-09T20:28:50.758Z",
+      "gender" : "male",
+      "lastLogin" : 1395200179495,
+      "overall" : 34,
+      "searchTags" : {
+        "-JISIhRZB-37lCK534SN" : "sales"
+      },
+      "dateCreated" : 1395200179495,
+      "picture" : "https://graph.facebook.com/193307468/picture?width=150&height=150",
+      "votes" : {
+        "star wars game" : {
+          "tagName" : "star wars game",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "card games" : {
+          "tagName" : "card games",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "badass" : {
+          "tagName" : "badass",
+          "value" : 0,
+          "193307468" : {
+            "type" : 1
+          },
+          "203101784" : {
+            "type" : -1
+          }
+        },
+        "undefined" : {
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "funny" : {
+          "tagName" : "funny",
+          "585465715" : {
+            "type" : 1
+          },
+          "value" : 3,
+          "193307468" : {
+            "type" : 1
+          },
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "exercise balls" : {
+          "tagName" : "exercise balls",
+          "value" : 1,
+          "17808584" : {
+            "type" : 1
+          }
+        },
+        "california" : {
+          "tagName" : "california",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "hard work" : {
+          "tagName" : "hard work",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "startups" : {
+          "tagName" : "startups",
+          "585465715" : {
+            "type" : 1
+          },
+          "value" : 1
+        },
+        "star wars" : {
+          "tagName" : "star wars",
+          "value" : 51,
+          "193307468" : {
+            "type" : 1
+          },
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "business" : {
+          "tagName" : "business",
+          "585465715" : {
+            "type" : 1
+          },
+          "value" : 87,
+          "193307468" : {
+            "type" : 1
+          },
+          "17808584" : {
+            "type" : -1
+          },
+          "203101784" : {
+            "type" : 1
+          }
+        }
+      },
+      "firstName" : "Bryson",
+      "id" : "193307468"
+    },
+    "1143543579" : {
+      "lastName" : "Wagner",
+      "location" : "Provo, Utah",
+      "fullName" : "Annie Marie Wagner",
+      "accessToken" : "CAADxvZBY3njQBALImhN1xL8DVtDfBIBivqrwbdForgu5DuwrPtEkn8yREN3Hfp691Ff1Jtb4IsGsZBPVhGT1xNULQVhThrtU8f242L7oTTF98CGNZCV85ZCjPgS2N96G8JtObXDdGgh0ZC6SaSiqyr9cqdyQHDhQ9sWTKuEfEJH3pw4EZBUTAF",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 51,
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/annie.m.wagner",
+      "lastVote" : "2014-04-01T18:52:15.575Z",
+      "gender" : "female",
+      "lastLogin" : 1395939863025,
+      "email" : "annie.m.wagner@gmail.com",
+      "dateCreated" : 1395939863025,
+      "picture" : "https://graph.facebook.com/1143543579/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Annie",
+      "id" : "1143543579"
+    },
+    "1527571779" : {
+      "lastName" : "Huntington",
+      "location" : "Provo, Utah",
+      "fullName" : "Sean Huntington",
+      "accessToken" : "CAADxvZBY3njQBANRkFsFwMRnbTnD2igscBXu9eBz8FBqRMib9Tm1ftRWaKumLoZABaE9WLUnwQ7YARqqbAmqQKp5mDeetlzoW30bLcoTk5ejPd1eppkdc5ldcjVnZAvDymHXvw7zfSNJJZCACISyuppXLYXE7mV5VLQ0SZCCdN7Q65qwpZC5xv",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/tedwerdthon",
+      "lastVote" : "2014-06-11T23:24:40.985Z",
+      "gender" : "male",
+      "lastLogin" : 1395960102652,
+      "email" : "tedwerdthon@gmail.com",
+      "dateCreated" : 1395960102652,
+      "picture" : "https://graph.facebook.com/1527571779/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 11,
+          "591069480" : {
+            "type" : 1
+          }
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Sean",
+      "id" : "1527571779"
+    },
+    "17808584" : {
+      "lastName" : "Schwarting",
+      "location" : "Provo, Utah",
+      "fullName" : "Jeff Schwarting",
+      "accessToken" : "CAADxvZBY3njQBAHTTFmE7ZCqSkfTJ5WcZBZBJeLZBe9ZBmC9Gr5EJT1A5eOBM3SYSQjz0FiupE6jdieH5i79U7naCpMZCEQs2b7htfylZA4HkgZBhcfWd1ZBQ2Jwjtf9CDZBXTFHE917shguYnIcdhcxoou2ZA17Pdq5oxBTluxvs9iRdYN6Q2EZCxDiN",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/jmschwarting",
+      "gender" : "male",
+      "lastLogin" : 1395966808041,
+      "email" : "jmschwarting@gmail.com",
+      "dateCreated" : 1395966808041,
+      "picture" : "https://graph.facebook.com/17808584/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Jeff",
+      "id" : "17808584"
+    },
+    "1408060230" : {
+      "lastName" : "Schuette",
+      "location" : "Salt Lake City, Utah",
+      "fullName" : "Markus Schuette",
+      "accessToken" : "CAADxvZBY3njQBAK4VeD1U06YLJxpv0uQAmtdgIvwnPY8G8BXJKlSlyYkpEgOFYISw3edJ3f6ZAetoYe3vL3ilLqzlZB9VFLm6U3VCa4J0Uh9E5ADP1uwhO0DCOQU2GLd1x2gReY04P9adKZAJ9ZBvtZA7nZCjmvgMqioHrfMO3OW3PmMlBZC9ZAMuYWJZBMMMhZA04ZD",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 51,
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/markus.schuette",
+      "lastVote" : "2014-04-01T00:04:01.946Z",
+      "comments" : {
+        "-JJT9xqxzNPRaZxQTYR8" : {
+          "comment" : "Markus is a fellow dreamer.  He's been a big help in helping get www.xoisland.com together and is a good friend.  We're both big fans of Noah Kagan, and maybe one day we'll actually make it down to Brazil :)",
+          "user" : "203101784",
+          "value" : 1
+        }
+      },
+      "gender" : "male",
+      "lastLogin" : 1395944865227,
+      "email" : "schuettemarkus@yahoo.com",
+      "dateCreated" : 1395944865227,
+      "picture" : "https://graph.facebook.com/1408060230/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "193307685" : {
+            "type" : 1
+          },
+          "tagName" : "hot",
+          "value" : 11
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Markus",
+      "id" : "1408060230"
+    },
+    "1395682538" : {
+      "lastName" : "Hanna",
+      "location" : "Provo, Utah",
+      "fullName" : "Nathan Hanna",
+      "accessToken" : "CAADxvZBY3njQBAC8ZArmlnWlj1mU6MwQ6ZAmUuSgFcgTKb7nBTbWLfYxHe5xJsTSdmFUyIWuQAIPzjvnRbZAVipJjP4SatnB7iv8ZB84hFUXZAQDRmVwl3WcfaMPEMlLTQyYiTZCH24azL63JzxyNpES2ZAF91N3bw60rxrufuVqI0llbaBky3MZAeMZB8ylNAergZD",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 52,
+        "1395682538" : {
+          "type" : 1
+        },
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/jnathanh",
+      "lastVote" : "2014-06-26T05:37:26.375Z",
+      "comments" : {
+        "-JQLfWbcgEKtZwAINlFx" : {
+          "comment" : "Nathan was my mentor.  Super smart, good developer",
+          "user" : "203101784",
+          "value" : 1
+        },
+        "-JJ65Y2kvNrdDODl6ixe" : {
+          "comment" : "Nathan is pretty much great at everything",
+          "user" : "1395682538",
+          "value" : 2,
+          "1395682538" : {
+            "type" : 1
+          }
+        }
+      },
+      "gender" : "male",
+      "lastLogin" : 1395983393272,
+      "email" : "jnathanh@gmail.com",
+      "dateCreated" : 1395983393272,
+      "picture" : "https://graph.facebook.com/1395682538/picture?width=150&height=150",
+      "votes" : {
+        "programming" : {
+          "tagName" : "programming",
+          "value" : 1,
+          "1395682538" : {
+            "type" : 1
+          }
+        },
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 12,
+          "1395682538" : {
+            "type" : 1
+          },
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "creative" : {
+          "tagName" : "creative",
+          "value" : 1,
+          "1395682538" : {
+            "type" : 1
+          }
+        },
+        "mountain biking" : {
+          "tagName" : "mountain biking",
+          "value" : 1,
+          "1395682538" : {
+            "type" : 1
+          }
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 12,
+          "1395682538" : {
+            "type" : 1
+          },
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 12,
+          "1395682538" : {
+            "type" : 1
+          },
+          "203101784" : {
+            "type" : 1
+          }
+        }
+      },
+      "firstName" : "Nathan",
+      "id" : "1395682538"
+    },
+    "591069480" : {
+      "lastName" : "Barton",
+      "location" : "Boulder, Colorado",
+      "fullName" : "Chas Barton",
+      "accessToken" : "CAADxvZBY3njQBAKhjSe0obCPZChtIDErDbfZCvoMpoRXZAUlsXpR4h014rEgP8pMOq45NgrBGWC7eaucza1qfyjAt7bRcDLUDDZA4bieLWEaANbyXoZB6XNLLtVUNkjZC5TZBHEccWqvzmwVRD4HAERHBsDlrRPSX1YMtUVZAuPSRhjZAkpALZC9fbEHWqWuoMpZCI0ZD",
+      "bio" : "",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/charleskbarton",
+      "lastVote" : "2014-06-11T23:23:42.419Z",
+      "gender" : "male",
+      "lastLogin" : 1402528859583,
+      "email" : "charleskbarton@gmail.com",
+      "dateCreated" : 1402528859583,
+      "picture" : "https://graph.facebook.com/591069480/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 11,
+          "591069480" : {
+            "type" : 1
+          }
+        },
+        "design" : {
+          "tagName" : "design",
+          "value" : 1,
+          "591069480" : {
+            "type" : 1
+          }
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 11,
+          "591069480" : {
+            "type" : 1
+          }
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Chas",
+      "id" : "591069480"
+    },
+    "563714671" : {
+      "lastName" : "Hooper",
+      "location" : "Salt Lake City, Utah",
+      "fullName" : "Reiley Hooper",
+      "accessToken" : "CAADxvZBY3njQBAC4F7KP5K5qdZCLYsbxrypAoUonIJI9rBlo0lfbJOW9UM7IpIAE5Wc4kUZB8UeKJbQZAiYj4K1NZC6foZCVr2oAsRagXmfIyOyUYgsvvtZCsxioMZClpMHwFFOZC7OJ8rbHKZCbRz7KDKdo26e5zrScZAi2Qd6soOiZCzZCLDUuBh70P9qiZCHWHb1UsZD",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/reiley.hooper",
+      "gender" : "male",
+      "lastLogin" : 1395944192717,
+      "email" : "hoopdawg42@yahoo.com",
+      "dateCreated" : 1395944192717,
+      "picture" : "https://graph.facebook.com/563714671/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Reiley",
+      "id" : "563714671"
+    },
+    "1581162401" : {
+      "lastName" : "Sutherland",
+      "location" : "North Ogden, Utah",
+      "fullName" : "Matt Sutherland",
+      "accessToken" : "CAADxvZBY3njQBAAFBeNB34xQnGwNfugqLIbczupZADoEq6Fu2M5rRiYbckfyhPsFZB2tjfbvAq5qbvP7R3cCQLZCBybk16KDBjK83PIuknF7rQRb3NkoGotij3Ah6DT1h7PnevRpFPc7ooIK7cKJYZCmsUygkLKbgTKmDJHNtnZCjWYJqQxWNvLC7uRs6PLPwZD",
+      "bio" : "I love cats!",
+      "overallVotes" : {
+        "value" : 51,
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/MattWSutherland",
+      "lastVote" : "2014-04-11T22:21:22.543Z",
+      "gender" : "male",
+      "lastLogin" : 1395933945793,
+      "email" : "mattwsutherland@gmail.com",
+      "dateCreated" : 1395933945793,
+      "picture" : "https://graph.facebook.com/1581162401/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 11,
+          "1581162401" : {
+            "type" : 1
+          },
+          "203101784" : {
+            "type" : -1
+          }
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10,
+          "203101784" : {
+            "type" : -1
+          }
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10,
+          "203101784" : {
+            "type" : -1
+          }
+        }
+      },
+      "firstName" : "Matt",
+      "id" : "1581162401"
+    },
+    "203101784" : {
+      "lastName" : "Storey",
+      "location" : "Provo, Utah",
+      "fullName" : "John D. Storey",
+      "accessToken" : "CAADxvZBY3njQBAMF9NrefXW8JHVme5Hzd2mXWrOYe4M5IVdVXpBbzH2AfIgA0JcmGNGuMXOw2Rg5khDLlN0lc1srE8MYaMLvMTR1iAbAtxziLGvuyo2G2UQwhsKqBAxrFyiOUaooz3LHSjTBVfyiSiVydAbzGO2HHwkGvY1XLkI7TBljGWIVXfRBtELwZD",
+      "bio" : "Web Dev, iOS enthusiast",
+      "overallVotes" : {
+        "value" : 57
+      },
+      "link" : "https://www.facebook.com/johndangerstorey",
+      "gender" : "male",
+      "lastLogin" : 1400257957680,
+      "email" : "johndangerstorey@gmail.com",
+      "dateCreated" : 1400257957680,
+      "picture" : "https://graph.facebook.com/203101784/picture?width=150&height=150",
+      "votes" : {
+        "professional" : {
+          "tagName" : "professional",
+          "value" : 10
+        },
+        "availability" : {
+          "tagName" : "availability",
+          "value" : 10
+        },
+        "hustle" : {
+          "tagName" : "hustle",
+          "value" : 10
+        }
+      },
+      "firstName" : "John",
+      "id" : "203101784"
+    },
+    "1175400210" : {
+      "lastName" : "Tallent",
+      "location" : "Cedar Hills, Utah",
+      "fullName" : "John Evan Tallent III",
+      "accessToken" : "CAADxvZBY3njQBACjOIzi4XpbSwKubOqpmwZAyDlV37Cea8YIgeQLYuLXYegpzOGy0J8FZBXN6OtcqhVtZC09II8KvsZBiDsiZB9criSOtfUBXfLonI5P7TD7k4cJkZByoVWEMZAl83MFJxIkA1weHHqzpZAPeZCqgTzfpHZCBDGTPCCiZCSq3FJEFvHi",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 51,
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/jetallent",
+      "lastVote" : "2014-04-01T20:37:40.360Z",
+      "gender" : "male",
+      "lastLogin" : 1395957401007,
+      "email" : "jetallentiii@gmail.com",
+      "dateCreated" : 1395957401007,
+      "picture" : "https://graph.facebook.com/1175400210/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 11,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 11,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 11,
+          "203101784" : {
+            "type" : 1
+          }
+        }
+      },
+      "firstName" : "John",
+      "id" : "1175400210"
+    },
+    "17810849" : {
+      "lastName" : "Denny",
+      "location" : "Hartsdale, New York",
+      "fullName" : "Ryan Denny",
+      "accessToken" : "CAADxvZBY3njQBAHeZBZAZBWgi7d93ZCg2SckrBKUQFpMqvdqnEe8lfNa0meK5cNNZAdNzMXe1Wfv2U4Co1irMlolXMv7ogtx4aRqbLKf4sU5Nfhg6cjjUG5HRNBMbmgE8DOtqLVSS0C4f7g5mNlP8ZB16zmZAdZCbU9rruOsNkv7eLfZAEi9wQgrTS",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 51,
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/ryandenny",
+      "lastVote" : "2014-04-01T19:19:50.172Z",
+      "gender" : "male",
+      "lastLogin" : 1395919704139,
+      "email" : "ryandenny@gmail.com",
+      "dateCreated" : 1395919704139,
+      "picture" : "https://graph.facebook.com/17810849/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Ryan",
+      "id" : "17810849"
+    },
+    "1054603794" : {
+      "lastName" : "Allred",
+      "location" : "Provo, Utah",
+      "fullName" : "Ryan Allred",
+      "accessToken" : "CAADxvZBY3njQBAJtiZCVpbbVD4kMKZAHdqvJOucX8zAr351xlXG8jGZB7TaUYSGzZChNzq00Uq6dhM6OblnbbMFxkrg5NEMEuKJoDyrqVrZAAoK2z4MkmtM2RdXLr1E6MiZCgQ2C3FAfFMwLYH4Wm4K5fuyMHLb6cAupMxF6ohFrEYKjbUO2c5g",
+      "bio" : "",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/ryanslion",
+      "gender" : "male",
+      "lastLogin" : 1397497400664,
+      "email" : "ryanleeallred@gmail.com",
+      "dateCreated" : 1397497400664,
+      "picture" : "https://graph.facebook.com/1054603794/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Ryan",
+      "id" : "1054603794"
+    },
+    "1210657605" : {
+      "lastName" : "Purcell",
+      "location" : "Provo, Utah",
+      "fullName" : "Tiafau A. Purcell",
+      "accessToken" : "CAADxvZBY3njQBAFYTUtxoHiH4lWEYXFEtIlyYsOGnCqjZCl7YWm4xXr89dACOOfQygxSeZBbsjceQJ5HctUF3HnPPuayqulyozB5AkQhRFxqMRJ5ZBKD1KNUiT8VwSATbunb5ZBUsRDhoi9WGrYtm6X4DbjlPF4MEqwXR8CKDxX3ED4fNmW0qWSQwCqYZBU3oZD",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/tiafau.a.purcell",
+      "gender" : "male",
+      "lastLogin" : 1395944943423,
+      "email" : "tiafaupurcell@yahoo.com",
+      "dateCreated" : 1395944943423,
+      "picture" : "https://graph.facebook.com/1210657605/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Tiafau",
+      "id" : "1210657605"
+    },
+    "1043430130" : {
+      "lastName" : "Glover",
+      "location" : "Lindon, Utah",
+      "fullName" : "Danny Glover",
+      "accessToken" : "CAADxvZBY3njQBAI0rXWNjajT1LaE2Jv5BZBQZBZCmkWVZBhZAZBqXUzOGAsE2QeDWIPraccwO6DkJXZCCMbZAxokaacDspFvoHEonJwpM2mkEhrR9b5HPFEilZAz9ZALlSrJu2bZBGsZBGBITDWpbIoictZBYZCey4goxIMiL8BiEuro0RTM3q37vZAZBE6cFLc8FO5d04g0ZD",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/danielsglover",
+      "gender" : "male",
+      "lastLogin" : 1395984006392,
+      "email" : "dansteglo@gmail.com",
+      "dateCreated" : 1395984006392,
+      "picture" : "https://graph.facebook.com/1043430130/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Danny",
+      "id" : "1043430130"
+    },
+    "715882688" : {
+      "lastName" : "Henrie",
+      "location" : "Provo, Utah",
+      "fullName" : "Douglas Colt Turner Henrie",
+      "accessToken" : "CAADxvZBY3njQBAFvKtso3INQOOJvZCOj4gCi5nZAid1GlBiOf1TIAOyAFKREwSzb9l2fQmNsVPkHFUJwLucZAychWS4PFWBIZBXyorfPPr6UioNOchjelbRqJIw8PXrMErB2RdWE5B0pzoB4GoSQsFjSJDZAusXHObnSOpgadS2tqjyLkZAR1R0",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 51,
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/dougchenrie",
+      "lastVote" : "2014-05-17T20:58:22.908Z",
+      "comments" : {
+        "-JJVNi8ppGSZAlNgPd3I" : {
+          "comment" : "great teacher",
+          "17800862" : {
+            "type" : 1
+          },
+          "user" : "203101784",
+          "value" : 2
+        }
+      },
+      "gender" : "male",
+      "lastLogin" : 1395932864647,
+      "email" : "dougchenrie@gmail.com",
+      "dateCreated" : 1395932864647,
+      "picture" : "https://graph.facebook.com/715882688/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Douglas",
+      "id" : "715882688"
+    },
+    "17805885" : {
+      "lastName" : "Bergener",
+      "location" : "Yakima, Washington",
+      "fullName" : "Justin Bergener",
+      "accessToken" : "CAADxvZBY3njQBAEmPTLG5AOWbZA4waUZC10OZCFOLl0hzjalZCJZArLMNBoNzlLHgjUb0PRe5N1TcjoVm9ZCvFdeewrmFCdhZBwpSqbZBrLtQbjZB20Q7E9PjYjXcifoeQ6z4EvoZAO7Q5BWJbE9yZC1eALpH4O8PuiwcZAuHZCyRO2kXry5qPGdAjJfniTxEOVmrPdbAZD",
+      "bio" : "Ghetto i'm in the shizzle hizzle, izzle, mah nizzle things, sollicitudizzle boom shackalack, nulla. Crunk crazy, nisi egestas facilisizzle crunk, neque away consequizzle velizzle, mollizzle shiznit libero sheezy izzle crackalackin. Break it down aptent taciti ghetto rizzle shizznit torquent per conubia nostra, pizzle inceptos sheezy. Aliquizzle maurizzle uhuh ... yih!",
+      "overallVotes" : {
+        "585465715" : {
+          "type" : 1
+        },
+        "value" : 50
+      },
+      "myOrderReverse" : false,
+      "link" : "https://www.facebook.com/jbergener",
+      "lastVote" : "2014-03-22T23:50:22.644Z",
+      "comments" : {
+        "-JIdWvH-S_nDYxkKLw9h" : {
+          "comment" : "He moved down to Provo just to pursue his startup!  That's committed, welcome to Provo :)",
+          "585465715" : {
+            "type" : 1
+          },
+          "user" : "585465715",
+          "value" : 2
+        },
+        "-JIdVhkIDclepxaXJozd" : {
+          "comment" : "first comment",
+          "585465715" : {
+            "type" : -1
+          },
+          "user" : "585465715",
+          "value" : 0
+        }
+      },
+      "gender" : "male",
+      "overall" : 86,
+      "email" : "justinbergener@gmail.com",
+      "dateCreated" : 1394320328673,
+      "picture" : "https://graph.facebook.com/17805885/picture?width=150&height=150",
+      "votes" : {
+        "chill" : {
+          "tagName" : "chill",
+          "userID" : "date",
+          "585465715" : {
+            "type" : 1
+          },
+          "value" : 12,
+          "100002528567117" : {
+            "type" : 1
+          }
+        },
+        "committed" : {
+          "tagName" : "committed",
+          "585465715" : {
+            "type" : 1
+          },
+          "value" : 2,
+          "100002528567117" : {
+            "type" : 1
+          }
+        },
+        "ambitious" : {
+          "tagName" : "ambitious",
+          "585465715" : {
+            "type" : 1
+          },
+          "value" : 2,
+          "100002528567117" : {
+            "type" : 1
+          }
+        },
+        "startups" : {
+          "tagName" : "startups",
+          "585465715" : {
+            "type" : 1
+          },
+          "value" : 1
+        }
+      },
+      "firstName" : "Justin",
+      "id" : "17805885"
+    },
+    "100000478960804" : {
+      "lastName" : "Merrill",
+      "location" : "Murray, Utah",
+      "fullName" : "Griffen Merrill",
+      "accessToken" : "CAADxvZBY3njQBAPDR7zyuZCH3ir1uU5NuJwTXRZAUr8v5NZCbglG5ht12kKGNLH7MgIl94AXnJdzazhs2zigXjaAkbUfp5wGWCDj5gQ32ZB5pi1P5qqUhMPP1ZC3tCat2QWbTiPwDwnpD55zXasMZC7sRLOzqTZCxqzSaqBPn26ZCTi2yt42KmhfKNZB7FMxRLScIZD",
+      "bio" : "Golf, Ceramics",
+      "overallVotes" : {
+        "value" : 53,
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/griffen.merrill",
+      "lastVote" : "2014-06-26T20:30:47.107Z",
+      "comments" : {
+        "-JQOrp8fvrPp-TKnyna0" : {
+          "comment" : "My mission buddy, really good at back massages ;)",
+          "user" : "203101784",
+          "value" : 1
+        }
+      },
+      "gender" : "male",
+      "lastLogin" : 1402551351953,
+      "curator" : {
+        "description" : "Let fellow golfers know where the most manicured courses are throughout the state. It is also used the fore-warn golfers of poor conditions and the dreaded aeration machine.",
+        "pageName" : "golf",
+        "headline" : "Real Time Course Ratings"
+      },
+      "email" : "m.griffen@mac.com",
+      "dateCreated" : 1402551351953,
+      "picture" : "https://graph.facebook.com/100000478960804/picture?width=150&height=150",
+      "votes" : {
+        "long hair" : {
+          "tagName" : "long hair",
+          "value" : 1,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 11,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "golf" : {
+          "tagName" : "golf",
+          "value" : 1,
+          "100000478960804" : {
+            "type" : 1
+          }
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10,
+          "203101784" : {
+            "type" : -1
+          }
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Griffen",
+      "id" : "100000478960804"
+    },
+    "712812623" : {
+      "lastName" : "Barnes",
+      "location" : "Provo, Utah",
+      "fullName" : "Joseph L. Barnes",
+      "accessToken" : "CAADxvZBY3njQBANo0dDBrtM74YJMTTZCCvO6xiGIK3jj1Wm6XnOZAV9graZBUD9BXXvXYGzZAZBDbWh9naxzy7xKfm9Ck2qBq0QiUmVqqZA4UdcQFmIkhtFz47vnujjmRCvWnVTcCuTeqRkUf8eXJwBKTEcCNcrrrcoZCPOp1A3o8NNbvaaveLIZB",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 51,
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/joseph.l.barnes.3",
+      "lastVote" : "2014-06-12T07:10:09.720Z",
+      "gender" : "male",
+      "lastLogin" : 1395943847922,
+      "email" : "millenium_111@yahoo.com",
+      "dateCreated" : 1395943847922,
+      "picture" : "https://graph.facebook.com/712812623/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10,
+          "100000478960804" : {
+            "type" : -1
+          }
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 11,
+          "100000478960804" : {
+            "type" : 1
+          }
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Joseph",
+      "id" : "712812623"
+    },
+    "40202504" : {
+      "lastName" : "Wilson",
+      "location" : "Idaho Falls, Idaho",
+      "fullName" : "Colter Wilson",
+      "accessToken" : "CAADxvZBY3njQBAANLgZCfFbpDBCzcpwU69BFZCDtsNmMEkBihlmWJoJAVZBNPaBL72eUdH3mOR3vI7X99Tfv2gaU6BofFhggCzWV7DihLfZCE2ug6pNZCSdqz823auZBgtUfccdDTDZAUz3vAC0sPXZCOkckqfC2hYdjfGbYuvqqV0nnz8DOQviEG",
+      "bio" : "I am an entrepreneur leading a movement of online fundraising with a unique musi distribution platform benefiting charity through sponsors.",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "www.ViralCharity.com",
+      "gender" : "male",
+      "lastLogin" : 1396417187852,
+      "email" : "colterwilson@yahoo.com",
+      "dateCreated" : 1396417187852,
+      "picture" : "https://graph.facebook.com/40202504/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "charity, music, and more" : {
+          "tagName" : "charity, music, and more",
+          "value" : 1,
+          "40202504" : {
+            "type" : 1
+          }
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Colter",
+      "id" : "40202504"
+    },
+    "100002528567117" : {
+      "lastName" : "Bracegirdle",
+      "fullName" : "Olo Bracegirdle",
+      "accessToken" : "CAADxvZBY3njQBADFqyX60p9UIzllRueKoU43ktfCckaHbX4wdHFTA9yqapVw98wXo9MZBa0jAz4CnZAxbMrT5ZCwidKYPqcVAndhLynZCZCNvQlV7u1P2nHKfSJNeh2v7mrO5gE11nmoFCTHaspY3LsuU0L5US3cvy4fmVnQK6kOBglQUakuf2wu6mSlq5jD4ZD",
+      "bio" : "Olo Bracegirdle is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "193307685" : {
+          "type" : 1
+        },
+        "value" : 51
+      },
+      "link" : "https://www.facebook.com/olo.bracegirdle",
+      "lastVote" : "2014-03-27T20:08:52.603Z",
+      "comments" : {
+        "-JIgAOoPNeQO9-sR4JoW" : {
+          "comment" : "I think I'm pretty swell",
+          "user" : "100002528567117",
+          "value" : 0,
+          "193307468" : {
+            "type" : -1
+          }
+        }
+      },
+      "gender" : "male",
+      "lastLogin" : 1395531052633,
+      "email" : "johndstorey1@gmail.com",
+      "dateCreated" : 1395531052633,
+      "picture" : "https://graph.facebook.com/100002528567117/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 49,
+          "100002528567117" : {
+            "type" : -1
+          }
+        },
+        "hobbit stuff" : {
+          "tagName" : "hobbit stuff",
+          "value" : 1,
+          "100002528567117" : {
+            "type" : 1
+          }
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 51,
+          "100002528567117" : {
+            "type" : 1
+          }
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 51,
+          "100002528567117" : {
+            "type" : 1
+          }
+        },
+        "holes" : {
+          "tagName" : "holes",
+          "value" : 49,
+          "100002528567117" : {
+            "type" : -1
+          }
+        }
+      },
+      "firstName" : "Olo",
+      "id" : "100002528567117"
+    },
+    "509817845" : {
+      "lastName" : "Boyack",
+      "location" : "Provo, Utah",
+      "fullName" : "Parker Boyack",
+      "accessToken" : "CAADxvZBY3njQBAFrXa611MJbUEBuxZB7XVAahvHdZCYSfSaBwyWcvPslzPK9xmMEucMKAC2xzTKiega1MVMpnEMX1EznjXEgYfbY1QCTG7CfkLpLeABMxQjRlizntVfPg7mZB9u4nUh6oOJy8gXvFejwrrzdexSKX5LGRAbVOAZB0cUDZCtayIVAE5VS2VMrkZD",
+      "bio" : "undefined is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/parker.boyack",
+      "gender" : "male",
+      "lastLogin" : 1395939770461,
+      "email" : "parker.boyack@gmail.com",
+      "dateCreated" : 1395939770461,
+      "picture" : "https://graph.facebook.com/509817845/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Parker",
+      "id" : "509817845"
+    },
+    "852100014" : {
+      "lastName" : "Davis",
+      "location" : "Provo, Utah",
+      "fullName" : "Ryan Davis",
+      "accessToken" : "CAADxvZBY3njQBAEZA4iWcMoNlSZBcAfWZCWZAtERJiL7s5gXFjWEn85nlDZCkuwIgyfXG15GMxcuI2eFsWWKcRbNjg3m1iVoaHMJRmMnTzsZCxFrJdfbMPzj3mryQb1yZB9rkeeqYeRponde64HCeehzz6zgyuIKWs6bYP3bhkgXZB9npYUxqDdE3qZA0iY3geETQZD",
+      "bio" : "",
+      "overallVotes" : {
+        "value" : 50
+      },
+      "link" : "https://www.facebook.com/profile.php?id=852100014",
+      "gender" : "male",
+      "lastLogin" : 1399741434835,
+      "email" : "ronan144@hotmail.com",
+      "dateCreated" : 1399741434835,
+      "picture" : "https://graph.facebook.com/852100014/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 10
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 10
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 10
+        }
+      },
+      "firstName" : "Ryan",
+      "id" : "852100014"
+    },
+    "100002074621120" : {
+      "lastName" : "Hamill",
+      "location" : "Orem, Utah",
+      "fullName" : "Tonya Hamill",
+      "accessToken" : "CAADxvZBY3njQBAAjUILkvgZCVN7XzSNrEpZB8C7B5Bj5XsZBhyuDrTBMIgHtifYhVvXyeOFs96ojf5gzPoBo6B979vyQs0r57mC6VJZCO6I7t5oEREpIBAX1vpE9nDd55zPaJiCPSTZAnYC7zL4h45DRgU65ZBXJYZBKZAPCVhHXUIDQ6MVjtjd8nkHli1zFEI4sZD",
+      "bio" : "Tonya Hamill is pretty much awesome and has lots of friends that do fun things on the weekend.",
+      "overallVotes" : {
+        "value" : 51,
+        "203101784" : {
+          "type" : 1
+        }
+      },
+      "link" : "https://www.facebook.com/tonya.hamill",
+      "lastVote" : "2014-04-01T19:38:24.387Z",
+      "comments" : {
+        "-JJ1FIedPqlWtB7H9j1a" : {
+          "comment" : "For one thing, she has AWESOME business cards (inside joke).  But serious, she has a great energy and from my limited experience with her she is great at organizing events and branding.",
+          "user" : "203101784",
+          "value" : 1,
+          "193307468" : {
+            "type" : 1
+          },
+          "1395682538" : {
+            "type" : -1
+          },
+          "715882688" : {
+            "type" : 1
+          }
+        },
+        "-JJ1GdtGdB5uz65o6zYF" : {
+          "comment" : "This is to see if comment box clears",
+          "user" : "203101784",
+          "value" : 1,
+          "193307468" : {
+            "type" : -1
+          },
+          "1395682538" : {
+            "type" : 1
+          },
+          "203101784" : {
+            "type" : -1
+          }
+        }
+      },
+      "gender" : "female",
+      "lastLogin" : 1395682045203,
+      "email" : "tonyahamill@gmail.com",
+      "dateCreated" : 1395682045203,
+      "picture" : "https://graph.facebook.com/100002074621120/picture?width=150&height=150",
+      "votes" : {
+        "hot" : {
+          "tagName" : "hot",
+          "value" : 51,
+          "203101784" : {
+            "type" : 1
+          }
+        },
+        "fun" : {
+          "tagName" : "fun",
+          "value" : 52,
+          "203101784" : {
+            "type" : 1
+          },
+          "715882688" : {
+            "type" : 1
+          }
+        },
+        "interesting" : {
+          "tagName" : "interesting",
+          "value" : 52,
+          "203101784" : {
+            "type" : 1
+          },
+          "715882688" : {
+            "type" : 1
+          }
+        }
+      },
+      "firstName" : "Tonya",
+      "id" : "100002074621120"
+    }
+  }
+}

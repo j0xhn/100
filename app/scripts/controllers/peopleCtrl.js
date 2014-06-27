@@ -6,6 +6,8 @@ angular.module('100App')
 // MAKE SCOPE VARIABLES
 ///////////////////////////
 //people
+
+
 var people = peopleService.getPeople();
 var isSelected = 0;
 people.$bind($scope, 'people');
@@ -15,6 +17,8 @@ $scope.$watch('people', function(people) {
         $scope.selectedPerson = people[$scope.selectedPerson.id]
     }
 }, true)
+// curator
+var curator = peopleService.getCurator();
 //location
 var locationName = peopleService.getLocationName();
 $scope.locationName = locationName;

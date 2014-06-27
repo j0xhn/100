@@ -3,6 +3,9 @@
 angular.module('100App', [
 	'ui.router', 'ui.bootstrap', 'firebase','xeditable','ngAnimate'
 ]).config(function ($stateProvider, $urlRouterProvider) {
+  
+
+
   // UI ROUTER
   $urlRouterProvider.otherwise('/');
 
