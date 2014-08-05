@@ -41,11 +41,11 @@ angular.module('100App')
           //hides login
           $( "#top_nav_right" ).find('a').hide()
           //checks to see if there is user
-          var peopleObject = peopleService.getPeople();
-          peopleObject.$on('loaded', function() {
-            console.log('loaded:', peopleObject)
+          var userMasterList = peopleService.getUsers();
+          userMasterList.$on('loaded', function() {
+            console.log('loaded:', userMasterList)
              // for loop to assign picture
-            if (user.id in peopleObject) {
+            if (user.id in userMasterList) {
               $rootScope.userPicture = 'https://graph.facebook.com/' + user.id + '/picture?width=150&height=150';
               $rootScope.userID = user.id;
               //checks to see if last login was 24hrs ago
@@ -64,7 +64,7 @@ angular.module('100App')
               $rootScope.$apply();
             } else {
                 console.log("user does not exist yet")
-                var dataBase = new Firebase ("https://top100.firebaseio.com/realestate/" + user.id);
+                var dataBase = new Firebase ("https://top100.firebaseio.com/provo/" + user.id);
                 console.log('you did not have a profile, so we will make one for:');
                 console.log(user);
                 dataBase.set({

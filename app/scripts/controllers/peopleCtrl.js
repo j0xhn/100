@@ -236,10 +236,11 @@ $scope.upVote = function (tagName, selectedPerson, userID, $filter) {
             selectedPerson.votes[tagName].value++;
         }
         //rewards user for engagment 
-        people[userID].overallVotes.value++;
+        // people[userID].overallVotes.value++;
     } else {
         peopleService.loginPrompt();
     }
+    $scope.selectedPerson = selectedPerson;
 }
 $scope.downVote = function (tagName, selectedPerson, userID, $filter) {
     console.log('You clicked for down Vote');
@@ -259,7 +260,7 @@ $scope.downVote = function (tagName, selectedPerson, userID, $filter) {
             selectedPerson.votes[tagName].value--;
         }
         //rewards user for engagment 
-        people[userID].overallVotes.value++;
+        // people[userID].overallVotes.value++;
     } else {
         peopleService.loginPrompt();
     }

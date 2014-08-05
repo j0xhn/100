@@ -51,7 +51,7 @@
         <h2>Searchable Tags</h2>
       </div>
         <div class='tagBox'>
-          <p ng-repeat="tag in people[userID].votes | object2Array | orderBy:'value':true">{{ tag.tagName }},&nbsp; </p>
+          <p ng-repeat="tag in people[userID].votes | orderBy:'value':true">{{ tag.tagName }},&nbsp; </p>
 <!-- INPUT TAG -->
           <form ng-submit="tagCreate(tagFromView, selectedPerson, userID)" id='tagCreateForm'>
             <input class='tagName' type='text' name='tagFromView' placeholder='Create new tag' ng-model="tagFromView">
@@ -113,7 +113,7 @@
 <!-- LOGIN MODAL -->
       <div class="modal-login model-open-up" ng-controller='LoginCtrl' >
         <h1>You need to be logged in to do that</h1>
-        <img ng-click='submit() 'src='../images/login_1.png'/>
+        <img ng-click='submitLogin() 'src='../images/login_1.png'/>
         <a ng-click="loginPrompt()"> no thanks</a>
       </div>
 <!-- MODAL BODY -->
@@ -145,21 +145,21 @@
                   </div>
                 </li>
 <!-- TAG VOTE -->
-                <li id='tag' ng-repeat="tag in selectedPerson.votes | object2Array | orderBy:'value':true | limitTo: 3">
+                <li id='tag' ng-repeat="tag in selectedPerson.votes | orderBy:'value':true | limitTo: 3">
                   <div class='tagName'>
                     <p>{{ tag.tagName }}</p>
                     <progressbar class="progress-striped active" value=" tag.value " type="info"><i></i></progressbar>
                   </div>
                   <div class='tagBtns'>
-                    <button class='btn' id='buttonLeft' ng-click='downVote(tag.tagName, selectedPerson, userID)'><span class="glyphicon glyphicon-chevron-left"></button>
+                    <button class='btn' id='buttonLeft' ng-click='downVote(tag.literalTagName, selectedPerson, userID)'><span class="glyphicon glyphicon-chevron-left"></button>
                     <h3 id='tagValue'>{{ tag.value }}</h3>
-                    <button class='btn' id='buttonRight' ng-click='upVote(tag.tagName, selectedPerson, userID)'><span class="glyphicon glyphicon-chevron-right"></button>
+                    <button class='btn' id='buttonRight' ng-click='upVote(tag.literalTagName, selectedPerson, userID)'><span class="glyphicon glyphicon-chevron-right"></button>
                   </div>
                 </li>
               </ul>
 <!-- TAG BOX-->
               <div class='tagBox'>
-                <span>Other Tags&nbsp;</span><i>(click to vote up)</i>:&nbsp;<p ng-repeat="tag in selectedPerson.votes | object2Array | orderBy:'value':true" ng-click='upVote(tag.tagName, selectedPerson, userID)'>{{ tag.tagName }},&nbsp;</p>
+                <span>Other Tags&nbsp;</span><i>(click to vote up)</i>:&nbsp;<p ng-repeat="tag in selectedPerson.votes | orderBy:'value':true" ng-click='upVote(tag.literalTagName, selectedPerson, userID)'>{{ tag.tagName }},&nbsp;</p>
 <!-- INPUT TAG -->
                 <form ng-submit="tagCreate(tagFromView, selectedPerson, userID)" id='tagCreateForm'>
                   <input class='tagName' type='text' name='tagFromView' placeholder='Create new tag' ng-model="tagFromView">
@@ -181,7 +181,7 @@
             </div>
 <!-- SUGGESTION DISPLAY -->
             <div class='commentSection'>
-              <div class='comments' ng-repeat="comment in selectedPerson.comments | object2Array | orderBy : 'value':true">
+              <div class='comments' ng-repeat="comment in selectedPerson.comments | orderBy : 'value':true">
                 <div class='comment'>
                   <img src='https://graph.facebook.com/{{ comment.user }}/picture?width=25&height=25'>
                   <p>{{ comment.comment }}</p>

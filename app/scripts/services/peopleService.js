@@ -19,6 +19,14 @@ return {
         return $firebase(ref);
 
     },
+
+    getUsers: function () {
+        var ref = new Firebase(FBURL + 'provo/');
+        // console.log(ref);
+        return $firebase(ref);
+
+    },
+
     getLocationName: function(){
         var ref = new Firebase(FBURL + 'locations/usa/west/utah/utahValley/provo');
         var locationName = ref.name();
@@ -34,18 +42,6 @@ return {
 return deferred.promise;
 });
 
-
-//old service request
-    // allPeople.on('value', function(recieved){
-    //     var peopleRecieved = recieved.val();
-    //     console.log("from peopleService: "+ peopleRecieved.toString());
-    //     console.log(peopleRecieved);
-    // });
-    // return allPeople;
-    // //
-
-    // AngularJS will instantiate a singleton by calling "new" on this function
-  // });
 
 
 
