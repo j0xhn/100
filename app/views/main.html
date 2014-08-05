@@ -67,28 +67,28 @@
 <!-- Banner -->
 <div class='banner'>
   <h1>Real Time Course Ratings</h1>
-  <h2>Let fellow golfers know where the most manicured courses are throughout the state. It is also used the fore-warn golfers of poor conditions and the dreaded aeration machine.</h2>
+  <h2>Let fellow golfers know where the most manicured public golf courses are throughout the state. It is also used to fore-warn golfers of poor conditions and the dreaded aeration machine.</h2>
   <!-- Single button -->
   <div class="btn-group mobile">
     <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
       Filter Courses By <span class="caret"></span>
     </button>
     <ul class="dropdown-menu" role="menu">
-      <li><a href="#">Green Condition</a></li>
-      <li><a href="#">Course Condition</a></li>
-      <li><a href="#">Value</a></li>
+      <li><a href="#" ng-click='myOrder = "votes.green.value"; myOrderReverse = true;'>Green Condition</a></li>
+      <li><a href="#"  ng-click='myOrder = "votes.course.value"; myOrderReverse = true;'>Course Condition</a></li>
+      <li><a href="#" ng-click='myOrder = "votes.value.value"; myOrderReverse = true;'>Value</a></li>
     </ul>
   </div>
 <!-- Desktop Button Group -->
   <div class="btn-group btn-group-justified desktop">
     <div class="btn-group">
-      <button type="button" class="btn btn-default">Highest Rated Greens</button>
+      <button type="button" class="btn btn-default" ng-click='myOrder = "votes.green.value"; myOrderReverse = true;'>Highest Rated Greens</button>
     </div>
     <div class="btn-group">
-      <button type="button" class="btn btn-default">Top Overall Courses</button>
+      <button type="button" class="btn btn-default" ng-click='myOrder = "votes.course.value"; myOrderReverse = true;' >Top Overall Courses</button>
     </div>
     <div class="btn-group">
-      <button type="button" class="btn btn-default">Utah's Best Value</button>
+      <button type="button" class="btn btn-default" ng-click='myOrder = "votes.value.value"; myOrderReverse = true;'>Utah's Best Value</button>
     </div>
   </div>
 </div>
@@ -97,21 +97,8 @@
   <ul id = 'makeCenter'>
    <li class="person" ng-click="setPerson(person, 0)" ng-repeat="person in people | orderByPriority | orderBy:'overallVotes.value':true| orderBy:myOrder:myOrderReverse | filter: sortField : true | filter: search || property:'tags':search:undefined:true | limitTo: 100">
      <img ng-src="{{person.picture}}" ng-mouseover='showOverall(person, $event)'> 
-<!--       <div class='textBackground'>
-        <div class='addOns'>
-           <a ng-click='overallUpVote(person)'><i class="fa fa-arrow-up" id='left_icon'></i></a>
-           <a ng-click='overallDownVote(person)'><i class="fa fa-arrow-down" id='right_icon'></i></a>
-        </div>
-      </div>
-      <p>{{person.fullName}}</p> -->
         <div class='showOverall scoreBubble'>
           {{person.overallVotes.value}}
-        </div>
-<!--         <div class='showOverall upBubble'>
-          <a ng-click='upVoteOverall(selectedPerson, userID, 1)'><span class="glyphicon glyphicon-chevron-up"></span></a>
-        </div> -->
-        <div class='showOverall linkBubble'>
-          <a href="{{person.link}}" target='_blank'><i class="fa fa-bolt"></i></a>
         </div>
    </li>
   </ul>
@@ -138,9 +125,10 @@
               <img src="{{selectedPerson.picture}}">
             </div>
               <p id='bio'>
-                {{selectedPerson.address}} <br>
-                <a href="tel:+{{selectedPerson.callablePhoneNumber}}">{{selectedPerson.phoneNumber}}</a> <br>
-                ${{selectedPerson.price}} <small>course + cart</small></p> <br>
+                {{selectedPerson.address}}
+              </p>
+              <a id='modalPhone' href="tel:+{{selectedPerson.callablePhoneNumber}}">{{selectedPerson.phoneNumber}}</a>
+              <p>~${{selectedPerson.price}} <small>course + cart</small></p>
               <a href="{{selectedPerson.link}}">Contact Course</a>
 
 <!-- OVERALL VOTE -->

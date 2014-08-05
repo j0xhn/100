@@ -6,8 +6,6 @@ angular.module('100App')
 // MAKE SCOPE VARIABLES
 ///////////////////////////
 //people
-
-
 var people = peopleService.getPeople();
 var isSelected = 0;
 people.$bind($scope, 'people');
@@ -266,4 +264,11 @@ $scope.downVote = function (tagName, selectedPerson, userID, $filter) {
         peopleService.loginPrompt();
     }
 }
+///////////////////////////
+// CUSTOM ORDERBY FUNCTION
+///////////////////////////
+$scope.orderByTees = function(course) {
+    console.log(course.votes.course.value);
+   return course.votes.course.value;
+};
 });
